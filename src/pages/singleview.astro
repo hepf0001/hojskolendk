@@ -5,14 +5,70 @@ import Link from "../components/Link.astro";
 ---
 
 <MainLayout title="HØJSKOLE I CARIBIEN, HAWAII & MEXICO">
-    <section class="max-w-7xl mx-auto p-6">
-        <h1>Singleview</h1>
+    <section class="max-w-7xl mx-auto p-s grid grid-cols-12 gap-s">
+        <div class="tab-section bg-neutral-100 rounded-sm col-span-9">
+            <div class="flex flex-wrap">
+                <button class="rounded-l-sm bg-neutral-950 hover:bg-neutral-900 p-xs text-neutral-50 font-bold flex-grow" data-tab-target="#tab1">Overblik</button>
+                <button class="bg-neutral-950 hover:bg-neutral-900 p-xs text-neutral-50 font-bold flex-grow" data-tab-target="#tab2">Program</button>
+                <button class="bg-neutral-950 hover:bg-neutral-900 p-xs text-neutral-50 font-bold flex-grow" data-tab-target="#tab3">Inkluderet</button>
+                <button class="bg-neutral-950 hover:bg-neutral-900 p-xs text-neutral-50 font-bold flex-grow" data-tab-target="#tab4">Fag</button>
+                <button class="rounded-r-sm bg-neutral-950 hover:bg-neutral-900 p-xs text-neutral-50 font-bold flex-grow" data-tab-target="#tab5">Kontakt</button>
+            </div>
+            <div class="mt-xxs">
+                <div id="tab1" class="tab-content p-s">
+                    <h3 class="">Overblik</h3>
+                    <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae quidem impedit doloremque explicabo illum quos. Molestias aspernatur rem itaque doloribus culpa similique rerum provident id quos sed.</p>
+                </div>
+                <div id="tab2" class="tab-content p-s hidden">
+                    <h3 class="">Program</h3>
+                    <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae quidem impedit doloremque explicabo illum quos. Molestias aspernatur rem itaque doloribus culpa similique rerum provident id quos sed.</p>
+                </div>
+                <div id="tab3" class="tab-content p-s hidden">
+                    <h3 class="">Inkluderet</h3>
+                    <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae quidem impedit doloremque explicabo illum quos. Molestias aspernatur rem itaque doloribus culpa similique rerum provident id quos sed.</p>
+                </div>
+                <div id="tab4" class="tab-content p-s hidden">
+                    <h3 class="">Fag</h3>
+                    <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae quidem impedit doloremque explicabo illum quos. Molestias aspernatur rem itaque doloribus culpa similique rerum provident id quos sed.</p>
+                </div>
+                <div id="tab5" class="tab-content p-s hidden">
+                    <h3 class="">Kontakt</h3>
+                    <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae quidem impedit doloremque explicabo illum quos. Molestias aspernatur rem itaque doloribus culpa similique rerum provident id quos sed.</p>
+                </div>
+            </div>
+        </div>
 
-        <h1>Test</h1>
-        <h2>Test</h2>
-        <h3>Test</h3>
-        <h4>Test</h4>
-        <p>Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test</p>
-        <a href="">helenapfeffer02@gmail.com</a>
+        <section class="col-span-3">
+            <div class="bg-orange-600 rounded-sm">
+                <div class="p-s">
+                    <h3 class="text-neutral-50 pb-xxs">Card test</h3>
+                    <p class="text-neutral-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium fuga est, blanditiis iure corrupti odit doloribus reprehenderit suscipit tempora, cum magni expedita similique, maiores dignissimos autem necessitatibus voluptatibus eum! Officiis.</p>
+                </div>
+            </div>
+        </section>
     </section>
 </MainLayout>
+
+<script>
+    const tabs = document.querySelectorAll("[data-tab-target]");
+    const activeClass = "bg-orange-600 hover:bg-orange-700";
+
+    // Select first tab by default
+    tabs[0].classList.add(...activeClass.split(" "));
+    document.querySelector("#tab1").classList.remove("hidden");
+
+    tabs.forEach((tab) => {
+        tab.addEventListener("click", () => {
+            const targetContent = document.querySelector(tab.dataset.tabTarget);
+
+            document.querySelectorAll(".tab-content").forEach((content) => content.classList.add("hidden"));
+            targetContent.classList.remove("hidden");
+
+            // Remove active class from all tabs except the card section
+            document.querySelectorAll(".bg-neutral-950").forEach((activeTab) => activeTab.classList.remove(...activeClass.split(" ")));
+
+            // Add active class to clicked tab
+            tab.classList.add(...activeClass.split(" "));
+        });
+    });
+</script>
