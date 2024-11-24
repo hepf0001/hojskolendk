@@ -13,6 +13,7 @@ import brochure_1 from "../assets/images/brochure1.svg";
 import brochure_close from "../assets/images/brochure_close.webp";
 import brochure_open from "../assets/images/brochure_open2.webp";
 import explore from "../assets/images/explore.webp";
+import fly from "../assets/images/paperfly.svg";
 ---
 
 <MainLayout title="Forside">
@@ -34,22 +35,28 @@ import explore from "../assets/images/explore.webp";
   </section>
 
   <!--------------------Den første section------------------->
-  <section class="flex flex-col px-s pt-sm mx-auto md:max-w-7xl md:p-large">
-    <h1 class="text-h2-mobile font-display text-neutral-950 md:text-h1-desktop">ER DU KLAR TIL DIT LIVS EVENTYR?</h1>
-    <div class="py-xs">
-      <Image src={rejsebrev} alt="rejsebrev picture" class="w-full object-cover rounded-sm" />
+  <section class="flex flex-col px-s pt-sm mx-auto md:p-large">
+    <div class="md:max-w-7xl md:mx-auto">
+      <h1 class="text-h2-mobile font-display text-neutral-950 md:text-h1-desktop md:pt-[80px]">ER DU KLAR TIL DIT LIVS EVENTYR?</h1>
+      <div class="md:grid md:grid-cols-2 md:justify-center md:items-start md:gap-sm md:pt-s">
+        <div class="py-xs md:py-xxxxs">
+          <Image src={rejsebrev} alt="rejsebrev picture" class="w-full object-cover rounded-sm" />
+        </div>
+        <div class="text-p-mobile md:text-p-desktop">
+          <p class="font-lato text-neutral-950">HÖJSKOLENDK er en dansk højskole for unge i alderen ca. 18-30 år. Vi brænder for oplevelser, fællesskab og mødet med nye mennesker og kulturer; derfor laver vi eventyrlige højskoleophold i udlandet.</p>
+          <br />
+          <p class="font-lato text-neutral-950">HÖJSKOLENDK er noget for dig, hvis du vil på højskole i udlandet og er vild med højskolefællesskab, vil med på et fantastisk rejseeventyr, glæder dig til at lære om fremmede kulturer, vil rejse med rygsæk, drømmer om en fed grupperejse med andre skønne unge, vil opleve et stærkt sammenhold og ønsker inspirerende og meningsfuld undervisning.</p>
+          <br />
+          <p class="font-lato text-neutral-950">Du er sikker på en tryg rejseoplevelse da vi er medlem af Rejsegarantifonden. Vi glæder os til at lære dig at kende!</p>
+          <div class="pt-xs">
+            <Button variant="primary" size="sm:xsmall md:medium">Højskoleophold</Button>
+          </div>
+        </div>
+      </div>
     </div>
-    <p class="font-lato text-neutral-950">HÖJSKOLENDK er en dansk højskole for unge i alderen ca. 18-30 år. Vi brænder for oplevelser, fællesskab og mødet med nye mennesker og kulturer; derfor laver vi eventyrlige højskoleophold i udlandet.</p>
-    <br />
-    <p class="font-lato text-neutral-950">HÖJSKOLENDK er noget for dig, hvis du vil på højskole i udlandet og er vild med højskolefællesskab, vil med på et fantastisk rejseeventyr, glæder dig til at lære om fremmede kulturer, vil rejse med rygsæk, drømmer om en fed grupperejse med andre skønne unge, vil opleve et stærkt sammenhold og ønsker inspirerende og meningsfuld undervisning.</p>
-    <br />
-    <p class="font-lato text-neutral-950">Du er sikker på en tryg rejseoplevelse da vi er medlem af Rejsegarantifonden. Vi glæder os til at lære dig at kende!</p>
-    <div class="pt-xs">
-      <Button variant="primary" size="sm:xsmall md:medium">Højskoleophold</Button>
-    </div>
-
-    <div class="py-xs">
-      <Image src={top} alt="group top picture" class="w-full object-cover rounded-sm" />
+    <div class="py-xs md:py-xxxxs md:w-full md:p-large md:grid md:grid-cols-2 md:justify-center md:items-start md:gap-sm md:relative">
+      <Image src={fly} alt="fly illustration" class="w-[80%] md:pt-s md:pl-lg object-cover" />
+      <Image src={top} alt="group top picture" class="w-full object-cover" />
     </div>
   </section>
 
@@ -82,7 +89,7 @@ import explore from "../assets/images/explore.webp";
     </div>
   </section>
   <!--------------------Den infomøde kort section------------------->
-  <section class="flex flex-col px-s pt-sm mx-auto md:max-w-7xl md:p-large">
+  <section class="flex flex-col px-s pt-sm mx-auto md:max-w-7xl md:p-large md:pt-[80px]">
     <h1 class="text-h2-mobile font-display text-neutral-950 md:text-h1-desktop">Infomøde</h1>
     <p class="font-lato text-neutral-950 py-xxs text-p-mobile">Hvis du drømmer om et fantastisk rejseeventyr med masser af eventyr, vilde naturoplevelser og spændende kulturmøder så smut forbi et af vores hyggelige infomøder i København eller Aarhus – eller mød os på et online infomøde.</p>
     <div class="pb-sm"><Button variant="primary" size="medium">Tilmeld dig infomødet</Button></div>
