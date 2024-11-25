@@ -24,6 +24,7 @@ import Link from "../components/Link.astro";
                     </div>
                 </section>
 
+                <!------------------------------- Info card ------------------------------->
                 <section class="col-span-2 flex items-center p-0 relative">
                     <div class="absolute left-0 top-1/2 transform -translate-y-1/2 h-1/2 border-l border-[1px] border-neutral-800"></div>
                     <div class="w-full pl-s">
@@ -80,8 +81,28 @@ import Link from "../components/Link.astro";
                         </h3>
                         <div id="answer-1" class="hidden bg-neutral-100" aria-labelledby="accordion-color-heading-1">
                             <div class="p-s">
-                                <h3>Overblik</h3>
-                                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae quidem impedit doloremque explicabo illum quos. Molestias aspernatur rem itaque doloribus culpa similique rerum provident id quos sed.</p>
+                                <div class="pb-ml">
+                                    <h3 class="pb-s">CARIBIEN, HAWAII & MEXICO</h3>
+                                    <p class="pb-xs">Tag med på drømmenes højskoleophold til et vaskeægte paradis med verdens bedste strande, surfing, den smukkeste natur og sol hver dag.</p>
+                                    <p>Et rejseeventyr med masser af adventure på vulkaner, i regnskov og ikke mindst på, i og under vandet. En fantastisk højskole i udlandet.</p>
+                                </div>
+                                <div class="pb-ml">
+                                    <h3 class="pb-s">Hawaii</h3>
+                                    <p class="pb-xs">
+                                        Som en perlesnor langt ude i Stillehavet ligger ø-gruppen Hawaii med noget af planetens mest storslåede og vilde natur. Tropiske regnskove, brusende floder, vilde vulkaner, brølende vandfald på dramatiske bjerge og aloha-spirit har placeret Hawaii på enhvers eventyrlystens sjæls travel-bucket-list.
+                                    </p>
+                                    <p>Glæd dig til at opleve Honolulu, Waikiki Beach, de fantastiske hvide, sorte, røde og grønne sandstrande, vulkan-kratere, berømte surf-spots, noget af verdens bedste dykning (med bl.a. Manta Ray Nightdive), hvalsafari, delfiner der leger i bugterne og hawaiiansk hula-fest.</p>
+                                </div>
+                                <div class="pb-ml">
+                                    <h3 class="pb-s">Mexico</h3>
+                                    <p class="pb-xs">Mexico byder på en fantastisk kombination af sol, varme, eksotiske og lækre strande, et perfekt klima og naturskønne omgivelser på Yucatan halvøen.</p>
+                                    <p class="pb-xs">Vi oplever den ældgamle mayakultur, med inka-ruiner og maya indianere, og udforsker områdets fantastiske natur og dyreliv – over og under vand. Vi bor downtown i Playa del Carmen, hvor der både er plads til undervisning, chill-time og masser af lækkert højskolefællesskab.</p>
+                                    <p>Glæd dig til alle de fantastiske mad-oplevelser og hyggelige gadekøkkener med det lækreste mexicanske mad.</p>
+                                </div>
+                                <div>
+                                    <h3 class="pb-s">St. Croix i Caribien</h3>
+                                    <p>Tag med på drømmenes højskoleophold til et vaskeægte paradis med verdens bedste strande, surfing, den smukkeste natur og sol hver dag. Et rejseeventyr med masser af adventure på vulkaner, i regnskov og ikke mindst på, i og under vandet. En fantastisk højskole i udlandet.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -156,6 +177,47 @@ import Link from "../components/Link.astro";
                 </div>
             </div>
 
+            <!------------------------------- Statestik ------------------------------->
+            <section class="md:hidden block">
+                <section class="py-s">
+                    <div class="pb-s">
+                        <div class="bg-neutral-100 rounded-sm flex items-center justify-center h-full">
+                            <div class="p-s text-center">
+                                <p class="">Glade & skønne elever</p>
+                                <h1 class="text-orange-600">2.000+</h1>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pb-s">
+                        <div class="bg-neutral-100 rounded-sm flex items-center justify-center h-full">
+                            <div class="p-s text-center">
+                                <p class="">Anbefaler Höjskolendk</p>
+                                <h1 class="text-orange-600">94%</h1>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pb-s">
+                        <div class="bg-neutral-100 rounded-sm flex items-center justify-center h-full">
+                            <div class="p-s text-center">
+                                <p class="">Tilfredshed efter ophold</p>
+                                <h1 class="text-orange-600">8.7/10</h1>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pb-s">
+                        <div class="bg-neutral-100 rounded-sm flex items-center justify-center h-full">
+                            <div class="p-s text-center">
+                                <img src="/trustpilot_logo_black.svg" alt="trustpilot logo" />
+                                <h1 class="text-orange-600">4.8/5</h1>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
             <!------------------------------- Tabbed interface - Desktop ------------------------------->
             <section class="col-span-9 hidden md:block">
                 <div class="tab-section bg-neutral-100 rounded-sm">
@@ -167,32 +229,124 @@ import Link from "../components/Link.astro";
                         <button class="rounded-r-sm bg-neutral-950 hover:bg-neutral-900 p-xs text-neutral-50 font-bold flex-grow" data-tab-target="#tab5">Kontakt</button>
                     </div>
                     <div class="mt-xxs">
-                        <div id="tab1" class="tab-content p-s">
-                            <h3 class="">Overblik</h3>
-                            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae quidem impedit doloremque explicabo illum quos. Molestias aspernatur rem itaque doloribus culpa similique rerum provident id quos sed.</p>
+                        <div id="tab1" class="tab-content p-md">
+                            <section class="grid grid-cols-2 gap-md">
+                                <div>
+                                    <div class="pb-ml">
+                                        <h3 class="pb-s">CARIBIEN, HAWAII & MEXICO</h3>
+                                        <p class="pb-xs">Tag med på drømmenes højskoleophold til et vaskeægte paradis med verdens bedste strande, surfing, den smukkeste natur og sol hver dag.</p>
+                                        <p>Et rejseeventyr med masser af adventure på vulkaner, i regnskov og ikke mindst på, i og under vandet. En fantastisk højskole i udlandet.</p>
+                                    </div>
+                                    <div>
+                                        <h3 class="pb-s">Hawaii</h3>
+                                        <p class="pb-xs">
+                                            Som en perlesnor langt ude i Stillehavet ligger ø-gruppen Hawaii med noget af planetens mest storslåede og vilde natur. Tropiske regnskove, brusende floder, vilde vulkaner, brølende vandfald på dramatiske bjerge og aloha-spirit har placeret Hawaii på enhvers eventyrlystens sjæls travel-bucket-list.
+                                        </p>
+                                        <p>Glæd dig til at opleve Honolulu, Waikiki Beach, de fantastiske hvide, sorte, røde og grønne sandstrande, vulkan-kratere, berømte surf-spots, noget af verdens bedste dykning (med bl.a. Manta Ray Nightdive), hvalsafari, delfiner der leger i bugterne og hawaiiansk hula-fest.</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="pb-ml">
+                                        <h3 class="pb-s">Mexico</h3>
+                                        <p class="pb-xs">Mexico byder på en fantastisk kombination af sol, varme, eksotiske og lækre strande, et perfekt klima og naturskønne omgivelser på Yucatan halvøen.</p>
+                                        <p class="pb-xs">Vi oplever den ældgamle mayakultur, med inka-ruiner og maya indianere, og udforsker områdets fantastiske natur og dyreliv – over og under vand. Vi bor downtown i Playa del Carmen, hvor der både er plads til undervisning, chill-time og masser af lækkert højskolefællesskab.</p>
+                                        <p>Glæd dig til alle de fantastiske mad-oplevelser og hyggelige gadekøkkener med det lækreste mexicanske mad.</p>
+                                    </div>
+                                    <div>
+                                        <h3 class="pb-s">St. Croix i Caribien</h3>
+                                        <p>Tag med på drømmenes højskoleophold til et vaskeægte paradis med verdens bedste strande, surfing, den smukkeste natur og sol hver dag. Et rejseeventyr med masser af adventure på vulkaner, i regnskov og ikke mindst på, i og under vandet. En fantastisk højskole i udlandet.</p>
+                                    </div>
+                                </div>
+                            </section>
                         </div>
-                        <div id="tab2" class="tab-content p-s hidden">
+                        <div id="tab2" class="tab-content p-md hidden">
                             <h3 class="">Program</h3>
                             <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae quidem impedit doloremque explicabo illum quos. Molestias aspernatur rem itaque doloribus culpa similique rerum provident id quos sed.</p>
                         </div>
-                        <div id="tab3" class="tab-content p-s hidden">
+                        <div id="tab3" class="tab-content p-md hidden">
                             <h3 class="">Inkluderet</h3>
                             <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae quidem impedit doloremque explicabo illum quos. Molestias aspernatur rem itaque doloribus culpa similique rerum provident id quos sed.</p>
                         </div>
-                        <div id="tab4" class="tab-content p-s hidden">
+                        <div id="tab4" class="tab-content p-md hidden">
                             <h3 class="">Fag</h3>
                             <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae quidem impedit doloremque explicabo illum quos. Molestias aspernatur rem itaque doloribus culpa similique rerum provident id quos sed.</p>
                         </div>
-                        <div id="tab5" class="tab-content p-s hidden">
+                        <div id="tab5" class="tab-content p-md hidden">
                             <h3 class="">Kontakt</h3>
                             <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae quidem impedit doloremque explicabo illum quos. Molestias aspernatur rem itaque doloribus culpa similique rerum provident id quos sed.</p>
                         </div>
                     </div>
                 </div>
+
+                <!------------------------------- Statestik ------------------------------->
+                <section class="grid grid-cols-4 gap-s py-s">
+                    <div class="bg-neutral-100 rounded-sm flex items-center justify-center h-full">
+                        <div class="p-s text-center">
+                            <p class="">Glade & skønne elever</p>
+                            <h1 class="text-orange-600">2.000+</h1>
+                        </div>
+                    </div>
+
+                    <div class="bg-neutral-100 rounded-sm flex items-center justify-center h-full">
+                        <div class="p-s text-center">
+                            <p class="">Anbefaler Höjskolendk</p>
+                            <h1 class="text-orange-600">94%</h1>
+                        </div>
+                    </div>
+
+                    <div class="bg-neutral-100 rounded-sm flex items-center justify-center h-full">
+                        <div class="p-s text-center">
+                            <p class="">Tilfredshed efter ophold</p>
+                            <h1 class="text-orange-600">8.7/10</h1>
+                        </div>
+                    </div>
+
+                    <div class="bg-neutral-100 rounded-sm flex items-center justify-center h-full">
+                        <div class="p-s text-center">
+                            <img src="/trustpilot_logo_black.svg" alt="trustpilot logo" />
+                            <h1 class="text-orange-600">4.8/5</h1>
+                        </div>
+                    </div>
+                </section>
+
+                <!------------------------------- Rejsebreve ------------------------------->
+                <section class="col-span-9">
+                    <h2 class="pb-s">Rejsebreve</h2>
+                    <section class="grid grid-cols-9 gap-s">
+                        <div class="col-span-3 relative group">
+                            <img src="/laura.webp" alt="Billede af Laura" class="w-full h-full object-cover rounded-sm" />
+                            <div class="absolute inset-0 bg-neutral-950 opacity-50 rounded-sm"></div>
+                            <div class="overlay absolute inset-0 bg-orange-500 opacity-0 group-hover:opacity-50 transition-opacity duration-300 rounded-sm"></div>
+                            <div class="absolute inset-x-0 bottom-0 p-s z-10">
+                                <h3 class="text-neutral-50">Laura Sofie Pedersen</h3>
+                                <p class="text-neutral-50">Den 1. november 2017, stod jeg klar i Københavns Lufthavn og var klar til mit…</p>
+                            </div>
+                        </div>
+                        <div class="col-span-3 relative group">
+                            <img src="/emma.webp" alt="Billede af Emma" class="w-full h-full object-cover rounded-sm" />
+                            <div class="absolute inset-0 bg-neutral-950 opacity-50 rounded-sm"></div>
+                            <div class="overlay absolute inset-0 bg-orange-500 opacity-0 group-hover:opacity-50 transition-opacity duration-300 rounded-sm"></div>
+                            <div class="absolute inset-x-0 bottom-0 p-s z-10">
+                                <h3 class="text-neutral-50">Emma Jo Sørensen</h3>
+                                <p class="text-neutral-50">Med lidt under en uge tilbage her i Caribien kan jeg virkelig mærke, hvor meget…</p>
+                            </div>
+                        </div>
+                        <div class="col-span-3 relative group">
+                            <img src="/kristoffer.webp" alt="Billede af Kristoffer" class="w-full h-full object-cover rounded-sm" />
+                            <div class="absolute inset-0 bg-neutral-950 opacity-50 rounded-sm"></div>
+                            <div class="overlay absolute inset-0 bg-orange-500 opacity-0 group-hover:opacity-50 transition-opacity duration-300 rounded-sm"></div>
+                            <div class="absolute inset-x-0 bottom-0 p-s z-10">
+                                <h3 class="text-neutral-50">Kristoffer Strandhauge</h3>
+                                <p class="text-neutral-50">Hvis man beder en person om at beskrive hvordan han eller hun forestiller sig Caribien…</p>
+                            </div>
+                        </div>
+                    </section>
+                    <h4 class="pt-s text-orange-600 flex justify-center">Se flere</h4>
+                </section>
             </section>
 
             <!------------------------------- Info cards ------------------------------->
-            <section class="md:col-span-3">
+            <section class="md:col-span-3 lg:col-span-3">
                 <section class="pb-s">
                     <div class="bg-orange-600 rounded-sm">
                         <div class="p-s">
@@ -211,7 +365,7 @@ import Link from "../components/Link.astro";
                             <h3 class="pb-s">Afrejse</h3>
                             <p>20. december 2024</p>
                             <p class="pb-xs text-orange-600">2 pladser tilbage</p>
-                            <p class="pb-xs">2. febuar 2025</p>
+                            <p class="pb-xs">2. februar 2025</p>
                             <p>16. maj 2025</p>
                         </div>
                     </div>
@@ -268,71 +422,112 @@ import Link from "../components/Link.astro";
             </section>
 
             <!------------------------------- Rejsebreve ------------------------------->
-            <section></section>
+            <section class="md:hidden block">
+                <h2 class="pb-s">Rejsebreve</h2>
+                <section class="gap-s">
+                    <div class="pb-s">
+                        <div class="relative group">
+                            <img src="/laura.webp" alt="Billede af Laura" class="w-full h-full object-cover rounded-sm" />
+                            <div class="absolute inset-0 bg-neutral-950 opacity-50 rounded-sm"></div>
+                            <div class="overlay absolute inset-0 bg-orange-500 opacity-0 group-hover:opacity-50 transition-opacity duration-300 rounded-sm"></div>
+                            <div class="absolute inset-x-0 bottom-0 p-s z-10">
+                                <h3 class="text-neutral-50">Laura Sofie Pedersen</h3>
+                                <p class="text-neutral-50">Den 1. november 2017, stod jeg klar i Københavns Lufthavn og var klar til mit…</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pb-s">
+                        <div class="relative group">
+                            <img src="/emma.webp" alt="Billede af Emma" class="w-full h-full object-cover rounded-sm" />
+                            <div class="absolute inset-0 bg-neutral-950 opacity-50 rounded-sm"></div>
+                            <div class="overlay absolute inset-0 bg-orange-500 opacity-0 group-hover:opacity-50 transition-opacity duration-300 rounded-sm"></div>
+                            <div class="absolute inset-x-0 bottom-0 p-s z-10">
+                                <h3 class="text-neutral-50">Emma Jo Sørensen</h3>
+                                <p class="text-neutral-50">Med lidt under en uge tilbage her i Caribien kan jeg virkelig mærke, hvor meget…</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pb-s">
+                        <div class="relative group">
+                            <img src="/kristoffer.webp" alt="Billede af Kristoffer" class="w-full h-full object-cover rounded-sm" />
+                            <div class="absolute inset-0 bg-neutral-950 opacity-50 rounded-sm"></div>
+                            <div class="overlay absolute inset-0 bg-orange-500 opacity-0 group-hover:opacity-50 transition-opacity duration-300 rounded-sm"></div>
+                            <div class="absolute inset-x-0 bottom-0 p-s z-10">
+                                <h3 class="text-neutral-50">Kristoffer Strandhauge</h3>
+                                <p class="text-neutral-50">Hvis man beder en person om at beskrive hvordan han eller hun forestiller sig Caribien…</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <h4 class="pt-s text-orange-600 flex justify-center">Se flere</h4>
+            </section>
         </section>
+        <!------------------------------- Trustpilot ------------------------------->
+    </section>
 
-        <!------------------------------- Accordion - Mobil ------------------------------->
-        <script>
-            document.addEventListener("DOMContentLoaded", function () {
-                const buttons = document.querySelectorAll(".question-btn");
-                const activeClass = "bg-orange-600";
+    <!------------------------------- Accordion - Mobil ------------------------------->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const buttons = document.querySelectorAll(".question-btn");
+            const activeClass = "bg-orange-600";
 
-                buttons.forEach((button) => {
-                    button.addEventListener("click", function () {
-                        const targetId = this.getAttribute("data-toggle");
-                        const target = document.getElementById(targetId);
-                        const isExpanded = target.classList.contains("hidden");
+            buttons.forEach((button) => {
+                button.addEventListener("click", function () {
+                    const targetId = this.getAttribute("data-toggle");
+                    const target = document.getElementById(targetId);
+                    const isExpanded = target.classList.contains("hidden");
 
-                        // Close all other accordions
-                        buttons.forEach((btn) => {
-                            if (btn !== this) {
-                                const otherTargetId = btn.getAttribute("data-toggle");
-                                const otherTarget = document.getElementById(otherTargetId);
-                                otherTarget.classList.add("hidden");
-                                btn.classList.remove(activeClass);
-                                btn.querySelector("svg").classList.remove("rotate-180");
-                            }
-                        });
-
-                        if (isExpanded) {
-                            target.classList.remove("hidden");
-                            this.classList.add(activeClass);
-                            this.querySelector("svg").classList.add("rotate-180");
-                        } else {
-                            target.classList.add("hidden");
-                            this.classList.remove(activeClass);
-                            this.querySelector("svg").classList.remove("rotate-180");
+                    // Close all other accordions
+                    buttons.forEach((btn) => {
+                        if (btn !== this) {
+                            const otherTargetId = btn.getAttribute("data-toggle");
+                            const otherTarget = document.getElementById(otherTargetId);
+                            otherTarget.classList.add("hidden");
+                            btn.classList.remove(activeClass);
+                            btn.querySelector("svg").classList.remove("rotate-180");
                         }
                     });
+
+                    if (isExpanded) {
+                        target.classList.remove("hidden");
+                        this.classList.add(activeClass);
+                        this.querySelector("svg").classList.add("rotate-180");
+                    } else {
+                        target.classList.add("hidden");
+                        this.classList.remove(activeClass);
+                        this.querySelector("svg").classList.remove("rotate-180");
+                    }
                 });
             });
-        </script>
+        });
+    </script>
 
-        <!------------------------------- Tabbed interface - Desktop ------------------------------->
-        <script>
-            document.addEventListener("DOMContentLoaded", function () {
-                const tabs = document.querySelectorAll("[data-tab-target]");
-                const activeClass = "bg-orange-600 hover:bg-orange-700";
+    <!------------------------------- Tabbed interface - Desktop ------------------------------->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const tabs = document.querySelectorAll("[data-tab-target]");
+            const activeClass = "bg-orange-600 hover:bg-orange-700";
 
-                // Select first tab by default
-                tabs[0].classList.add(...activeClass.split(" "));
-                document.querySelector("#tab1").classList.remove("hidden");
+            // Select first tab by default
+            tabs[0].classList.add(...activeClass.split(" "));
+            document.querySelector("#tab1").classList.remove("hidden");
 
-                tabs.forEach((tab) => {
-                    tab.addEventListener("click", () => {
-                        const targetContent = document.querySelector(tab.dataset.tabTarget);
+            tabs.forEach((tab) => {
+                tab.addEventListener("click", () => {
+                    const targetContent = document.querySelector(tab.dataset.tabTarget);
 
-                        document.querySelectorAll(".tab-content").forEach((content) => content.classList.add("hidden"));
-                        targetContent.classList.remove("hidden");
+                    document.querySelectorAll(".tab-content").forEach((content) => content.classList.add("hidden"));
+                    targetContent.classList.remove("hidden");
 
-                        // Remove active class from all tabs except the card section
-                        document.querySelectorAll(".bg-neutral-950").forEach((activeTab) => activeTab.classList.remove(...activeClass.split(" ")));
+                    // Remove active class from all tabs except the card section
+                    document.querySelectorAll(".bg-neutral-950").forEach((activeTab) => activeTab.classList.remove(...activeClass.split(" ")));
 
-                        // Add active class to clicked tab
-                        tab.classList.add(...activeClass.split(" "));
-                    });
+                    // Add active class to clicked tab
+                    tab.classList.add(...activeClass.split(" "));
                 });
             });
-        </script>
-    </section>
+        });
+    </script>
 </MainLayout>
