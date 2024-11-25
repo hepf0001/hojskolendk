@@ -32,19 +32,6 @@ export default {
           900: '#10169f',
           950: '#0a0b5c',
         },
-        yellow: {
-          50: "#FFFCE5",
-          100: "#FFF8CC",
-          200: "#FFF199",
-          300: "#FFEB66",
-          400: "#FFE433",
-          500: "#FFDF00",
-          600: "#CCB100",
-          700: "#998500",
-          800: "#665800",
-          900: "#332C00",
-          950: "#191600",
-        },
         gray: {
           50: '#f6f7f9',
           100: '#edeef1',
@@ -73,6 +60,7 @@ export default {
         },
       },
       spacing: {
+        'none': '0px',
         'xxxxs': '2px',
         'xxxs': '4px',
         'xxs': '8px',
@@ -109,8 +97,8 @@ export default {
         medium: ['2rem', { lineHeight: '3rem' }],
         large: ['2.5rem', { lineHeight: '3.75rem' }],
         xlarge: ['3rem', { lineHeight: '4.5rem' }],
-        'display-desktop': ['4.5rem', { lineHeight: '5.5rem' }], // 72px
-        'display-mobile': ['2.8125rem', { lineHeight: '3.5rem' }], // 45px
+        'display-desktop': ['5rem', { lineHeight: '5.5rem' }], // 72px
+        'display-mobile': ['3.5rem', { lineHeight: '3.5rem' }], // 45px
         'h1-desktop': ['3rem', { lineHeight: '3.75rem' }], // 48px
         'h1-mobile': ['2.5rem', { lineHeight: '3.125rem' }], // 40px
         'h2-desktop': ['2.5rem', { lineHeight: '3.125rem' }], // 40px

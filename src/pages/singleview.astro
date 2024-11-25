@@ -4,142 +4,212 @@ import Button from "../components/Button.astro";
 import Link from "../components/Link.astro";
 ---
 
-<MainLayout title="Forside">
-    <section class="max-w-7xl mx-auto p-s grid md:grid-cols-12 gap-s">
-        <!------------------------------- Mobil ------------------------------->
-        <div id="accordion-color" data-accordion="collapse" data-active-classes="bg-orange-600 text-neutral-50" class="md:hidden block">
-            <div class="rounded-lg bg-white">
-                <div>
-                    <h3 id="accordion-color-heading-1">
-                        <button type="button" class="question-btn flex justify-between w-full p-s text-neutral-50 rounded-t-sm bg-neutral-950 text-left" data-toggle="answer-1" aria-expanded="false" aria-controls="accordion-color-body-1">
-                            <span>Overblik</span>
-                            <svg data-accordion-icon class="w-s h-s rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"></path>
-                            </svg>
-                        </button>
-                    </h3>
-                    <div id="answer-1" class="hidden bg-neutral-100" aria-labelledby="accordion-color-heading-1">
-                        <div class="p-s">
-                            <h3>Overblik</h3>
-                            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae quidem impedit doloremque explicabo illum quos. Molestias aspernatur rem itaque doloribus culpa similique rerum provident id quos sed.</p>
-                        </div>
-                    </div>
+<MainLayout title="CARIBIEN, HAWAII & MEXICO">
+    <!------------------------------- Hero ------------------------------->
+    <section class="relative h-screen w-full">
+        <img class="h-5/6 w-full object-cover" src="/hero-single.webp" alt="gruppe billede" />
+        <div class="absolute inset-0 flex items-center">
+            <section class="justify-start grid md:grid-cols-12 gap-s">
+                <div class="max-w-7xl mx-auto p-s flex items-center col-span-6">
+                    <h1 class="text-neutral-50 display">HØJSKOLE I CARIBIEN, HAWAII & MEXICO</h1>
                 </div>
-
-                <div>
-                    <h3 id="accordion-color-heading-2">
-                        <button type="button" class="question-btn flex justify-between w-full p-s text-neutral-50 bg-neutral-950 text-left" data-toggle="answer-2" aria-expanded="false" aria-controls="accordion-color-body-2">
-                            <span>Program</span>
-                            <svg data-accordion-icon class="w-s h-s rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"></path>
-                            </svg>
-                        </button>
-                    </h3>
-                    <div id="answer-2" class="hidden bg-neutral-100" aria-labelledby="accordion-color-heading-2">
-                        <div class="p-s">
-                            <h3>Program</h3>
-                            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae quidem impedit doloremque explicabo illum quos. Molestias aspernatur rem itaque doloribus culpa similique rerum provident id quos sed.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div>
-                    <h3 id="accordion-color-heading-3">
-                        <button type="button" class="question-btn flex justify-between w-full p-s text-neutral-50 bg-neutral-950 text-left" data-toggle="answer-3" aria-expanded="false" aria-controls="accordion-color-body-3">
-                            <span>Inkluderet</span>
-                            <svg data-accordion-icon class="w-s h-s rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"></path>
-                            </svg>
-                        </button>
-                    </h3>
-                    <div id="answer-3" class="hidden bg-neutral-100" aria-labelledby="accordion-color-heading-3">
-                        <div class="p-s">
-                            <h3>Inkluderet</h3>
-                            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae quidem impedit doloremque explicabo illum quos. Molestias aspernatur rem itaque doloribus culpa similique rerum provident id quos sed.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div>
-                    <h3 id="accordion-color-heading-4">
-                        <button type="button" class="question-btn flex justify-between w-full p-s text-neutral-50 bg-neutral-950 text-left" data-toggle="answer-4" aria-expanded="false" aria-controls="accordion-color-body-4">
-                            <span>Fag</span>
-                            <svg data-accordion-icon class="w-s h-s rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"></path>
-                            </svg>
-                        </button>
-                    </h3>
-                    <div id="answer-4" class="hidden bg-neutral-100" aria-labelledby="accordion-color-heading-4">
-                        <div class="p-s">
-                            <h3>Fag</h3>
-                            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae quidem impedit doloremque explicabo illum quos. Molestias aspernatur rem itaque doloribus culpa similique rerum provident id quos sed.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div>
-                    <h3 id="accordion-color-heading-5">
-                        <button type="button" class="question-btn flex justify-between w-full p-s text-neutral-50 rounded-b-sm bg-neutral-950 text-left" data-toggle="answer-5" aria-expanded="false" aria-controls="accordion-color-body-5">
-                            <span>Kontakt</span>
-                            <svg data-accordion-icon class="w-s h-s rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"></path>
-                            </svg>
-                        </button>
-                    </h3>
-                    <div id="answer-5" class="hidden bg-neutral-100" aria-labelledby="accordion-color-heading-5">
-                        <div class="p-s">
-                            <h3>Kontakt</h3>
-                            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae quidem impedit doloremque explicabo illum quos. Molestias aspernatur rem itaque doloribus culpa similique rerum provident id quos sed.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </section>
         </div>
+        <section class="bg-neutral-200 h-2xl">
+            <section class="grid md:grid-cols-11 gap-xs h-full">
+                <section class="col-span-1 flex items-center p-0">
+                    <div class="w-full">
+                        <h4 class="text-neutral-800">Varighed</h4>
+                        <p>3 måneder</p>
+                    </div>
+                </section>
 
-        <!------------------------------- Desktop ------------------------------->
-        <div class="tab-section bg-neutral-100 rounded-sm col-span-9 hidden md:block">
-            <div class="flex flex-wrap">
-                <button class="rounded-l-sm bg-neutral-950 hover:bg-neutral-900 p-xs text-neutral-50 font-bold flex-grow" data-tab-target="#tab1">Overblik</button>
-                <button class="bg-neutral-950 hover:bg-neutral-900 p-xs text-neutral-50 font-bold flex-grow" data-tab-target="#tab2">Program</button>
-                <button class="bg-neutral-950 hover:bg-neutral-900 p-xs text-neutral-50 font-bold flex-grow" data-tab-target="#tab3">Inkluderet</button>
-                <button class="bg-neutral-950 hover:bg-neutral-900 p-xs text-neutral-50 font-bold flex-grow" data-tab-target="#tab4">Fag</button>
-                <button class="rounded-r-sm bg-neutral-950 hover:bg-neutral-900 p-xs text-neutral-50 font-bold flex-grow" data-tab-target="#tab5">Kontakt</button>
-            </div>
-            <div class="mt-xxs">
-                <div id="tab1" class="tab-content p-s">
-                    <h3 class="">Overblik</h3>
-                    <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae quidem impedit doloremque explicabo illum quos. Molestias aspernatur rem itaque doloribus culpa similique rerum provident id quos sed.</p>
-                </div>
-                <div id="tab2" class="tab-content p-s hidden">
-                    <h3 class="">Program</h3>
-                    <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae quidem impedit doloremque explicabo illum quos. Molestias aspernatur rem itaque doloribus culpa similique rerum provident id quos sed.</p>
-                </div>
-                <div id="tab3" class="tab-content p-s hidden">
-                    <h3 class="">Inkluderet</h3>
-                    <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae quidem impedit doloremque explicabo illum quos. Molestias aspernatur rem itaque doloribus culpa similique rerum provident id quos sed.</p>
-                </div>
-                <div id="tab4" class="tab-content p-s hidden">
-                    <h3 class="">Fag</h3>
-                    <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae quidem impedit doloremque explicabo illum quos. Molestias aspernatur rem itaque doloribus culpa similique rerum provident id quos sed.</p>
-                </div>
-                <div id="tab5" class="tab-content p-s hidden">
-                    <h3 class="">Kontakt</h3>
-                    <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae quidem impedit doloremque explicabo illum quos. Molestias aspernatur rem itaque doloribus culpa similique rerum provident id quos sed.</p>
-                </div>
-            </div>
-        </div>
+                <section class="col-span-2 flex items-center p-0 relative">
+                    <div class="absolute left-0 top-1/2 transform -translate-y-1/2 h-1/2 border-l border-[1px] border-neutral-800"></div>
+                    <div class="w-full pl-s">
+                        <h4 class="text-neutral-800">Inklusiv</h4>
+                        <p>Flybillet tur/retur</p>
+                    </div>
+                </section>
 
-        <section class="md:col-span-3">
-            <div class="bg-orange-600 rounded-sm">
-                <div class="p-s">
-                    <h3 class="text-neutral-50 pb-xxs">Card test</h3>
-                    <p class="text-neutral-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium fuga est, blanditiis iure corrupti odit doloribus reprehenderit suscipit tempora, cum magni expedita similique, maiores dignissimos autem necessitatibus voluptatibus eum! Officiis.</p>
+                <div class="col-span-8">
+                    <div class="grid grid-cols-8 gap-0 h-full">
+                        <section class="col-span-2 bg-neutral-300 h-full flex items-center p-0">
+                            <div class="w-full px-s">
+                                <h4 class="text-neutral-800">Ca. pris</h4>
+                                <p>67.900 DKK</p>
+                            </div>
+                        </section>
+
+                        <button class="col-span-2 bg-neutral-950 hover:bg-neutral-900 h-full p-0">
+                            <a href="" class="w-full px-s">
+                                <h4 class="text-neutral-50">Hold dig opdateret</h4>
+                            </a>
+                        </button>
+
+                        <button class="col-span-2 bg-orange-600 hover:bg-orange-700 h-full p-0">
+                            <a href="" class="w-full px-s">
+                                <h4 class="text-neutral-50">Tilmeld infomøde</h4>
+                            </a>
+                        </button>
+
+                        <button class="col-span-2 bg-blue-700 hover:bg-blue-800 h-full p-0">
+                            <a href="" class="w-full px-s">
+                                <h4 class="text-neutral-50">Tilmeld dig opholdet</h4>
+                            </a>
+                        </button>
+                    </div>
                 </div>
-            </div>
+            </section>
         </section>
     </section>
 
-    <!------------------------------- Mobil ------------------------------->
+    <section class="max-w-7xl mx-auto p-s">
+        <section class="grid md:grid-cols-12 gap-s">
+            <!------------------------------- Accordion - Mobil ------------------------------->
+            <div id="accordion-color" data-accordion="collapse" data-active-classes="bg-orange-600 text-neutral-50" class="md:hidden block">
+                <div class="rounded-lg bg-white">
+                    <div>
+                        <h3 id="accordion-color-heading-1">
+                            <button type="button" class="question-btn flex justify-between w-full p-s text-neutral-50 rounded-t-sm bg-neutral-950 text-left" data-toggle="answer-1" aria-expanded="false" aria-controls="accordion-color-body-1">
+                                <span>Overblik</span>
+                                <svg data-accordion-icon class="w-s h-s rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"></path>
+                                </svg>
+                            </button>
+                        </h3>
+                        <div id="answer-1" class="hidden bg-neutral-100" aria-labelledby="accordion-color-heading-1">
+                            <div class="p-s">
+                                <h3>Overblik</h3>
+                                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae quidem impedit doloremque explicabo illum quos. Molestias aspernatur rem itaque doloribus culpa similique rerum provident id quos sed.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 id="accordion-color-heading-2">
+                            <button type="button" class="question-btn flex justify-between w-full p-s text-neutral-50 bg-neutral-950 text-left" data-toggle="answer-2" aria-expanded="false" aria-controls="accordion-color-body-2">
+                                <span>Program</span>
+                                <svg data-accordion-icon class="w-s h-s rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"></path>
+                                </svg>
+                            </button>
+                        </h3>
+                        <div id="answer-2" class="hidden bg-neutral-100" aria-labelledby="accordion-color-heading-2">
+                            <div class="p-s">
+                                <h3>Program</h3>
+                                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae quidem impedit doloremque explicabo illum quos. Molestias aspernatur rem itaque doloribus culpa similique rerum provident id quos sed.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 id="accordion-color-heading-3">
+                            <button type="button" class="question-btn flex justify-between w-full p-s text-neutral-50 bg-neutral-950 text-left" data-toggle="answer-3" aria-expanded="false" aria-controls="accordion-color-body-3">
+                                <span>Inkluderet</span>
+                                <svg data-accordion-icon class="w-s h-s rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"></path>
+                                </svg>
+                            </button>
+                        </h3>
+                        <div id="answer-3" class="hidden bg-neutral-100" aria-labelledby="accordion-color-heading-3">
+                            <div class="p-s">
+                                <h3>Inkluderet</h3>
+                                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae quidem impedit doloremque explicabo illum quos. Molestias aspernatur rem itaque doloribus culpa similique rerum provident id quos sed.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 id="accordion-color-heading-4">
+                            <button type="button" class="question-btn flex justify-between w-full p-s text-neutral-50 bg-neutral-950 text-left" data-toggle="answer-4" aria-expanded="false" aria-controls="accordion-color-body-4">
+                                <span>Fag</span>
+                                <svg data-accordion-icon class="w-s h-s rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"></path>
+                                </svg>
+                            </button>
+                        </h3>
+                        <div id="answer-4" class="hidden bg-neutral-100" aria-labelledby="accordion-color-heading-4">
+                            <div class="p-s">
+                                <h3>Fag</h3>
+                                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae quidem impedit doloremque explicabo illum quos. Molestias aspernatur rem itaque doloribus culpa similique rerum provident id quos sed.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 id="accordion-color-heading-5">
+                            <button type="button" class="question-btn flex justify-between w-full p-s text-neutral-50 rounded-b-sm bg-neutral-950 text-left" data-toggle="answer-5" aria-expanded="false" aria-controls="accordion-color-body-5">
+                                <span>Kontakt</span>
+                                <svg data-accordion-icon class="w-s h-s rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"></path>
+                                </svg>
+                            </button>
+                        </h3>
+                        <div id="answer-5" class="hidden bg-neutral-100" aria-labelledby="accordion-color-heading-5">
+                            <div class="p-s">
+                                <h3>Kontakt</h3>
+                                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae quidem impedit doloremque explicabo illum quos. Molestias aspernatur rem itaque doloribus culpa similique rerum provident id quos sed.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!------------------------------- Tabbed interface - Desktop ------------------------------->
+            <section class="col-span-9 hidden md:block">
+                <div class="tab-section bg-neutral-100 rounded-sm">
+                    <div class="flex flex-wrap">
+                        <button class="rounded-l-sm bg-neutral-950 hover:bg-neutral-900 p-xs text-neutral-50 font-bold flex-grow" data-tab-target="#tab1">Overblik</button>
+                        <button class="bg-neutral-950 hover:bg-neutral-900 p-xs text-neutral-50 font-bold flex-grow" data-tab-target="#tab2">Program</button>
+                        <button class="bg-neutral-950 hover:bg-neutral-900 p-xs text-neutral-50 font-bold flex-grow" data-tab-target="#tab3">Inkluderet</button>
+                        <button class="bg-neutral-950 hover:bg-neutral-900 p-xs text-neutral-50 font-bold flex-grow" data-tab-target="#tab4">Fag</button>
+                        <button class="rounded-r-sm bg-neutral-950 hover:bg-neutral-900 p-xs text-neutral-50 font-bold flex-grow" data-tab-target="#tab5">Kontakt</button>
+                    </div>
+                    <div class="mt-xxs">
+                        <div id="tab1" class="tab-content p-s">
+                            <h3 class="">Overblik</h3>
+                            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae quidem impedit doloremque explicabo illum quos. Molestias aspernatur rem itaque doloribus culpa similique rerum provident id quos sed.</p>
+                        </div>
+                        <div id="tab2" class="tab-content p-s hidden">
+                            <h3 class="">Program</h3>
+                            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae quidem impedit doloremque explicabo illum quos. Molestias aspernatur rem itaque doloribus culpa similique rerum provident id quos sed.</p>
+                        </div>
+                        <div id="tab3" class="tab-content p-s hidden">
+                            <h3 class="">Inkluderet</h3>
+                            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae quidem impedit doloremque explicabo illum quos. Molestias aspernatur rem itaque doloribus culpa similique rerum provident id quos sed.</p>
+                        </div>
+                        <div id="tab4" class="tab-content p-s hidden">
+                            <h3 class="">Fag</h3>
+                            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae quidem impedit doloremque explicabo illum quos. Molestias aspernatur rem itaque doloribus culpa similique rerum provident id quos sed.</p>
+                        </div>
+                        <div id="tab5" class="tab-content p-s hidden">
+                            <h3 class="">Kontakt</h3>
+                            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae quidem impedit doloremque explicabo illum quos. Molestias aspernatur rem itaque doloribus culpa similique rerum provident id quos sed.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="md:col-span-3">
+                <div class="bg-orange-600 rounded-sm">
+                    <div class="p-s">
+                        <h3 class="text-neutral-50 pb-xxs">Card test</h3>
+                        <p class="text-neutral-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium fuga est, blanditiis iure corrupti odit doloribus reprehenderit suscipit tempora, cum magni expedita similique, maiores dignissimos autem necessitatibus voluptatibus eum! Officiis.</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </section>
+
+    <section class="max-w-7xl mx-auto p-s">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ducimus assumenda, at est voluptate aperiam accusantium similique vitae magni libero, eveniet nisi blanditiis deleniti inventore porro! At, nulla. Necessitatibus, rerum? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum voluptatem nemo reiciendis totam minima
+            molestiae tempore nobis vitae deleniti facilis alias ut eius, enim dolore quis? Perspiciatis sapiente praesentium culpa.
+        </p>
+    </section>
+
+    <!------------------------------- Accordion - Mobil ------------------------------->
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const buttons = document.querySelectorAll(".question-btn");
@@ -176,7 +246,7 @@ import Link from "../components/Link.astro";
         });
     </script>
 
-    <!------------------------------- Desktop ------------------------------->
+    <!------------------------------- Tabbed interface - Desktop ------------------------------->
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const tabs = document.querySelectorAll("[data-tab-target]");
