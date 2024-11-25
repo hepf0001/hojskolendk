@@ -35,54 +35,53 @@
       </section>
     </div>
   </div>
-
-  <style>
-    /* CSS for Parallax */
-    .parallax-bg {
-      background-attachment: fixed;
-      background-size: cover;
-      background-position: center;
-      will-change: transform; /* Helps with performance on scroll */
-    }
-
-    /* Sticky Sections */
-    .sticky {
-      position: sticky;
-      top: 0;
-    }
-
-    /* Responsive typography */
-    .text-h2-mobile {
-      font-size: 2rem;
-    }
-
-    @media (min-width: 640px) {
-      .text-h2-mobile {
-        font-size: 3rem;
-      }
-    }
-
-    /* Additional styles for smooth scrolling */
-    .stickyparallax1 {
-      will-change: transform;
-    }
-  </style>
-
-  <script>
-    import { animate, scroll } from "motion";
-
-    // Sticky parallax text animation
-    const textElements = document.querySelectorAll(".stickyparallax1");
-    textElements.forEach((el) => {
-      scroll(animate(el, { y: [-300, 0] }), { target: el });
-    });
-
-    // Parallax effect for background images
-    const bgSections = document.querySelectorAll("[data-parallax-bg]");
-    bgSections.forEach((section) => {
-      scroll(animate(section, { backgroundPositionY: ["0%", "50%"] }), {
-        target: section,
-      });
-    });
-  </script>
 </section>
+<style>
+  /* CSS for Parallax */
+  .parallax-bg {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    will-change: transform; /* Helps with performance on scroll */
+  }
+
+  /* Sticky Sections */
+  .sticky {
+    position: sticky;
+    top: 0;
+  }
+
+  /* Responsive typography */
+  .text-h2-mobile {
+    font-size: 2rem;
+  }
+
+  @media (min-width: 640px) {
+    .text-h2-mobile {
+      font-size: 3rem;
+    }
+  }
+
+  /* Additional styles for smooth scrolling */
+  .stickyparallax1 {
+    will-change: transform;
+  }
+</style>
+
+<script>
+  import { animate, scroll } from "motion";
+
+  // Sticky parallax text animation
+  const textElements = document.querySelectorAll(".stickyparallax1");
+  textElements.forEach((el) => {
+    scroll(animate(el, { y: [-300, 0] }), { target: el });
+  });
+
+  // Parallax effect for background images
+  const bgSections = document.querySelectorAll("[data-parallax-bg]");
+  bgSections.forEach((section) => {
+    scroll(animate(section, { backgroundPositionY: ["0%", "50%"] }), {
+      target: section,
+    });
+  });
+</script>

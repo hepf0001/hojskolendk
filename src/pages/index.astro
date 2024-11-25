@@ -26,7 +26,7 @@ import young from "../assets/images/young1.webp";
       <iframe src="https://www.youtube.com/embed/uBhtgAC1_S0?autoplay=1&mute=1&si=ijcqewpixxFZAjrM" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen> </iframe>
     </div>
     <!-- Tekst over videoen -->
-    <div class="absolute w-full px-[20px] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+    <div class="absolute w-full px-[20px] md:pl-2xl top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
       <p class="font-lato text-neutral-50 font-[14px] md:font-p-desktop">Pak rygsækken og oplev verden!</p>
       <h1 class="text-[24px] md:text-display-desktop font-display font-bold text-neutral-50">HØJSKOLE I UDLANDET</h1>
       <p class="font-lato text-neutral-50 font-[16px] md:text-h4-desktop">Er du klar til fællesskab, kulturmøder og dit livs rejseeventyr?</p>
@@ -58,7 +58,7 @@ import young from "../assets/images/young1.webp";
           </div>
         </div>
       </div>
-      <div class="py-xs hidden md:max-w-7xl md:mx-auto md:py-xxxxs md:w-full md:p-large md:grid md:grid-cols-2 md:justify-center md:items-start md:gap-sm md:relative md:z-50">
+      <div class="py-xs hidden md:max-w-7xl md:mx-auto md:py-xxxxs md:w-full md:p-large md:grid md:grid-cols-2 md:justify-center md:items-start md:gap-sm md:relative">
         <Image src={fly} alt="fly illustration" class="w-full md:pt-s md:pl-lg object-cover" />
         <Image src={top} alt="group top picture" class="w-full object-cover sm:mt-[4%] sm:ml-[3%] md:mt-[0%] md:ml-[3%] lg:mt-[0%] lg:ml-[10%] xl:mt-[-22%] xl:ml-[10%]" />
       </div>
@@ -179,24 +179,24 @@ import young from "../assets/images/young1.webp";
     <!--------------------Den trustpilot section------------------------------------------------->
     <section class="bg-gray-200 w-full py-sm flex flex-col mx-auto items-center md:justify-center md:flex-row md:gap-xs">
       <div class="flex flex-col pl-s">
-        <img src="/trustpilot_logo_black.svg" alt="Trustpilot logo" class="w-1/2 pb-xs md:w-[350px]" />
+        <img src="/trustpilot_logo_black.svg" alt="Trustpilot logo" class="w-1/2 pb-xs md:w-[250px]" />
       </div>
       <div class="flex gap-xs">
         <div class="flex items-center pl-s gap-xxs">
-          <img src="/stars.svg" alt="Trustpilot rating" class="md:w-[50px]" />
-          <img src="/stars.svg" alt="Trustpilot rating" class="md:w-[50px]" />
-          <img src="/stars.svg" alt="Trustpilot rating" class="md:w-[50px]" />
-          <img src="/stars.svg" alt="Trustpilot rating" class="md:w-[50px]" />
-          <img src="/stars.svg" alt="Trustpilot rating" class="md:w-[50px]" />
+          <img src="/stars.svg" alt="Trustpilot rating" class="md:w-[40px]" />
+          <img src="/stars.svg" alt="Trustpilot rating" class="md:w-[40px]" />
+          <img src="/stars.svg" alt="Trustpilot rating" class="md:w-[40px]" />
+          <img src="/stars.svg" alt="Trustpilot rating" class="md:w-[40px]" />
+          <img src="/stars.svg" alt="Trustpilot rating" class="md:w-[40px]" />
         </div>
-        <h1 class="text-small pr-sm md:text-xlarge md:pl-s">4,8 / 5</h1>
+        <h1 class="text-small pr-sm md:text-large md:pl-s">4,8 / 5</h1>
       </div>
     </section>
 
     <!--------------------Den sidste section------------------------------------------------->
     <section class="relative w-full flex flex-col items-center mx-auto justify-center">
       <div class="flex items-center h-screen w-full bg-cover bg-center filter brightness-75" style="background-image: url('/skov.webp')"></div>
-      <div class="absolute top-0 left-0 flex flex-col md:grid md:grid-cols-2 md:max-w-7xl md:gap-xxs md:items-center">
+      <div class="absolute top-50% left-50% flex flex-col w-full md:grid md:grid-cols-2 md:max-w-7xl md:gap-xxs md:items-center md:mx-auto">
         <img src="/verdens_skove_logo.webp" alt="verdensskove logo" class="w-full" />
         <div>
           <h1 class="text-h2-mobile font-display w-full pl-s text-neutral-50 md:text-h1-desktop">VI GØR EN FORSKEL</h1>
@@ -206,10 +206,3 @@ import young from "../assets/images/young1.webp";
     </section>
   </section>
 </MainLayout>
-<script>
-  import { inView, animate, scroll } from "motion";
-  //Stickyparallax tekst animation////////////////////////////////////////////
-  scroll(animate(".stickyparallax1", { y: [-300, 0] }), {
-    target: document.querySelector(".stickyparallax1"),
-  });
-</script>

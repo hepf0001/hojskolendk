@@ -2,4 +2,328 @@
 
 ---
 
-<h1 class="text-[80px]">karusel cards</h1>
+<div class="container">
+  <div class="button" onclick="shiftLeft()">
+    <img src="https://image.ibb.co/mRsEb7/left_arrow.png" alt="" />
+  </div>
+  <div class="cards-wrapper">
+    <ul class="cards__container">
+      <li class="box" style="background-color:red">box 1</li>
+      <li class="box">box 2</li>
+      <li class="box">box 3</li>
+      <li class="box">box 4</li>
+      <li class="box">box 5</li>
+      <li class="box box--hide">box 6</li>
+      <li class="box box--hide">box 7</li>
+    </ul>
+    <div class="card__text-content">
+      <h3 class="card__title">The Famous Five</h3>
+      <div class="card__summary">The Famous Five is a series of children's adventure novels written by English author Enid Blyton. The first book, Five on a Treasure Island, was published in 1942.</div>
+    </div>
+  </div>
+  <div class="button" onclick="shiftRight()">
+    <img src="https://image.ibb.co/dfPSw7/right_arrow.png" alt="" />
+  </div>
+</div>
+
+<style>
+  .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .button {
+    margin-left: 0 3%;
+    width: 2rem;
+    cursor: pointer;
+  }
+
+  .button--inactive {
+    opacity: 0.2;
+  }
+
+  .button img {
+    width: 60%;
+  }
+
+  .cards-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cards__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25rem;
+  }
+
+  .box {
+    /*     margin: -1.5rem; */
+    width: 12rem;
+    height: 20rem;
+    box-shadow: 0px 0px 2rem 0px #888888;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* transition: 1s all; */
+  }
+
+  .box:nth-child(2n) {
+    transform: scale(0.85);
+    z-index: -1;
+  }
+
+  .box:nth-child(2) {
+    left: 5%;
+  }
+
+  .box:nth-child(4) {
+    left: -5%;
+  }
+
+  .box:nth-child(4n + 1) {
+    transform: scale(0.75);
+    z-index: -2;
+  }
+
+  .box:nth-child(1) {
+    left: 15%;
+  }
+
+  .box:nth-child(5) {
+    left: -15%;
+  }
+
+  .card__text-content {
+    text-align: center;
+    width: 75%;
+  }
+
+  .card__title {
+    padding: 1rem;
+  }
+
+  .box--hide {
+    display: none;
+  }
+
+  .move-out-from-left {
+    animation: moveOutLeft 0.5s ease-in-out;
+  }
+
+  .move-out-from-right {
+    animation: moveOutRight 0.5s ease-in-out;
+  }
+
+  .move-to-position5-from-left {
+    animation: moveToP5Left 0.5s ease-in-out;
+  }
+
+  .move-to-position4-from-left {
+    animation: moveToP4Left 0.5s ease-in-out;
+  }
+
+  .move-to-position3-from-left {
+    animation: moveToP3Left 0.5s ease-in-out;
+  }
+
+  .move-to-position2-from-left {
+    animation: moveToP2Left 0.5s ease-in-out;
+  }
+
+  .move-to-position1-from-left {
+    animation: moveToP1Left 0.5s ease-in-out;
+  }
+
+  .move-to-position5-from-right {
+    animation: moveToP5Right 0.5s ease-in-out;
+  }
+  .move-to-position4-from-right {
+    animation: moveToP4Right 0.5s ease-in-out;
+  }
+  .move-to-position3-from-right {
+    animation: moveToP3Right 0.5s ease-in-out;
+  }
+  .move-to-position2-from-right {
+    animation: moveToP2Right 0.5s ease-in-out;
+  }
+  .move-to-position1-from-right {
+    animation: moveToP1Right 0.5s ease-in-out;
+  }
+
+  @keyframes moveOutLeft {
+    0% {
+      transform: scale(0.75) translateX(0%);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(0.5) translateX(-150%);
+      opacity: 0.5;
+    }
+    100% {
+      transform: scale(0.25) translateX(0%);
+      opacity: 0;
+    }
+  }
+
+  @keyframes moveOutRight {
+    0% {
+      transform: scale(0.75) translateX(0%);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(0.5) translateX(150%);
+      opacity: 0.5;
+    }
+    100% {
+      transform: scale(0.25) translateX(0%);
+      opacity: 0;
+    }
+  }
+
+  @keyframes moveToP5Left {
+    from {
+      transform: scale(0.75) translateX(100%);
+    }
+    to {
+      transform: scale(0.75) translateX(0);
+    }
+  }
+
+  @keyframes moveToP4Left {
+    from {
+      transform: scale(0.75) translateX(100%);
+    }
+    to {
+      transform: scale(0.85) translateX(0);
+    }
+  }
+
+  @keyframes moveToP3Left {
+    from {
+      transform: scale(0.85) translateX(100%);
+    }
+    to {
+      transform: scale(1) translateX(0);
+    }
+  }
+
+  @keyframes moveToP2Left {
+    from {
+      transform: scale(1) translateX(100%);
+    }
+    to {
+      transform: scale(0.85) translateX(0);
+    }
+  }
+
+  @keyframes moveToP1Left {
+    from {
+      transform: scale(0.85) translateX(100%);
+    }
+    to {
+      transform: scale(0.75) translateX(0);
+    }
+  }
+
+  @keyframes moveToP1Right {
+    from {
+      transform: scale(0.75) translateX(-100%);
+    }
+    to {
+      transform: scale(0.75) translateX(0);
+    }
+  }
+
+  @keyframes moveToP2Right {
+    from {
+      transform: scale(0.75) translateX(-100%);
+    }
+    to {
+      transform: scale(0.85) translateX(0);
+    }
+  }
+
+  @keyframes moveToP3Right {
+    from {
+      transform: scale(0.85) translateX(-100%);
+    }
+    to {
+      transform: scale(1) translateX(0);
+    }
+  }
+
+  @keyframes moveToP4Right {
+    from {
+      transform: scale(1) translateX(-100%);
+    }
+    to {
+      transform: scale(0.85) translateX(0);
+    }
+  }
+
+  @keyframes moveToP5Right {
+    from {
+      transform: scale(0.85) translateX(-100%);
+    }
+    to {
+      transform: scale(0.75) translateX(0);
+    }
+  }
+</style>
+
+<script>
+  function shiftLeft() {
+    const boxes = document.querySelectorAll(".box");
+    const tmpNode = boxes[0]; // 첫 번째 박스를 저장
+    tmpNode.classList.add("move-out-from-left"); // 첫 번째 박스를 왼쪽으로 이동시키는 애니메이션 추가
+
+    setTimeout(function () {
+      if (boxes.length > 5) {
+        tmpNode.classList.add("box--hide"); // 6번째 박스를 숨김
+        boxes[5].classList.add("move-to-position5-from-left"); // 6번째 박스를 왼쪽에서 들어오게 설정
+      }
+
+      // 나머지 박스를 왼쪽으로 차례대로 이동시키는 애니메이션 추가
+      boxes[1].classList.add("move-to-position1-from-left");
+      boxes[2].classList.add("move-to-position2-from-left");
+      boxes[3].classList.add("move-to-position3-from-left");
+      boxes[4].classList.add("move-to-position4-from-left");
+
+      // 첫 번째 박스를 맨 뒤로 이동
+      tmpNode.remove();
+      document.querySelector(".cards__container").appendChild(tmpNode);
+    }, 500); // 애니메이션 시간 500ms 뒤에 실행
+  }
+
+  function shiftRight() {
+    const boxes = document.querySelectorAll(".box");
+    const lastNode = boxes[boxes.length - 1]; // 마지막 박스를 저장
+    lastNode.classList.add("move-out-from-right"); // 마지막 박스를 오른쪽으로 이동시키는 애니메이션 추가
+
+    setTimeout(function () {
+      const noOfCards = boxes.length;
+      if (noOfCards > 4) {
+        boxes[4].classList.add("box--hide"); // 5번째 박스를 숨김
+      }
+
+      lastNode.classList.remove("box--hide");
+      lastNode.remove(); // 마지막 박스를 제거
+
+      let parentObj = document.querySelector(".cards__container");
+      parentObj.insertBefore(lastNode, parentObj.firstChild); // 맨 앞에 추가
+      lastNode.classList.add("move-to-position1-from-right");
+
+      // 나머지 박스를 오른쪽으로 차례대로 이동시키는 애니메이션 추가
+      boxes[0].classList.add("move-to-position2-from-right");
+      boxes[1].classList.add("move-to-position3-from-right");
+      boxes[2].classList.add("move-to-position4-from-right");
+      boxes[3].classList.add("move-to-position5-from-right");
+    }, 500); // 애니메이션 시간 500ms 뒤에 실행
+  }
+</script>
