@@ -9,12 +9,12 @@ import Link from "../components/Link.astro";
 ---
 
 <!---------------------Mobile----------------------------------------------->
-<div id="controls-carousel" class="relative w-full" data-carousel="static">
+<div id="controls-carousel" class="relative w-full md:hidden" data-carousel="static">
   <!-- Carousel wrapper -->
-  <div class="relative h-56 overflow-hidden rounded-xs md:h-auto">
+  <div class="relative aspect-w-16 aspect-h-9 overflow-hidden rounded-xs md:h-auto">
     <!-- Item 1 -->
     <div class="hidden duration-700 ease-in-out" data-carousel-item>
-      <Image src={card1} alt="Slide 1" class="relative object-cover" />
+      <Image src={card1} alt="Slide 1" class="relative w-full h-auto object-container" />
     </div>
     <!-- Item 2 -->
     <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
