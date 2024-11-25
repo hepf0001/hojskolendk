@@ -191,85 +191,148 @@ import Link from "../components/Link.astro";
                 </div>
             </section>
 
+            <!------------------------------- Info cards ------------------------------->
             <section class="md:col-span-3">
-                <div class="bg-orange-600 rounded-sm">
-                    <div class="p-s">
-                        <h3 class="text-neutral-50 pb-xxs">Card test</h3>
-                        <p class="text-neutral-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium fuga est, blanditiis iure corrupti odit doloribus reprehenderit suscipit tempora, cum magni expedita similique, maiores dignissimos autem necessitatibus voluptatibus eum! Officiis.</p>
+                <section class="pb-s">
+                    <div class="bg-orange-600 rounded-sm">
+                        <div class="p-s">
+                            <h3 class="text-neutral-50 pb-s">Destination</h3>
+                            <p class="text-neutral-50 pb-xs">Introdage: New York City, USA</p>
+                            <p class="text-neutral-50 pb-xs">1. Måned: Oahu, Hawaii</p>
+                            <p class="text-neutral-50 pb-xs">2. Måned: Playa del Carmen, Mexico</p>
+                            <p class="text-neutral-50">3. Måned: St. Croix & Puerto Rico, Caribien</p>
+                        </div>
                     </div>
-                </div>
+                </section>
+
+                <section class="pb-s">
+                    <div class="bg-neutral-200 rounded-sm">
+                        <div class="p-s">
+                            <h3 class="pb-s">Afrejse</h3>
+                            <p>20. december 2024</p>
+                            <p class="pb-xs text-orange-600">2 pladser tilbage</p>
+                            <p class="pb-xs">2. febuar 2025</p>
+                            <p>16. maj 2025</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="pb-s">
+                    <div class="bg-neutral-200 rounded-sm">
+                        <div class="p-s">
+                            <h3 class="pb-s">Undervisning</h3>
+                            <p class="pb-xs">Teambuilding</p>
+                            <p class="pb-xs">Frivilligt arbejde & kulturforståelse</p>
+                            <p class="pb-xs">Selvudvikling & kommunikation</p>
+                            <p>Sport & adventure</p>
+                        </div>
+                    </div>
+                </section>
+
+                <button class="bg-orange-600 hover:bg-orange-700 rounded-sm w-full p-s">
+                    <a href="" class="w-full">
+                        <h3 class="text-neutral-50">Tilmeld infomøde</h3>
+                    </a>
+                </button>
+
+                <section class="py-s">
+                    <div class="bg-neutral-200 rounded-sm">
+                        <div class="p-s">
+                            <h3 class="pb-s">Pakkeliste</h3>
+                            <ul class="list-disc px-s">
+                                <li class="pb-xs text-gray-950">Badetøj</li>
+                                <li class="pb-xs text-gray-950">Vandresko</li>
+                                <li class="pb-xs text-gray-950">Regnslag</li>
+                                <li class="pb-xs text-gray-950">Tøj</li>
+                                <li class="pb-xs text-gray-950">Solbriller og solhat/kasket</li>
+                                <li class="pb-xs text-gray-950">Solcreme</li>
+                                <li class="pb-xs text-gray-950">Myggespray</li>
+                                <li class="pb-xs text-gray-950">Førstehjælpssæt</li>
+                                <li class="pb-xs text-gray-950">Personlig medicin</li>
+                                <li class="pb-xs text-gray-950">Tandbørste og tandpasta</li>
+                                <li class="pb-xs text-gray-950">Deodorant</li>
+                                <li class="pb-xs text-gray-950">Shampoo og balsam</li>
+                                <li class="pb-xs text-gray-950">Håndklæder</li>
+                                <li class="pb-xs text-gray-950">Rejseadaptere</li>
+                                <li class="pb-xs text-gray-950">Mobiltelefon og oplader</li>
+                                <li class="pb-xs text-gray-950">Rejsepass og andre identifikationsdokumenter</li>
+                                <li class="pb-xs text-gray-950">Rejseforsikringspapirer</li>
+                                <li class="pb-xs text-gray-950">Kopier af vigtige dokumenter</li>
+                                <li class="pb-xs text-gray-950">Vandflaske</li>
+                                <li class="pb-xs text-gray-950">Dagrygsæk</li>
+                                <li class="pb-xs text-gray-950">Lommepenge</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
             </section>
+
+            <!------------------------------- Rejsebreve ------------------------------->
+            <section></section>
         </section>
-    </section>
 
-    <section class="max-w-7xl mx-auto p-s">
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ducimus assumenda, at est voluptate aperiam accusantium similique vitae magni libero, eveniet nisi blanditiis deleniti inventore porro! At, nulla. Necessitatibus, rerum? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum voluptatem nemo reiciendis totam minima
-            molestiae tempore nobis vitae deleniti facilis alias ut eius, enim dolore quis? Perspiciatis sapiente praesentium culpa.
-        </p>
-    </section>
+        <!------------------------------- Accordion - Mobil ------------------------------->
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const buttons = document.querySelectorAll(".question-btn");
+                const activeClass = "bg-orange-600";
 
-    <!------------------------------- Accordion - Mobil ------------------------------->
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const buttons = document.querySelectorAll(".question-btn");
-            const activeClass = "bg-orange-600";
+                buttons.forEach((button) => {
+                    button.addEventListener("click", function () {
+                        const targetId = this.getAttribute("data-toggle");
+                        const target = document.getElementById(targetId);
+                        const isExpanded = target.classList.contains("hidden");
 
-            buttons.forEach((button) => {
-                button.addEventListener("click", function () {
-                    const targetId = this.getAttribute("data-toggle");
-                    const target = document.getElementById(targetId);
-                    const isExpanded = target.classList.contains("hidden");
+                        // Close all other accordions
+                        buttons.forEach((btn) => {
+                            if (btn !== this) {
+                                const otherTargetId = btn.getAttribute("data-toggle");
+                                const otherTarget = document.getElementById(otherTargetId);
+                                otherTarget.classList.add("hidden");
+                                btn.classList.remove(activeClass);
+                                btn.querySelector("svg").classList.remove("rotate-180");
+                            }
+                        });
 
-                    // Close all other accordions
-                    buttons.forEach((btn) => {
-                        if (btn !== this) {
-                            const otherTargetId = btn.getAttribute("data-toggle");
-                            const otherTarget = document.getElementById(otherTargetId);
-                            otherTarget.classList.add("hidden");
-                            btn.classList.remove(activeClass);
-                            btn.querySelector("svg").classList.remove("rotate-180");
+                        if (isExpanded) {
+                            target.classList.remove("hidden");
+                            this.classList.add(activeClass);
+                            this.querySelector("svg").classList.add("rotate-180");
+                        } else {
+                            target.classList.add("hidden");
+                            this.classList.remove(activeClass);
+                            this.querySelector("svg").classList.remove("rotate-180");
                         }
                     });
-
-                    if (isExpanded) {
-                        target.classList.remove("hidden");
-                        this.classList.add(activeClass);
-                        this.querySelector("svg").classList.add("rotate-180");
-                    } else {
-                        target.classList.add("hidden");
-                        this.classList.remove(activeClass);
-                        this.querySelector("svg").classList.remove("rotate-180");
-                    }
                 });
             });
-        });
-    </script>
+        </script>
 
-    <!------------------------------- Tabbed interface - Desktop ------------------------------->
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const tabs = document.querySelectorAll("[data-tab-target]");
-            const activeClass = "bg-orange-600 hover:bg-orange-700";
+        <!------------------------------- Tabbed interface - Desktop ------------------------------->
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const tabs = document.querySelectorAll("[data-tab-target]");
+                const activeClass = "bg-orange-600 hover:bg-orange-700";
 
-            // Select first tab by default
-            tabs[0].classList.add(...activeClass.split(" "));
-            document.querySelector("#tab1").classList.remove("hidden");
+                // Select first tab by default
+                tabs[0].classList.add(...activeClass.split(" "));
+                document.querySelector("#tab1").classList.remove("hidden");
 
-            tabs.forEach((tab) => {
-                tab.addEventListener("click", () => {
-                    const targetContent = document.querySelector(tab.dataset.tabTarget);
+                tabs.forEach((tab) => {
+                    tab.addEventListener("click", () => {
+                        const targetContent = document.querySelector(tab.dataset.tabTarget);
 
-                    document.querySelectorAll(".tab-content").forEach((content) => content.classList.add("hidden"));
-                    targetContent.classList.remove("hidden");
+                        document.querySelectorAll(".tab-content").forEach((content) => content.classList.add("hidden"));
+                        targetContent.classList.remove("hidden");
 
-                    // Remove active class from all tabs except the card section
-                    document.querySelectorAll(".bg-neutral-950").forEach((activeTab) => activeTab.classList.remove(...activeClass.split(" ")));
+                        // Remove active class from all tabs except the card section
+                        document.querySelectorAll(".bg-neutral-950").forEach((activeTab) => activeTab.classList.remove(...activeClass.split(" ")));
 
-                    // Add active class to clicked tab
-                    tab.classList.add(...activeClass.split(" "));
+                        // Add active class to clicked tab
+                        tab.classList.add(...activeClass.split(" "));
+                    });
                 });
             });
-        });
-    </script>
+        </script>
+    </section>
 </MainLayout>
