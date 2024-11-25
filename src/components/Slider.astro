@@ -8,7 +8,52 @@ import card5 from "../assets/images/card5.webp";
 import Link from "../components/Link.astro";
 ---
 
-<section id="slider">
+<!---------------------Mobile----------------------------------------------->
+<div id="controls-carousel" class="relative w-full" data-carousel="static">
+  <!-- Carousel wrapper -->
+  <div class="relative h-56 overflow-hidden rounded-xs md:h-auto">
+    <!-- Item 1 -->
+    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+      <Image src={card1} alt="Slide 1" class="relative object-cover" />
+    </div>
+    <!-- Item 2 -->
+    <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+      <Image src={card2} alt="Slide 1" class="relative object-cover" />
+    </div>
+    <!-- Item 3 -->
+    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+      <Image src={card3} alt="Slide 1" class="relative object-cover" />
+    </div>
+    <!-- Item 4 -->
+    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+      <Image src={card4} alt="Slide 1" class="relative object-cover" />
+    </div>
+    <!-- Item 5 -->
+    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+      <Image src={card5} alt="Slide 1" class="relative object-cover" />
+    </div>
+  </div>
+  <!-- Slider controls -->
+  <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 bg-gray-100 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+      <svg class="w-4 h-4 text-gray-400 dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"></path>
+      </svg>
+      <span class="sr-only">Previous</span>
+    </span>
+  </button>
+  <button type="button" class="absolute top-[0px] right-[0px] z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 bg-gray-100 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+      <svg class="w-4 h-4 text-gray-400 dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"></path>
+      </svg>
+      <span class="sr-only">Next</span>
+    </span>
+  </button>
+</div>
+
+<!-------------------------- Desktop slider ---------------------------->
+<section id="slider" class="hidden md:block">
   <input type="radio" name="slider" id="s1" checked />
   <input type="radio" name="slider" id="s2" />
   <input type="radio" name="slider" id="s3" />
@@ -64,6 +109,7 @@ import Link from "../components/Link.astro";
 </section>
 
 <style>
+  /*-----------------------------------------PC -------------------------------------*/
   #slider {
     position: relative;
     width: 50%;
@@ -206,6 +252,7 @@ import Link from "../components/Link.astro";
 </style>
 
 <script>
+  //desktop slider////////////////////////////////
   const radioButtons = document.querySelectorAll("input[type=radio]");
 
   const slideShow = () => {
@@ -220,3 +267,4 @@ import Link from "../components/Link.astro";
 
   console.log("Hello");
 </script>
+<script src="https://cdn.jsdelivr.net/npm/flowbite@1.6.5/dist/flowbite.min.js"></script>

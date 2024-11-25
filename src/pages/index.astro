@@ -53,7 +53,7 @@ import young from "../assets/images/young1.webp";
             <br />
             <p class="font-lato text-neutral-950">Du er sikker på en tryg rejseoplevelse da vi er medlem af Rejsegarantifonden. Vi glæder os til at lære dig at kende!</p>
             <div class="pt-xs">
-              <Button variant="primary" size="sm:xsmall md:medium">Højskoleophold</Button>
+              <a href="/listview"><Button variant="primary" size="sm:xsmall md:medium">Højskoleophold</Button></a>
             </div>
           </div>
         </div>
@@ -87,19 +87,19 @@ import young from "../assets/images/young1.webp";
       <section class="gap-sm flex flex-col md:grid md:grid-cols-2">
         <div class="relative w-full h-full bg-blue-600 rounded-sm md:col-start-1 md:col-end-2 md:row-start-1 md:row-end-3">
           <div class="relative"><Image src={brochure_1} alt="brochure picture" class="w-full h-full object-cover rounded-sm relative" /></div>
-          <div class="absolute bottom-[7%] right-[7%] m-4"><Button variant="secondary" size="medium">Download brochure</Button></div>
+          <div class="absolute bottom-[7%] right-[7%] m-4"><a href="https://www.hojskolendk.dk/brochure/"><Button variant="secondary" size="medium">Download brochure</Button></a></div>
         </div>
         <div class="relative md:col-start-2 md:col-end-3 md:row-start-1 md:row-end-2">
           <div class="w-full h-12xl bg-blue-600 rounded-sm">
             <div class="absolute transform rotate-0 lg:top-[-28px] lg:right-[200px] md:rotate-45"><Image src={brochure_close} alt="brochure picture" class="w-[300px] object-cover rounded-sm" /></div>
           </div>
-          <div class="absolute bottom-[7%] right-[7%] m-4"><Button variant="secondary" size="medium">Bestill brochure</Button></div>
+          <div class="absolute bottom-[7%] right-[7%] m-4"><a href="https://www.hojskolendk.dk/bestil-brochure/"><Button variant="secondary" size="medium">Bestill brochure</Button></a></div>
         </div>
         <div class="relative md:col-start-2 md:col-end-3 md:row-start-2 md:row-end-3">
           <div class="w-full h-12xl bg-blue-600 rounded-sm">
             <div class="absolute bottom-[40%] right-[5%] pt-sm transform rotate-45 lg:top-[-28px] lg:right-[200px]"><Image src={brochure_open} alt="brochure picture" class="w-full object-cover rounded-sm" /></div>
           </div>
-          <div class="absolute bottom-[7%] right-[7%] m-4"><Button variant="secondary" size="medium">Læs brochure</Button></div>
+          <div class="absolute bottom-[7%] right-[7%] m-4"><a href="https://issuu.com/hojskolendk/docs/h_jskolendk_-_dit_livs_eventyr"><Button variant="secondary" size="medium">Læs brochure</Button></a></div>
         </div>
       </section>
     </section>
@@ -169,7 +169,7 @@ import young from "../assets/images/young1.webp";
     </section>
 
     <!--------------------Den Blog section------------------------------------------------->
-    <section class="py-sm px-s mx-auto md:max-w-7xl">
+    <section class="py-sm px-s mx-auto md:max-w-7xl md:pt-xl">
       <h1 class="text-h2-mobile font-display text-neutral-950 md:text-h1-desktop">Blog</h1>
       <p class="font-lato text-neutral-950 py-xxs text-p-mobile">Dyk ned i historier fra højskolelivet. Her deler vi oplevelser, indsigter og inspiration fra rejser, læring og fællesskab.</p>
       <Link variant="primary" size="medium" href="#">Læs videre og bliv en del af fællesskabet! </Link>
