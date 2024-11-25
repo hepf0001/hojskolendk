@@ -5,6 +5,7 @@ import card2 from "../assets/images/card2.webp";
 import card3 from "../assets/images/card3.webp";
 import card4 from "../assets/images/card4.webp";
 import card5 from "../assets/images/card5.webp";
+import Link from "../components/Link.astro";
 ---
 
 <section id="slider">
@@ -16,25 +17,51 @@ import card5 from "../assets/images/card5.webp";
 
   <!-- Replace the number labels with image-based labels -->
   <label for="s1" id="slide1">
-    <Image src={card1} alt="Slide 1" />
+    <Image src={card1} alt="Slide 1" class="relative" />
+    <div class="absolute bottom-[0] left-[0] w-full bg-blue-900 text-center">
+      <div class="flex items-center justify-center">
+        <p class="text-neutral-50 p-s text-h4-desktop">Glem jagten på lykke</p>
+        <Link href="https://www.hojskolendk.dk/glem-jagten-paa-lykke/" variant="secondary" size="medium">Læs mere</Link>
+      </div>
+    </div>
   </label>
   <label for="s2" id="slide2">
     <Image src={card2} alt="Slide 2" />
+    <div class="absolute bottom-[0] left-[0] w-full bg-blue-900 text-center">
+      <div class="flex items-center justify-center">
+        <p class="text-neutral-50 p-s text-h4-desktop">Kulturforståelse er fantastisk</p>
+        <Link href="https://www.hojskolendk.dk/kulturforstaaelse-er-fantastisk/" variant="secondary" size="medium">Læs mere</Link>
+      </div>
+    </div>
   </label>
   <label for="s3" id="slide3">
     <Image src={card3} alt="Slide 3" />
+    <div class="absolute bottom-[0] left-[0] w-full bg-blue-900 text-center">
+      <div class="flex items-center justify-center">
+        <p class="text-neutral-50 p-s text-h4-desktop">Brev til mit fortidsjeg</p>
+        <Link href="https://www.hojskolendk.dk/brev-til-mit-fortidsjeg/" variant="secondary" size="medium">Læs mere</Link>
+      </div>
+    </div>
   </label>
   <label for="s4" id="slide4">
     <Image src={card4} alt="Slide 4" />
+    <div class="absolute bottom-[0] left-[0] w-full bg-blue-900 text-center">
+      <div class="flex items-center justify-center">
+        <p class="text-neutral-50 p-s text-h4-desktop">Hvad sagde manden?</p>
+        <Link href="https://www.hojskolendk.dk/hvad-sagde-manden/" variant="secondary" size="medium">Læs mere</Link>
+      </div>
+    </div>
   </label>
   <label for="s5" id="slide5">
     <Image src={card5} alt="Slide 5" />
+    <div class="absolute bottom-[0] left-[0] w-full bg-blue-900 text-center">
+      <div class="flex items-center justify-center">
+        <p class="text-neutral-50 p-s text-h4-desktop">Dit sabbatår – make the most of it</p>
+        <Link href="https:https://www.hojskolendk.dk/dit-sabbataar-make-the-most-of-it/" variant="secondary" size="medium">Læs mere</Link>
+      </div>
+    </div>
   </label>
 </section>
-
-<a href="https://youtu.be/feVfzM--S3Y" target="self">
-  <div class="youtube-link">Watch on YouTube</div>
-</a>
 
 <style>
   #slider {
@@ -80,9 +107,9 @@ import card5 from "../assets/images/card5.webp";
   }
 
   #slider label img {
-    width: 100%; /* 이미지를 라벨 크기에 맞게 채움 */
-    height: 100%; /* 이미지를 라벨 크기에 맞게 채움 */
-    object-fit: cover; /* 이미지가 영역을 완전히 덮도록 설정 */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   #slide1,
@@ -138,7 +165,8 @@ import card5 from "../assets/images/card5.webp";
     box-shadow:
       0 6px 10px rgba(0, 0, 0, 0.3),
       0 2px 2px rgba(0, 0, 0, 0.2);
-    transform: translate3d(15%, 0, -100px);
+    transform: translate3d(30%, 0, -200px);
+    filter: brightness(0.7);
   }
 
   /* Next to Next Slide */
@@ -148,7 +176,8 @@ import card5 from "../assets/images/card5.webp";
   #s4:checked ~ #slide1,
   #s5:checked ~ #slide2 {
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
-    transform: translate3d(30%, 0, -250px);
+    transform: translate3d(60%, 0, -450px);
+    filter: brightness(0.5);
   }
 
   /* Previous to Previous Slide */
@@ -158,7 +187,8 @@ import card5 from "../assets/images/card5.webp";
   #s4:checked ~ #slide2,
   #s5:checked ~ #slide3 {
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
-    transform: translate3d(-30%, 0, -250px);
+    transform: translate3d(-60%, 0, -450px);
+    filter: brightness(0.5);
   }
 
   /* Previous Slide */
@@ -170,22 +200,8 @@ import card5 from "../assets/images/card5.webp";
     box-shadow:
       0 6px 10px rgba(0, 0, 0, 0.3),
       0 2px 2px rgba(0, 0, 0, 0.2);
-    transform: translate3d(-15%, 0, -100px);
-  }
-
-  /* YouTube Link */
-  .youtube-link {
-    position: absolute;
-    bottom: 50px;
-    width: 150px;
-    left: 50%;
-    margin-left: -75px;
-    padding: 5px;
-    font-weight: 700;
-    color: coral;
-    background: navy;
-    text-align: center;
-    border-radius: 0.2em;
+    transform: translate3d(-30%, 0, -200px);
+    filter: brightness(0.7);
   }
 </style>
 
