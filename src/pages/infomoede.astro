@@ -77,8 +77,8 @@ import pin from "../assets/images/stedpin.svg";
           <input
             type="text"
             id="name"
-            class="w-full border bg-neutral-100 border-neutral-100 p-2 rounded-[5px] text-neutral-600"
-            value="Børge Møller Hansen"
+            class="w-full border bg-neutral-100 border-neutral-100 p-2 rounded-[5px] placeholder:text-neutral-600"
+            placeholder="Børge Møller Hansen"
             required
           />
         </div>
@@ -87,8 +87,8 @@ import pin from "../assets/images/stedpin.svg";
           <input
             type="tel"
             id="phone"
-            class="w-full border bg-neutral-100 border-neutral-100 p-2 rounded-[5px] text-neutral-600"
-            value="+45 11 22 33 44"
+            class="w-full border bg-neutral-100 border-neutral-100 p-2 rounded-[5px] placeholder:text-neutral-600"
+            placeholder="+45 11 22 33 44"
           />
         </div>
         <div>
@@ -96,8 +96,8 @@ import pin from "../assets/images/stedpin.svg";
           <input
             type="email"
             id="email"
-            class="w-full border bg-neutral-100 border-neutral-100 p-2 rounded-[5px] text-neutral-600"
-            value="boerge.m.hansen@gmail.com"
+            class="w-full border bg-neutral-100 border-neutral-100 p-2 rounded-[5px] placeholder:text-neutral-600"
+            placeholder="boerge.m.hansen@gmail.com"
           />
         </div>
         <div>
@@ -105,8 +105,8 @@ import pin from "../assets/images/stedpin.svg";
           <input
             type="number"
             id="participants"
-            class="w-full border bg-neutral-100 border-neutral-100 p-2 rounded-[5px] text-neutral-600"
-            value="2"
+            class="w-full border bg-neutral-100 border-neutral-100 p-2 rounded-[5px] placeholder:text-neutral-600"
+            placeholder="2"
             required
           />
         </div>
@@ -115,8 +115,8 @@ import pin from "../assets/images/stedpin.svg";
           <input
             type="text"
             id="destination"
-            class="w-full border bg-neutral-100 border-neutral-100 p-2 rounded-[5px] text-neutral-600"
-            value="Caribien, Hawaii & Mexico"
+            class="w-full border bg-neutral-100 border-neutral-100 p-2 rounded-[5px] placeholder:text-neutral-600"
+            placeholder="Caribien, Hawaii & Mexico"
             required
           />
           <div class="pt-xxs">
@@ -144,4 +144,14 @@ import pin from "../assets/images/stedpin.svg";
       <div class="md:p-xl p-xs"></div>
     </div>
   </div>
+
+  <style>
+    input[type="text"]::placeholder {
+      color: #888888; /* neutral-600 */
+    }
+
+    input[type="text"] {
+      color: #363636; /* neutral-950 */
+    }
+  </style>
 </MainLayout>
