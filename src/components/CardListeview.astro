@@ -19,7 +19,9 @@ import airplane from "../assets/images/airplane.svg";
 import ikon_uret from "../assets/images/uret1.svg";
 ---
 
-<div class="flex flex-col md:flex-row bg-white md:w-[1600px] rounded-sm shadow-md overflow-hidden bg-neutral-100">
+<div
+  class="flex flex-col md:flex-row bg-white md:w-[1600px] rounded-sm shadow-md overflow-hidden bg-neutral-100 transform hover:scale-[1.02] transition-all duration-300 ease-in-out"
+>
   <!-- Image Section -->
   <div class="md:w-[550px] w-full md:h-[350px] h-[400px] relative">
     <img src={image} alt={title} class="object-cover md:w-[550px] md:h-[350px] h-[400px] w-full" />
@@ -45,6 +47,7 @@ import ikon_uret from "../assets/images/uret1.svg";
     <div class="flex-1 py-6 px-6">
       <h3 class="text-xl font-bold mb-2 text-gray-950">{title}</h3>
       <p class="text-gray-600">{description}</p>
+
       <!-- Button Section -->
       <div class="mt-sm">
         <a href="/singleview">
@@ -102,4 +105,7 @@ import ikon_uret from "../assets/images/uret1.svg";
       </div>
     </div>
   </div>
+
+  <!-- Add an absolutely positioned link that covers the whole card -->
+  <a href="/singleview" class="absolute inset-0 z-0"></a>
 </div>
