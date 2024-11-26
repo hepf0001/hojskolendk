@@ -43,50 +43,54 @@ import Link from "../components/Link.astro";
         <!-- Dropdown -->
         <div>
           <div class="md:pt-10 pt-8 py-2">
-            <label for="destination" class="font-semibold text-h3-mobile">Højskoleophold<span class="text-orange-700">*</span></label>
+            <label for="destination" class="font-semibold text-h3-mobile text-gray-950">Højskoleophold<span class="text-orange-700">*</span></label>
           </div>
           <select
             id="destination"
-            class="w-full border bg-neutral-100 border-neutral-100 p-2 rounded-sm text-neutral-700"
+            class="w-full border bg-neutral-100 border-neutral-100 p-2 rounded-[5px] text-neutral-600"
             required
-            onchange="this.className = this.value ? 'w-full border bg-neutral-100 border-neutral-100 p-2 rounded-sm text-gray-950' : 'w-full border border-neutral-100 p-2 rounded-sm'"
+            onchange="this.className = this.value ? 'w-full border bg-neutral-100 border-neutral-100 p-2 rounded-[5px] text-gray-950' : 'w-full border border-neutral-100 p-2 rounded-[5px]'"
           >
             <option value="" disabled selected hidden>Vælg ønsket destination</option>
-            <option>Caribien, Hawaii & Mexico</option>
-            <option> Maldiverne, Sri Lanka, Bali & Gili Islands</option>
-            <option>Australien, NZ, Bali & Gili Islands</option>
-            <option>Australien, Japan, Bali & Gili Islands</option>
-            <option>Hawaii, Australien, Japan, Bali & Gili Islands</option>
-            <option>Brasilien, Bolivia, Colombia, Ecuador, Peru & Argentina</option>
-            <option>Costa rica, Mexico & Colombia</option>
-            <option>Indien, Nepal, Thailand, Vietnam & Sri Lanka</option>
-            <option>Bali, Lombok & Gili (sommerhøjskole)</option>
+            <option value="Vælg ønsket destination her*">Vælg ønsket destination her*</option>
+            <option value="sweden">Caribien, Hawaii & Mexico</option>
+            <option value="usa">Costa Rica, Mexico & Colombia</option>
+            <option value="sweden">Australien, New Zealand, Bali & Gili</option>
+            <option value="usa">Indien, Nepal, Thailand, Vietnam & Sri Lanka</option>
+            <option value="usa">Hawaii, Australien, Japan, Bali & Gili Islands</option>
+            <option value="sweden">Maldiverne, Sri Lanka, Bali & Gili Islands</option>
+            <option value="usa">Brasilien, Bolivia & Colombia</option>
+            <option value="usa">Ecuador, Peru & Argentina</option>
+            <option value="usa">Australien, Japan, Bali & Gili Islands</option>
+            <option value="usa">Bali, Lombok & Gili - sommerhøjskole</option>
           </select>
         </div>
 
         <!-- Contact Info -->
 
         <div>
-          <div class="pt-sm pb-xxs">
-            <label for="name" class="font-semibold text-h3-mobile">Kontaktinformation</label>
+          <div class="pt-xs pb-xxs">
+            <label for="name" class="font-semibold text-h3-mobile text-gray-950">Kontaktinformation</label>
           </div>
-          <label for="name" class="block font-regular mb-2">Fulde navn<span class="text-orange-700">*</span></label>
+          <label for="name" class="block font-regular mb-2 text-gray-950">Fulde navn<span class="text-orange-700">*</span></label>
           <input
             type="text"
             id="name"
-            class="w-full border bg-neutral-100 border-neutral-100 p-2 rounded-sm text-neutral-700"
+            class="w-full border bg-neutral-100 border-neutral-100 p-2 rounded-[5px] placeholder:text-neutral-600"
             placeholder="Børge Møller Hansen"
             required
           />
         </div>
 
         <div>
-          <label for="gender" class="block font-regular mb-2">Vælg køn <span class="font-semibold">(som det fremgår i dit pas)</span></label>
+          <label for="gender" class="block font-regular mb-2 text-gray-950"
+            >Vælg køn <span class="font-semibold">(som det fremgår i dit pas)</span></label
+          >
           <select
             id="gender"
-            class="w-full border bg-neutral-100 border-neutral-100 p-2 rounded-sm text-neutral-700"
+            class="w-full border bg-neutral-100 border-neutral-100 p-2 rounded-[5px] placeholder:text-neutral-600"
             required
-            onchange="this.className = this.value ? 'w-full border bg-neutral-100 border-neutral-100 p-2 rounded-sm text-gray-950' : 'w-full border border-neutral-100 p-2 rounded-sm'"
+            onchange="this.className = this.value ? 'w-full border bg-neutral-100 border-neutral-100 p-2 rounded-[5px] text-gray-950' : 'w-full border border-neutral-100 p-2 rounded-[5px]'"
           >
             <option value="" disabled selected hidden>Mand</option>
             <option>Mand</option>
@@ -98,22 +102,22 @@ import Link from "../components/Link.astro";
 
         <div class="flex flex-wrap gap-4">
           <div class="flex-1 min-w-[200px]">
-            <label for="phone" class="block font-regular mb-2">Tlf. nr.<span class="text-orange-700">*</span></label>
+            <label for="phone" class="block font-regular mb-2 text-gray-950">Tlf. nr.<span class="text-orange-700">*</span></label>
             <input
               type="tel"
               id="phone"
-              class="w-full border bg-neutral-100 border-neutral-100 p-2 rounded-sm text-neutral-700"
+              class="w-full border bg-neutral-100 border-neutral-100 p-2 rounded-[5px] placeholder:text-neutral-600"
               placeholder="+45 11 22 33 44"
               required
             />
           </div>
 
           <div class="flex-1 min-w-[200px]">
-            <label for="email" class="block font-regular mb-2">Email<span class="text-orange-700">*</span></label>
+            <label for="email" class="block font-regular mb-2 text-gray-950">Email<span class="text-orange-700">*</span></label>
             <input
               type="email"
               id="email"
-              class="w-full border bg-neutral-100 border-neutral-100 p-2 rounded-sm text-neutral-700"
+              class="input w-full border bg-neutral-100 border-neutral-100 p-2 rounded-[5px] placeholder:text-neutral-600"
               placeholder="boerge.m.hansen@gmail.com"
               required
             />
@@ -122,21 +126,24 @@ import Link from "../components/Link.astro";
 
         <!-- Remarks -->
         <div>
-          <div class="pt-sm pb-xxs">
-            <label for="remarks" class="font-semibold text-h3-mobile">Bemærkning(er)</label>
+          <div class="pt-xs pb-xxs">
+            <label for="remarks" class="font-semibold text-h3-mobile text-gray-950">Bemærkning(er)</label>
           </div>
           <textarea
             rows="8"
             id="remarks"
-            class="w-full border bg-neutral-100 border-neutral-100 p-2 rounded-sm text-neutral-700 placeholder:text-neutral-700 text-left align-top"
+            class="w-full border bg-neutral-100 border-neutral-100 p-2 rounded-[5px] text-neutral-600 placeholder:text-neutral-600 text-left align-top"
             placeholder="Evt. forhold der skal tages hensyn til"></textarea>
+          <div class="pt-xxs">
+            <p class="text-orange-700">* Disse felter skal udfyldes/vælges</p>
+          </div>
         </div>
 
         <!-- Checkbox Fields -->
         <div>
           <label class="flex items-start space-x-2">
             <input type="checkbox" required class="mt-1" />
-            <span
+            <span class="text-gray-950"
               >Jeg har læst jeres <a href="#" class="text-orange-700 underline">privatlivspolitik</a> og <a href="#" class="text-orange-700 underline"
                 >generelle bestemmelser</a
               > og er indforstået med begge<span class="text-orange-700">*</span></span

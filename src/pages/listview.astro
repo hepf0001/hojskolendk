@@ -124,6 +124,12 @@ const cards = [
     buttonText: "Læs mere",
   },
 ];
+
+import { Image } from "astro:assets";
+import money from "../assets/images/money.svg";
+import moneybag from "../assets/images/money_bag.svg";
+import moneymanager from "../assets/images/money_manager.svg";
+import paper from "../assets/images/paper.svg";
 ---
 
 <MainLayout title="Rejser">
@@ -174,7 +180,7 @@ const cards = [
       }
     </div>
   </section>
-  <section class="flex flex-col px-s mx-auto lg:max-w-7xl md:p-large md:pt-xl">
+  <section class="flex flex-col px-s mx-auto lg:max-w-7xl md:p-large md:pt-sm">
     <h1 class="text-h2-mobile font-display text-neutral-950 md:text-h1-desktop">Infomøde</h1>
     <p class="font-lato text-neutral-950 py-xxs text-p-mobile lg:w-1/2 md:text-p-desktop">
       Hvis du drømmer om et fantastisk rejseeventyr med masser af eventyr, vilde naturoplevelser og spændende kulturmøder så smut forbi et af vores
@@ -211,6 +217,48 @@ const cards = [
         tidspunkt="Kl.17-19"
       />
     </section>
+  </section>
+
+  <section class="py-12 px-3 md:py-md pt-sm pb-xl flex justify-center items-center">
+    <div class="grid md:grid-cols-2 grid-cols-1 gap-4 w-[80%]">
+      <div class="bg-neutral-100 p-4 rounded-[5px] flex items-start">
+        <Image src={money} alt="money" width={50} height={50} class="mr-4" />
+        <div>
+          <h2 class="text-xl font-bold mb-2">HØJSKOLE-PRISER</h2>
+          <p>
+            Vi har samlet vores højskoleophold og rejser her for at give dig et godt overblik. På destinationssiderne kan du læse om
+            adventure-aktiviteter, program, fag, transport, friuger, lommepenge og meget mere.
+          </p>
+        </div>
+      </div>
+      <div class="bg-neutral-100 p-4 rounded-[5px] flex items-start">
+        <Image src={moneybag} alt="moneybag" width={50} height={50} class="mr-4" />
+        <div>
+          <h2 class="text-xl font-bold mb-2">TILSKUD TIL HØJSKOLEOPHOLD</h2>
+          <p>
+            Tidligere elever har ikke fået tilskud til vores højskoleophold, men du kan kontakte din kommune for muligheder. Mange sparer op gennem
+            arbejde inden opholdet.
+          </p>
+        </div>
+      </div>
+      <div class="bg-neutral-100 p-4 rounded-[5px] flex items-start">
+        <Image src={moneymanager} alt="money manager" width={50} height={50} class="mr-4" />
+        <div>
+          <h2 class="text-xl font-bold mb-2">HVAD KOSTER ET HØJSKOLEOPHOLD?</h2>
+          <p>
+            Priserne varierer afhængigt af opholdets længde, destinationer, aktiviteter, transport og indkvartering. Indkvartering i friuger er ikke
+            inkluderet, da eleverne ofte rejser ud på egne eventyr i denne periode.
+          </p>
+        </div>
+      </div>
+      <div class="bg-neutral-100 p-4 rounded-[5px] flex items-start">
+        <Image src={paper} alt="paper" width={50} height={50} />
+        <div>
+          <h2 class="text-xl font-bold mb-2">LEGATER TIL HØJSKOLE</h2>
+          <p>Der findes også legater til højskoleophold, som du kan finde på legatmidler.dk og legatbogen.dk.</p>
+        </div>
+      </div>
+    </div>
   </section>
 </MainLayout>
 
