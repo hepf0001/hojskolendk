@@ -15,47 +15,50 @@ import Link from "../components/Link.astro";
                 </div>
             </section>
         </div>
-        <section class="bg-neutral-200 h-2xl">
-            <section class="grid md:grid-cols-11 gap-xs h-full">
-                <section class="col-span-1 flex items-center p-0">
-                    <div class="w-full">
+    </section>
+
+    <!------------------------------- Info card ------------------------------->
+    <section class="bg-neutral-200">
+        <section class="max-w-7xl mx-auto">
+            <section class="grid md:grid-cols-11">
+                <section class="col-span-1 flex items-center p-0 md:flex-row flex-col">
+                    <div class="">
                         <h4 class="text-neutral-800">Varighed</h4>
                         <p>3 måneder</p>
                     </div>
                 </section>
 
-                <!------------------------------- Info card ------------------------------->
-                <section class="col-span-2 flex items-center p-0 relative">
+                <section class="col-span-2 flex items-center p-0 relative md:flex-row flex-col">
                     <div class="absolute left-0 top-1/2 transform -translate-y-1/2 h-1/2 border-l border-[1px] border-neutral-800"></div>
-                    <div class="w-full pl-s">
+                    <div class="pl-s">
                         <h4 class="text-neutral-800">Inklusiv</h4>
                         <p>Flybillet tur/retur</p>
                     </div>
                 </section>
 
-                <div class="col-span-8">
-                    <div class="grid grid-cols-8 gap-0 h-full">
-                        <section class="col-span-2 bg-neutral-300 h-full flex items-center p-0">
-                            <div class="w-full px-s">
+                <div class="col-span-8 md:flex-row flex-col">
+                    <div class="grid grid-cols-1 md:grid-cols-8 gap-0 h-full">
+                        <section class="col-span-2 bg-neutral-300 h-full flex items-center p-0 md:col-span-2">
+                            <div class="px-s">
                                 <h4 class="text-neutral-800">Ca. pris</h4>
                                 <p>67.900 DKK</p>
                             </div>
                         </section>
 
-                        <button class="col-span-2 bg-neutral-950 hover:bg-neutral-900 h-full p-0">
-                            <a href="" class="w-full px-s">
+                        <button class="col-span-2 bg-neutral-950 hover:bg-neutral-900 h-full p-0 md:col-span-2">
+                            <a href="/opdateret" class="w-full px-s">
                                 <h4 class="text-neutral-50">Hold dig opdateret</h4>
                             </a>
                         </button>
 
-                        <button class="col-span-2 bg-orange-600 hover:bg-orange-700 h-full p-0">
-                            <a href="" class="w-full px-s">
+                        <button class="col-span-2 bg-orange-600 hover:bg-orange-700 h-full p-0 md:col-span-2">
+                            <a href="/infomoede" class="w-full px-s">
                                 <h4 class="text-neutral-50">Tilmeld infomøde</h4>
                             </a>
                         </button>
 
-                        <button class="col-span-2 bg-blue-700 hover:bg-blue-800 h-full p-0">
-                            <a href="" class="w-full px-s">
+                        <button class="col-span-2 bg-blue-700 hover:bg-blue-800 h-full p-0 md:col-span-2">
+                            <a href="/tilmeld" class="w-full px-s">
                                 <h4 class="text-neutral-50">Tilmeld dig opholdet</h4>
                             </a>
                         </button>
