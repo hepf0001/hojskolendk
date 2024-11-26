@@ -8,7 +8,7 @@ import Link from "../components/Link.astro";
     <!------------------------------- Hero ------------------------------->
 
     <section class="relative w-full">
-        <img class="w-full object-cover" src="/hero-single.webp" alt="gruppe billede" />
+        <img class="md:h-[700px] h-[450px] w-full object-cover" src="/hero-single.webp" alt="gruppe billede" />
         <div class="absolute inset-0 flex items-center max-w-7xl mx-auto p-s">
             <section class="justify-start grid md:grid-cols-12 gap-s">
                 <div class="flex items-center col-span-6">
@@ -20,7 +20,7 @@ import Link from "../components/Link.astro";
 
     <!------------------------------- Info card ------------------------------->
     <section class="bg-neutral-200">
-        <section class="max-w-7xl mx-auto px-s">
+        <section class="max-w-7xl mx-auto md:px-s">
             <section class="grid lg:grid-cols-11">
                 <section class="col-span-1 flex lg:items-center lg:flex-row flex-col">
                     <div class="lg:px-xxs px-s">
@@ -187,7 +187,7 @@ import Link from "../components/Link.astro";
                     <div class="pb-s">
                         <div class="bg-neutral-100 rounded-sm flex items-center justify-center h-full">
                             <div class="p-s text-center">
-                                <p class="">Glade & skønne elever</p>
+                                <p class="font-semibold">Glade & skønne elever</p>
                                 <h1 class="text-orange-600">2.000+</h1>
                             </div>
                         </div>
@@ -196,7 +196,7 @@ import Link from "../components/Link.astro";
                     <div class="pb-s">
                         <div class="bg-neutral-100 rounded-sm flex items-center justify-center h-full">
                             <div class="p-s text-center">
-                                <p class="">Anbefaler Höjskolendk</p>
+                                <p class="font-semibold">Anbefaler Höjskolendk</p>
                                 <h1 class="text-orange-600">94%</h1>
                             </div>
                         </div>
@@ -205,7 +205,7 @@ import Link from "../components/Link.astro";
                     <div class="pb-s">
                         <div class="bg-neutral-100 rounded-sm flex items-center justify-center h-full">
                             <div class="p-s text-center">
-                                <p class="">Tilfredshed efter ophold</p>
+                                <p class="font-semibold">Tilfredshed efter ophold</p>
                                 <h1 class="text-orange-600">8.7/10</h1>
                             </div>
                         </div>
@@ -214,7 +214,7 @@ import Link from "../components/Link.astro";
                     <div class="pb-s">
                         <div class="bg-neutral-100 rounded-sm flex items-center justify-center h-full">
                             <div class="p-s text-center">
-                                <img src="/trustpilot_logo_black.svg" alt="trustpilot logo" />
+                                <img class="w-3xl" src="/trustpilot_logo_black.svg" alt="trustpilot logo" />
                                 <h1 class="text-orange-600">4.8/5</h1>
                             </div>
                         </div>
@@ -286,28 +286,28 @@ import Link from "../components/Link.astro";
                 <section class="grid grid-cols-4 gap-s py-s">
                     <div class="bg-neutral-100 rounded-sm flex items-center justify-center h-full">
                         <div class="p-s text-center">
-                            <p class="">Glade & skønne elever</p>
+                            <p class="font-semibold">Glade & skønne elever</p>
                             <h1 class="text-orange-600">2.000+</h1>
                         </div>
                     </div>
 
                     <div class="bg-neutral-100 rounded-sm flex items-center justify-center h-full">
                         <div class="p-s text-center">
-                            <p class="">Anbefaler Höjskolendk</p>
+                            <p class="font-semibold">Anbefaler Höjskolendk</p>
                             <h1 class="text-orange-600">94%</h1>
                         </div>
                     </div>
 
                     <div class="bg-neutral-100 rounded-sm flex items-center justify-center h-full">
                         <div class="p-s text-center">
-                            <p class="">Tilfredshed efter ophold</p>
+                            <p class="font-semibold">Tilfredshed efter ophold</p>
                             <h1 class="text-orange-600">8.7/10</h1>
                         </div>
                     </div>
 
                     <div class="bg-neutral-100 rounded-sm flex items-center justify-center h-full">
                         <div class="p-s text-center">
-                            <img src="/trustpilot_logo_black.svg" alt="trustpilot logo" />
+                            <img class="w-4xl" src="/trustpilot_logo_black.svg" alt="trustpilot logo" />
                             <h1 class="text-orange-600">4.8/5</h1>
                         </div>
                     </div>
@@ -317,7 +317,7 @@ import Link from "../components/Link.astro";
                 <section class="col-span-9">
                     <h2 class="pb-s">Rejsebreve</h2>
                     <section class="grid grid-cols-9 gap-s">
-                        <div class="col-span-3 relative group">
+                        <div class="col-span-3 relative group hover:scale-[1.02] transition-all duration-300 ease-in-out">
                             <img src="/laura.webp" alt="Billede af Laura" class="w-full h-full object-cover rounded-sm" />
                             <div class="absolute inset-0 bg-neutral-950 opacity-50 rounded-sm"></div>
                             <div class="overlay absolute inset-0 bg-orange-500 opacity-0 group-hover:opacity-50 transition-opacity duration-300 rounded-sm"></div>
@@ -326,7 +326,7 @@ import Link from "../components/Link.astro";
                                 <p class="text-neutral-50">Den 1. november 2017, stod jeg klar i Københavns Lufthavn og var klar til mit…</p>
                             </div>
                         </div>
-                        <div class="col-span-3 relative group">
+                        <div class="col-span-3 relative group hover:scale-[1.02] transition-all duration-300 ease-in-out">
                             <img src="/emma.webp" alt="Billede af Emma" class="w-full h-full object-cover rounded-sm" />
                             <div class="absolute inset-0 bg-neutral-950 opacity-50 rounded-sm"></div>
                             <div class="overlay absolute inset-0 bg-orange-500 opacity-0 group-hover:opacity-50 transition-opacity duration-300 rounded-sm"></div>
@@ -335,7 +335,7 @@ import Link from "../components/Link.astro";
                                 <p class="text-neutral-50">Med lidt under en uge tilbage her i Caribien kan jeg virkelig mærke, hvor meget…</p>
                             </div>
                         </div>
-                        <div class="col-span-3 relative group">
+                        <div class="col-span-3 relative group hover:scale-[1.02] transition-all duration-300 ease-in-out">
                             <img src="/kristoffer.webp" alt="Billede af Kristoffer" class="w-full h-full object-cover rounded-sm" />
                             <div class="absolute inset-0 bg-neutral-950 opacity-50 rounded-sm"></div>
                             <div class="overlay absolute inset-0 bg-orange-500 opacity-0 group-hover:opacity-50 transition-opacity duration-300 rounded-sm"></div>
@@ -356,7 +356,7 @@ import Link from "../components/Link.astro";
 
                         <div class="flex flex-row">
                             <section class="grid grid-cols-9 gap-s slide1" x-show="slidenr === 'one'" x-transition:enter.duration.700ms>
-                                <div class="col-start-1 col-span-3 row-start-1 relative group">
+                                <div class="col-start-1 col-span-3 row-start-1 relative group hover:scale-[1.02] transition-all duration-300 ease-in-out">
                                     <div class="bg-neutral-100 rounded-[5px]">
                                         <div class="p-s">
                                             <img class="w-4xl pb-xs" src="/stjerner.svg" alt="trustpilot stjerner" />
@@ -366,7 +366,7 @@ import Link from "../components/Link.astro";
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-start-4 col-span-3 row-start-1 relative group">
+                                <div class="col-start-4 col-span-3 row-start-1 relative group hover:scale-[1.02] transition-all duration-300 ease-in-out">
                                     <div class="bg-neutral-100 rounded-[5px]">
                                         <div class="p-s">
                                             <img class="w-4xl pb-xs" src="/stjerner.svg" alt="trustpilot stjerner" />
@@ -376,7 +376,7 @@ import Link from "../components/Link.astro";
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-start-7 col-span-3 row-start-1 relative group">
+                                <div class="col-start-7 col-span-3 row-start-1 relative group hover:scale-[1.02] transition-all duration-300 ease-in-out">
                                     <div class="bg-neutral-100 rounded-[5px]">
                                         <div class="p-s pr-ml">
                                             <img class="w-4xl pb-xs" src="/stjerner.svg" alt="trustpilot stjerner" />
@@ -398,7 +398,7 @@ import Link from "../components/Link.astro";
                             </section>
 
                             <section class="grid grid-cols-9 gap-s slide2" x-show="slidenr === 'two'" x-transition:enter.duration.700ms>
-                                <div class="col-start-1 col-span-3 row-start-1 relative group">
+                                <div class="col-start-1 col-span-3 row-start-1 relative group hover:scale-[1.02] transition-all duration-300 ease-in-out">
                                     <div class="bg-neutral-100 rounded-[5px]">
                                         <div class="p-s pl-ml">
                                             <img class="w-4xl pb-xs" src="/stjerner.svg" alt="trustpilot stjerner" />
@@ -408,7 +408,7 @@ import Link from "../components/Link.astro";
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-start-4 col-span-3 row-start-1 relative group">
+                                <div class="col-start-4 col-span-3 row-start-1 relative group hover:scale-[1.02] transition-all duration-300 ease-in-out">
                                     <div class="bg-neutral-100 rounded-[5px]">
                                         <div class="p-s">
                                             <img class="w-4xl pb-xs" src="/stjerner.svg" alt="trustpilot stjerner" />
@@ -418,7 +418,7 @@ import Link from "../components/Link.astro";
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-start-7 col-span-3 row-start-1 relative group">
+                                <div class="col-start-7 col-span-3 row-start-1 relative group hover:scale-[1.02] transition-all duration-300 ease-in-out">
                                     <div class="bg-neutral-100 rounded-[5px]">
                                         <div class="p-s">
                                             <img class="w-4xl pb-xs" src="/stjerner.svg" alt="trustpilot stjerner" />
