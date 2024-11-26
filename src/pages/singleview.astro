@@ -351,8 +351,7 @@ import Link from "../components/Link.astro";
                 <!------------------------------- Trustpilot ------------------------------->
 
                 <section class="col-span-9" x-data="{slidenr: 'one'}">
-                    <img class="w-8xl pb-s" src="/trustpilot_logo_black.svg" alt="trustpilot logo" @click="slidenr = 'two'" />
-                    <img class="w-8xl pb-s" src="/trustpilot_logo_black.svg" alt="trustpilot logo" @click="slidenr = 'one'" />
+                    <img class="w-8xl pb-s" src="/trustpilot_logo_black.svg" alt="trustpilot logo" />
 
                     <div class="flex flex-row">
                         <section class="grid grid-cols-9 gap-s slide1" x-show="slidenr === 'one'" x-transition:enter.duration.700ms>
@@ -378,7 +377,7 @@ import Link from "../components/Link.astro";
                             </div>
                             <div class="col-start-7 col-span-3 row-start-1 relative group">
                                 <div class="bg-neutral-100 rounded-[5px]">
-                                    <div class="p-s">
+                                    <div class="p-s pr-ml">
                                         <img class="w-4xl pb-xs" src="/stjerner.svg" alt="trustpilot stjerner" />
                                         <h4 class="pb-xs">Mega fedt!</h4>
                                         <p class="pb-xs">Jeg var på turen Hawaii, Australien, Japan, Bali og Gili i foråret 2024 - sikke en oplevelse...</p>
@@ -399,7 +398,7 @@ import Link from "../components/Link.astro";
                         <section class="grid grid-cols-9 gap-s slide2" x-show="slidenr === 'two'" x-transition:enter.duration.700ms>
                             <div class="col-start-1 col-span-3 row-start-1 relative group">
                                 <div class="bg-neutral-100 rounded-[5px]">
-                                    <div class="p-s">
+                                    <div class="p-s pl-ml">
                                         <img class="w-4xl pb-xs" src="/stjerner.svg" alt="trustpilot stjerner" />
                                         <h4 class="pb-xs">Bedste beslutning nogensinde</h4>
                                         <p class="pb-xs">Hvis man gerne vil ud og rejse, men også vil møde nogle nye mennesker. Så vil jeg helt klart...</p>
@@ -428,7 +427,7 @@ import Link from "../components/Link.astro";
                                 </div>
                             </div>
 
-                            <button type=" button" class="col-start-1 row-start-1 z-50 bg-gradient-to-r from-neutral-300 text-right pl-xxs" @click="slidenr = 'one'">
+                            <button type=" button" class="col-start-1 row-start-1 z-50 bg-gradient-to-r from-neutral-300 text-left pl-xxs" @click="slidenr = 'one'">
                                 <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 bg-neutral-100 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
                                     <svg class="w-4 h-4 text-neutral-600 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"></path>
