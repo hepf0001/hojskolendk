@@ -47,9 +47,9 @@ import Link from "../components/Link.astro";
           </div>
           <select
             id="destination"
-            class="w-full border bg-neutral-100 border-neutral-100 p-2 rounded-sm text-neutral-700"
+            class="w-full border bg-neutral-100 border-neutral-100 p-2 rounded-[5px] text-neutral-700"
             required
-            onchange="this.className = this.value ? 'w-full border bg-neutral-100 border-neutral-100 p-2 rounded-sm text-gray-950' : 'w-full border border-neutral-100 p-2 rounded-sm'"
+            onchange="this.className = this.value ? 'w-full border bg-neutral-100 border-neutral-100 p-2 rounded-[5px] text-gray-950' : 'w-full border border-neutral-100 p-2 rounded-sm'"
           >
             <option value="" disabled selected hidden>Vælg ønsket destination</option>
             <option>Caribien, Hawaii & Mexico</option>
@@ -67,14 +67,14 @@ import Link from "../components/Link.astro";
         <!-- Contact Info -->
 
         <div>
-          <div class="pt-sm pb-xxs">
+          <div class="pt-xs pb-xxs">
             <label for="name" class="font-semibold text-h3-mobile">Kontaktinformation</label>
           </div>
           <label for="name" class="block font-regular mb-2">Fulde navn<span class="text-orange-700">*</span></label>
           <input
             type="text"
             id="name"
-            class="w-full border bg-neutral-100 border-neutral-100 p-2 rounded-sm text-neutral-700"
+            class="w-full border bg-neutral-100 border-neutral-100 p-2 rounded-[5px] text-neutral-700"
             placeholder="Børge Møller Hansen"
             required
           />
@@ -84,7 +84,7 @@ import Link from "../components/Link.astro";
           <label for="gender" class="block font-regular mb-2">Vælg køn <span class="font-semibold">(som det fremgår i dit pas)</span></label>
           <select
             id="gender"
-            class="w-full border bg-neutral-100 border-neutral-100 p-2 rounded-sm text-neutral-700"
+            class="w-full border bg-neutral-100 border-neutral-100 p-2 rounded-[5px] text-neutral-700"
             required
             onchange="this.className = this.value ? 'w-full border bg-neutral-100 border-neutral-100 p-2 rounded-sm text-gray-950' : 'w-full border border-neutral-100 p-2 rounded-sm'"
           >
@@ -102,7 +102,7 @@ import Link from "../components/Link.astro";
             <input
               type="tel"
               id="phone"
-              class="w-full border bg-neutral-100 border-neutral-100 p-2 rounded-sm text-neutral-700"
+              class="w-full border bg-neutral-100 border-neutral-100 p-2 rounded-[5px] text-neutral-700"
               placeholder="+45 11 22 33 44"
               required
             />
@@ -113,7 +113,7 @@ import Link from "../components/Link.astro";
             <input
               type="email"
               id="email"
-              class="w-full border bg-neutral-100 border-neutral-100 p-2 rounded-sm text-neutral-700"
+              class="w-full border bg-neutral-100 border-neutral-100 p-2 rounded-[5px] text-neutral-700"
               placeholder="boerge.m.hansen@gmail.com"
               required
             />
@@ -122,14 +122,17 @@ import Link from "../components/Link.astro";
 
         <!-- Remarks -->
         <div>
-          <div class="pt-sm pb-xxs">
+          <div class="pt-xs pb-xxs">
             <label for="remarks" class="font-semibold text-h3-mobile">Bemærkning(er)</label>
           </div>
           <textarea
             rows="8"
             id="remarks"
-            class="w-full border bg-neutral-100 border-neutral-100 p-2 rounded-sm text-neutral-700 placeholder:text-neutral-700 text-left align-top"
+            class="w-full border bg-neutral-100 border-neutral-100 p-2 rounded-[5px] text-neutral-700 placeholder:text-neutral-700 text-left align-top"
             placeholder="Evt. forhold der skal tages hensyn til"></textarea>
+          <div class="pt-xxs">
+            <p class="text-orange-700">* Disse felter skal udfyldes/vælges</p>
+          </div>
         </div>
 
         <!-- Checkbox Fields -->
