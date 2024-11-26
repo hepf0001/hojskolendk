@@ -8,11 +8,12 @@ import Link from "../components/Link.astro";
     <!------------------------------- Hero ------------------------------->
 
     <section class="relative w-full">
+        <div class="absolute inset-0 bg-neutral-950 w-full md:h-[700px] h-[450px] bg-opacity-30 z-10"></div>
         <img class="md:h-[700px] h-[450px] w-full object-cover" src="/hero-single.webp" alt="gruppe billede" />
         <div class="absolute inset-0 flex items-center max-w-7xl mx-auto p-s">
             <section class="justify-start grid md:grid-cols-12 gap-s">
                 <div class="flex items-center col-span-6">
-                    <h1 class="text-neutral-50 display">HØJSKOLE I CARIBIEN, HAWAII & MEXICO</h1>
+                    <h1 class="text-neutral-50 display z-20">HØJSKOLE I CARIBIEN, HAWAII & MEXICO</h1>
                 </div>
             </section>
         </div>
@@ -122,8 +123,162 @@ import Link from "../components/Link.astro";
                         </h3>
                         <div id="answer-2" class="hidden bg-neutral-100" aria-labelledby="accordion-color-heading-2">
                             <div class="p-s">
-                                <h3>Program</h3>
-                                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae quidem impedit doloremque explicabo illum quos. Molestias aspernatur rem itaque doloribus culpa similique rerum provident id quos sed.</p>
+                                <section class="pb-ml">
+                                    <h3 class="pb-xxxs">Introdage</h3>
+                                    <div class="flex flex-row gap-4">
+                                        <div class="flex items-center gap-2 mb-4">
+                                            <img src="/location.svg" alt="" class="w-7 h-7 object-cover" />
+                                            <p class="">New York City, USA</p>
+                                        </div>
+                                    </div>
+                                    <div class="pb-xs">
+                                        <img src="/introdage.webp" alt="introdage" />
+                                    </div>
+                                    <div>
+                                        <p class="pb-xs">
+                                            Vi starter vores rejseeventyr med 3-4 dage på Manhattan i New York City, hvor vi lærer hinanden at kende, rystes godt sammen og i fællesskab udforsker byen. Oplev Central Park, Frihedsgudinden, Brooklyn Bridge, SoHo, Bronx, Empire State Building, Times Square, Little Italy, Chinatown og Broadway.
+                                        </p>
+                                        <p>Derefter flyver vi til Hawaii, hvor aloha-spirit, strande, surfing, vulkaner og Luau venter på os.</p>
+                                    </div>
+                                </section>
+
+                                <section class="pb-ml">
+                                    <h3 class="pb-xxxs">Teambuilding & aktiviteter</h3>
+                                    <div class="flex flex-row gap-4">
+                                        <div class="flex items-center gap-2 mb-4">
+                                            <img src="/location.svg" alt="" class="w-7 h-7 object-cover" />
+                                            <p class="">ahu, Hawaii</p>
+                                        </div>
+                                    </div>
+                                    <div class="pb-xs">
+                                        <img src="/teambuildingvelse.webp" alt="introdage" />
+                                    </div>
+                                    <div>
+                                        <p class="pb-xs">Fra New Yorks pulserende storby tager vi til Oahu, nærmere bestemt Waikiki Beach. Vi bor i Honolulu, hvor vi oplever Pearl Harbor Memorial, Iolani-paladset og Diamond Head-krateret med udsigt over Stillehavet.</p>
+                                        <p>North Shore tilbyder hvide sandstrande og surfing. Vi surfer med lokale, hiker til udsigtspunkter og store vandfald, og udforsker polynesisk kultur.</p>
+                                    </div>
+                                </section>
+
+                                <section class="pb-ml">
+                                    <h3 class="pb-xxxs">Friuge</h3>
+                                    <div class="flex flex-row gap-4">
+                                        <div class="flex items-center gap-2 mb-4">
+                                            <img src="/location.svg" alt="" class="w-7 h-7 object-cover" />
+                                            <p class="">Hawaii</p>
+                                        </div>
+                                    </div>
+                                    <div class="pb-xs">
+                                        <img src="/hawaii-friuge.webp" alt="introdage" />
+                                    </div>
+                                    <div>
+                                        <p class="pb-xs">
+                                            Hawaii-øerne består af 8 hovedøer: Oahu, Hawai’i (Big Island), Maui, Kauai, L’nai, Niihau, Molokai og Kaho’olawe. Da øerne er forskellige, kan det være svært at vælge, hvilke(n) man skal besøge. Det tager kun ca. ½-1 time fra Honolulu til hver af øerne, så det er muligt at udforske flere under friugen.
+                                        </p>
+                                        <p>Vi tager en god snak undervejs om jeres muligheder og vores anbefalinger.</p>
+                                    </div>
+                                </section>
+
+                                <section class="pb-ml">
+                                    <h3 class="pb-xxxs">Frivilligt arbejde & kulturforståelse</h3>
+                                    <div class="flex flex-row gap-4">
+                                        <div class="flex items-center gap-2 mb-4">
+                                            <img src="/location.svg" alt="" class="w-7 h-7 object-cover" />
+                                            <p class="">Playa Del Carmen, Mexico</p>
+                                        </div>
+                                    </div>
+                                    <div class="pb-xs">
+                                        <img src="/mexico-frivilligt-arbejde.webp" alt="introdage" />
+                                    </div>
+                                    <div>
+                                        <p class="pb-xs">I Mexico bor vi i farverige Playa del Carmen på Yucatán-halvøen ved det caribiske hav. Byen er kendt for aktiviteter og afslapning. Vi vænner os til en ny kultur med krydrede dufte, spanske samtaler og mariachi-musik.</p>
+                                        <p>"Playa" byder på restauranter, caféer og barer med livemusik ned til stranden. Der er dykning, snorkling, beachvolley og adventure-oplevelser. Byen ligger perfekt til dagsture til Mayaruinerne ved Chichen Itza, Coba og Tulum, samt undervandsgrotter.</p>
+                                    </div>
+                                </section>
+
+                                <section class="pb-ml">
+                                    <h3 class="pb-xxxs">Friuge</h3>
+                                    <div class="flex flex-row gap-4">
+                                        <div class="flex items-center gap-2 mb-4">
+                                            <img src="/location.svg" alt="" class="w-7 h-7 object-cover" />
+                                            <p class="">Mexico</p>
+                                        </div>
+                                    </div>
+                                    <div class="pb-xs">
+                                        <img src="/mexico-friuge.webp" alt="introdage" />
+                                    </div>
+                                    <div>
+                                        <p class="pb-xs">Udforsk Mexicos spændende kultur med ældgamle maya-ruiner og inka-ruiner, eller fyld ugen med adventure i grotte-systemer under Yucatán-halvøen eller ATV-ture gennem junglen.</p>
+                                        <p>For flere rejseoplevelser kan du besøge Guatemala, Belize eller Costa Rica. Eventyrlystne kan tage direkte fly til Sydamerika og opleve Brasilien, Colombia, Bolivia, Argentina, Peru og/eller Ecuador.</p>
+                                    </div>
+                                </section>
+
+                                <section class="pb-ml">
+                                    <h3 class="pb-xxxs">Selvudvikling & kommunikation</h3>
+                                    <div class="flex flex-row gap-4">
+                                        <div class="flex items-center gap-2 mb-4">
+                                            <img src="/location.svg" alt="" class="w-7 h-7 object-cover" />
+                                            <p class="">St. Croix, US Virgin Islands</p>
+                                        </div>
+                                    </div>
+                                    <div class="pb-xs">
+                                        <img src="/bedste-strande-i-caribien-2.webp" alt="introdage" />
+                                    </div>
+                                    <div>
+                                        <p class="pb-xs">Midt i det Caribiske hav ligger de tidligere Dansk Vestindiske Øer – St. Thomas, St. Croix og St. John – nu kendt som US Virgin Islands. Øerne var danske indtil 1917 og har bevaret dansk kulturarv og gadenavne.</p>
+                                        <p>Det er et barfods-paradis med en hjertevarm caribisk kultur og et roligt 'Island Time' tempo. Sammenholdet og fællesskabsfølelsen er unik. Glæd jer.</p>
+                                    </div>
+                                </section>
+
+                                <section class="pb-ml">
+                                    <h3 class="pb-xxxs">Sport & adventure</h3>
+                                    <div class="flex flex-row gap-4">
+                                        <div class="flex items-center gap-2 mb-4">
+                                            <img src="/location.svg" alt="" class="w-7 h-7 object-cover" />
+                                            <p class="">St. Croix, US Virgin Islands</p>
+                                        </div>
+                                    </div>
+                                    <div class="pb-xs">
+                                        <img src="/sport-adventure-i-nepal.webp" alt="introdage" />
+                                    </div>
+                                    <div>
+                                        <p class="pb-xs">Sport & Adventure er en fed kombi af spænding, adrenalin, oplevelser og teamsport.</p>
+                                        <p>Det er en verden, hvor eventyr, aktiviteter og teamspirit går hånd i hånd og uanset om vi skal på kajaktur, hike i regnskoven eller ‘Robinson’ dyste er undervisningen et skønt frirum hvor vi flytter grænser, griner og oplever sammen – og hvor alle kan være med.</p>
+                                    </div>
+                                </section>
+
+                                <section class="pb-ml">
+                                    <h3 class="pb-xxxs">Friuge</h3>
+                                    <div class="flex flex-row gap-4">
+                                        <div class="flex items-center gap-2 mb-4">
+                                            <img src="/location.svg" alt="" class="w-7 h-7 object-cover" />
+                                            <p class="">St. Croix, US Virgin Islands</p>
+                                        </div>
+                                    </div>
+                                    <div class="pb-xs">
+                                        <img src="/dansk-vestindien-friuge-i-caribien.webp" alt="introdage" />
+                                    </div>
+                                    <div>
+                                        <p class="pb-xs">Mange elever har lyst til at udforske øerne omkring St. Croix, og ferien her er en god mulighed til det. Det er populært at tage en båd til St. Thomas eller St. John, eller købe en billig flybillet til Puerto Rico.</p>
+                                        <p>For større ferie-eventyr kan man tænke på Miami og/eller Orlando for et US-roadtrip og Miami Beach. Jamaica tilbyder reggae, rastafari-fester og skøn natur. Eller måske en uges ø-hop med et krydstogtskib.</p>
+                                    </div>
+                                </section>
+
+                                <section class="">
+                                    <h3 class="pb-xxxs">Outrodage</h3>
+                                    <div class="flex flex-row gap-4">
+                                        <div class="flex items-center gap-2 mb-4">
+                                            <img src="/location.svg" alt="" class="w-7 h-7 object-cover" />
+                                            <p class="">Puerto Rico, Caribien</p>
+                                        </div>
+                                    </div>
+                                    <div class="pb-xs">
+                                        <img src="/puerto-rico-friuge-i-caribien.webp" alt="introdage" />
+                                    </div>
+                                    <div>
+                                        <p class="pb-xs">De latinamerikanske rytmer fra Mexico venter igen i Puerto Rico. Øen er kendt for sine smukke strande, frodige regnskove og en livlig kultur med spanske, afrikanske og Taíno-indflydelser.</p>
+                                        <p>Glæd dig til musik, køkken og festivaler, samt besøg i El Yunque National Forest.</p>
+                                    </div>
+                                </section>
                             </div>
                         </div>
                     </div>
@@ -236,7 +391,7 @@ import Link from "../components/Link.astro";
                         <div id="tab1" class="tab-content p-md">
                             <section class="grid grid-cols-2 gap-md">
                                 <div>
-                                    <div class="pb-ml">
+                                    <div class="pb-xl">
                                         <h3 class="pb-s">CARIBIEN, HAWAII & MEXICO</h3>
                                         <p class="pb-xs">Tag med på drømmenes højskoleophold til et vaskeægte paradis med verdens bedste strande, surfing, den smukkeste natur og sol hver dag.</p>
                                         <p>Et rejseeventyr med masser af adventure på vulkaner, i regnskov og ikke mindst på, i og under vandet. En fantastisk højskole i udlandet.</p>
@@ -250,7 +405,7 @@ import Link from "../components/Link.astro";
                                     </div>
                                 </div>
                                 <div>
-                                    <div class="pb-ml">
+                                    <div class="pb-xl">
                                         <h3 class="pb-s">Mexico</h3>
                                         <p class="pb-xs">Mexico byder på en fantastisk kombination af sol, varme, eksotiske og lækre strande, et perfekt klima og naturskønne omgivelser på Yucatan halvøen.</p>
                                         <p class="pb-xs">Vi oplever den ældgamle mayakultur, med inka-ruiner og maya indianere, og udforsker områdets fantastiske natur og dyreliv – over og under vand. Vi bor downtown i Playa del Carmen, hvor der både er plads til undervisning, chill-time og masser af lækkert højskolefællesskab.</p>
@@ -264,8 +419,162 @@ import Link from "../components/Link.astro";
                             </section>
                         </div>
                         <div id="tab2" class="tab-content p-md hidden">
-                            <h3 class="">Program</h3>
-                            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae quidem impedit doloremque explicabo illum quos. Molestias aspernatur rem itaque doloribus culpa similique rerum provident id quos sed.</p>
+                            <section class="grid grid-cols-2 gap-md pb-xl">
+                                <div class="flex items-center">
+                                    <img src="/introdage.webp" alt="introdage" />
+                                </div>
+                                <div>
+                                    <h3 class="pb-xxxs">Introdage</h3>
+                                    <div class="flex flex-row gap-4 pb-xs">
+                                        <div class="flex items-center gap-2 mb-4">
+                                            <img src="/location.svg" alt="" class="w-7 h-7 object-cover" />
+                                            <p class="">New York City, USA</p>
+                                        </div>
+                                    </div>
+                                    <p class="pb-xs">
+                                        Vi starter vores rejseeventyr med 3-4 dage på Manhattan i New York City, hvor vi lærer hinanden at kende, rystes godt sammen og i fællesskab udforsker byen. Oplev Central Park, Frihedsgudinden, Brooklyn Bridge, SoHo, Bronx, Empire State Building, Times Square, Little Italy, Chinatown og Broadway.
+                                    </p>
+                                    <p>Derefter flyver vi til Hawaii, hvor aloha-spirit, strande, surfing, vulkaner og Luau venter på os.</p>
+                                </div>
+                            </section>
+
+                            <section class="grid grid-cols-2 gap-md pb-xl">
+                                <div>
+                                    <h3 class="pb-xxxs">Teambuilding & aktiviteter</h3>
+                                    <div class="flex flex-row gap-4 pb-xs">
+                                        <div class="flex items-center gap-2 mb-4">
+                                            <img src="/location.svg" alt="" class="w-7 h-7 object-cover" />
+                                            <p class="">ahu, Hawaii</p>
+                                        </div>
+                                    </div>
+                                    <p class="pb-xs">Fra New Yorks pulserende storby tager vi til Oahu, nærmere bestemt Waikiki Beach. Vi bor i Honolulu, hvor vi oplever Pearl Harbor Memorial, Iolani-paladset og Diamond Head-krateret med udsigt over Stillehavet.</p>
+                                    <p>North Shore tilbyder hvide sandstrande og surfing. Vi surfer med lokale, hiker til udsigtspunkter og store vandfald, og udforsker polynesisk kultur.</p>
+                                </div>
+                                <div class="flex items-center">
+                                    <img src="/teambuildingvelse.webp" alt="teambuildingvelse" />
+                                </div>
+                            </section>
+
+                            <section class="grid grid-cols-2 gap-md pb-xl">
+                                <div class="flex items-center">
+                                    <img src="/hawaii-friuge.webp" alt="introdage" />
+                                </div>
+                                <div>
+                                    <h3 class="pb-xxxs">Friuge</h3>
+                                    <div class="flex flex-row gap-4 pb-xs">
+                                        <div class="flex items-center gap-2 mb-4">
+                                            <img src="/location.svg" alt="" class="w-7 h-7 object-cover" />
+                                            <p class="">Hawaii</p>
+                                        </div>
+                                    </div>
+                                    <p class="pb-xs">
+                                        Hawaii-øerne består af 8 hovedøer: Oahu, Hawai’i (Big Island), Maui, Kauai, L’nai, Niihau, Molokai og Kaho’olawe. Da øerne er forskellige, kan det være svært at vælge, hvilke(n) man skal besøge. Det tager kun ca. ½-1 time fra Honolulu til hver af øerne, så det er muligt at udforske flere under friugen.
+                                    </p>
+                                    <p>Vi tager en god snak undervejs om jeres muligheder og vores anbefalinger.</p>
+                                </div>
+                            </section>
+
+                            <section class="grid grid-cols-2 gap-md pb-xl">
+                                <div>
+                                    <h3 class="pb-xxxs">Frivilligt arbejde & kulturforståelse</h3>
+                                    <div class="flex flex-row gap-4 pb-xs">
+                                        <div class="flex items-center gap-2 mb-4">
+                                            <img src="/location.svg" alt="" class="w-7 h-7 object-cover" />
+                                            <p class="">Playa Del Carmen, Mexico</p>
+                                        </div>
+                                    </div>
+                                    <p class="pb-xs">I Mexico bor vi i farverige Playa del Carmen på Yucatán-halvøen ved det caribiske hav. Byen er kendt for aktiviteter og afslapning. Vi vænner os til en ny kultur med krydrede dufte, spanske samtaler og mariachi-musik.</p>
+                                    <p>"Playa" byder på restauranter, caféer og barer med livemusik ned til stranden. Der er dykning, snorkling, beachvolley og adventure-oplevelser. Byen ligger perfekt til dagsture til Mayaruinerne ved Chichen Itza, Coba og Tulum, samt undervandsgrotter.</p>
+                                </div>
+                                <div class="flex items-center">
+                                    <img src="/mexico-frivilligt-arbejde.webp" alt="introdage" />
+                                </div>
+                            </section>
+
+                            <section class="grid grid-cols-2 gap-md pb-xl">
+                                <div class="flex items-center">
+                                    <img src="/mexico-friuge.webp" alt="introdage" />
+                                </div>
+                                <div>
+                                    <h3 class="pb-xxxs">Friuge</h3>
+                                    <div class="flex flex-row gap-4 pb-xs">
+                                        <div class="flex items-center gap-2 mb-4">
+                                            <img src="/location.svg" alt="" class="w-7 h-7 object-cover" />
+                                            <p class="">Mexico</p>
+                                        </div>
+                                    </div>
+                                    <p class="pb-xs">Udforsk Mexicos spændende kultur med ældgamle maya-ruiner og inka-ruiner, eller fyld ugen med adventure i grotte-systemer under Yucatán-halvøen eller ATV-ture gennem junglen.</p>
+                                    <p>For flere rejseoplevelser kan du besøge Guatemala, Belize eller Costa Rica. Eventyrlystne kan tage direkte fly til Sydamerika og opleve Brasilien, Colombia, Bolivia, Argentina, Peru og/eller Ecuador.</p>
+                                </div>
+                            </section>
+
+                            <section class="grid grid-cols-2 gap-md pb-xl">
+                                <div>
+                                    <h3 class="pb-xxxs">Selvudvikling & kommunikation</h3>
+                                    <div class="flex flex-row gap-4 pb-xs">
+                                        <div class="flex items-center gap-2 mb-4">
+                                            <img src="/location.svg" alt="" class="w-7 h-7 object-cover" />
+                                            <p class="">St. Croix, US Virgin Islands</p>
+                                        </div>
+                                    </div>
+                                    <p class="pb-xs">Midt i det Caribiske hav ligger de tidligere Dansk Vestindiske Øer – St. Thomas, St. Croix og St. John – nu kendt som US Virgin Islands. Øerne var danske indtil 1917 og har bevaret dansk kulturarv og gadenavne.</p>
+                                    <p>Det er et barfods-paradis med en hjertevarm caribisk kultur og et roligt 'Island Time' tempo. Sammenholdet og fællesskabsfølelsen er unik. Glæd jer.</p>
+                                </div>
+                                <div class="flex items-center">
+                                    <img src="/bedste-strande-i-caribien-2.webp" alt="introdage" />
+                                </div>
+                            </section>
+
+                            <section class="grid grid-cols-2 gap-md pb-xl">
+                                <div class="flex items-center">
+                                    <img src="/sport-adventure-i-nepal.webp" alt="introdage" />
+                                </div>
+                                <div>
+                                    <h3 class="pb-xxxs">Sport & adventure</h3>
+                                    <div class="flex flex-row gap-4 pb-xs">
+                                        <div class="flex items-center gap-2 mb-4">
+                                            <img src="/location.svg" alt="" class="w-7 h-7 object-cover" />
+                                            <p class="">St. Croix, US Virgin Islands</p>
+                                        </div>
+                                    </div>
+                                    <p class="pb-xs">Sport & Adventure er en fed kombi af spænding, adrenalin, oplevelser og teamsport.</p>
+                                    <p>Det er en verden, hvor eventyr, aktiviteter og teamspirit går hånd i hånd og uanset om vi skal på kajaktur, hike i regnskoven eller ‘Robinson’ dyste er undervisningen et skønt frirum hvor vi flytter grænser, griner og oplever sammen – og hvor alle kan være med.</p>
+                                </div>
+                            </section>
+
+                            <section class="grid grid-cols-2 gap-md pb-xl">
+                                <div>
+                                    <h3 class="pb-xxxs">Friuge</h3>
+                                    <div class="flex flex-row gap-4 pb-xs">
+                                        <div class="flex items-center gap-2 mb-4">
+                                            <img src="/location.svg" alt="" class="w-7 h-7 object-cover" />
+                                            <p class="">St. Croix, US Virgin Islands</p>
+                                        </div>
+                                    </div>
+                                    <p class="pb-xs">Mange elever har lyst til at udforske øerne omkring St. Croix, og ferien her er en god mulighed til det. Det er populært at tage en båd til St. Thomas eller St. John, eller købe en billig flybillet til Puerto Rico.</p>
+                                    <p>For større ferie-eventyr kan man tænke på Miami og/eller Orlando for et US-roadtrip og Miami Beach. Jamaica tilbyder reggae, rastafari-fester og skøn natur. Eller måske en uges ø-hop med et krydstogtskib.</p>
+                                </div>
+                                <div class="flex items-center">
+                                    <img src="/dansk-vestindien-friuge-i-caribien.webp" alt="introdage" />
+                                </div>
+                            </section>
+
+                            <section class="grid grid-cols-2 gap-md">
+                                <div class="flex items-center">
+                                    <img src="/puerto-rico-friuge-i-caribien.webp" alt="introdage" />
+                                </div>
+                                <div>
+                                    <h3 class="pb-xxxs">Outrodage</h3>
+                                    <div class="flex flex-row gap-4 pb-xs">
+                                        <div class="flex items-center gap-2 mb-4">
+                                            <img src="/location.svg" alt="" class="w-7 h-7 object-cover" />
+                                            <p class="">Puerto Rico, Caribien</p>
+                                        </div>
+                                    </div>
+                                    <p class="pb-xs">De latinamerikanske rytmer fra Mexico venter igen i Puerto Rico. Øen er kendt for sine smukke strande, frodige regnskove og en livlig kultur med spanske, afrikanske og Taíno-indflydelser.</p>
+                                    <p>Glæd dig til musik, køkken og festivaler, samt besøg i El Yunque National Forest.</p>
+                                </div>
+                            </section>
                         </div>
                         <div id="tab3" class="tab-content p-md hidden">
                             <h3 class="">Inkluderet</h3>
