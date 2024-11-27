@@ -9,9 +9,9 @@ import pin from "../assets/images/stedpin.svg";
 <MainLayout title="Tilmeld infomøde">
   <div class="flex flex-wrap lg:flex-nowrap">
     <!-- Left Section -->
-    <div class="bg-blue-900 text-neutral-50 p-md w-full lg:w-1/2">
+    <div class="bg-blue-900 text-neutral-50 md:px-xl md:py-sm px-xs py-md max-w-[700px] h-auto">
       <div class="w-full px-s md:pt-4xl pt-xl">
-        <h1 class="flex w-full font-display text-h2-mobile text-neutral-50 md:text-h2-desktop">Infomøder – Højskole i Udlandet</h1>
+        <h1 class="font-display flex w-full text-neutral-50">Infomøder – Højskole i Udlandet</h1>
         <p class="mt-8 text-neutral-50 md:text-p-desktop text-p-mobile">
           Drømmer du om et rejseeventyr fyldt med adventure, naturoplevelser, kulturmøder og højskolefællesskab? Deltag i et af vores infomøder i
           København, Aarhus eller online!
@@ -19,41 +19,43 @@ import pin from "../assets/images/stedpin.svg";
       </div>
       <div>
         <div class="mt-8">
-          <div class="flex items-start space-x-4">
+          <div class="flex items-start space-x-4 px-xs">
             <span><Image src={pin} alt="ikon_uret" class="w-6 h-6 mt-2" /></span>
             <div>
-              <h3 class="text-h3-mobile font-bold text-neutral-50">København</h3>
-              <p class="text-neutral-50 md:text-p-desktop text-p-mobile">Studenterhuset<br />Købmagergade 52 – 1150 København K</p>
+              <h3 class="text-[22.5px] font-bold text-neutral-50">København</h3>
+              <p class="text-neutral-50">Studenterhuset<br />Købmagergade 52 – 1150 København K</p>
             </div>
           </div>
-          <div class="flex items-start space-x-4 mt-10">
+          <div class="flex items-start space-x-4 mt-10 px-xs">
             <span><Image src={pin} alt="ikon_uret" class="w-6 h-6 mt-2" /></span>
             <div>
-              <h3 class="text-h3-mobile font-bold text-neutral-50">Aarhus</h3>
-              <p class="text-neutral-50 md:text-p-desktop text-p-mobile">LYNfabrikken<br />Vestergade 49B – 8000 Aarhus</p>
+              <h3 class="text-[22.5px] font-bold text-neutral-50">Aarhus</h3>
+              <p class="text-neutral-50">LYNfabrikken<br />Vestergade 49B – 8000 Aarhus</p>
             </div>
           </div>
         </div>
-        <h4 class="md:text-h4-desktop text-h4-mobile font-bold mt-12 text-neutral-50">Oplev vores højskole og alt det, der venter:</h4>
-        <ul class="list-disc list-inside mt-2 space-y-2">
-          <li class="text-neutral-50 md:text-p-desktop text-p-mobile">Hvem er HØJSKOLENDK?</li>
-          <li class="text-neutral-50 md:text-p-desktop text-p-mobile">Vores eventyrlige højskoleophold</li>
-          <li class="text-neutral-50 md:text-p-desktop text-p-mobile">Adventure, aktiviteter og oplevelser, der venter</li>
-          <li class="text-neutral-50 md:text-p-desktop text-p-mobile">En typisk dag på højskole i udlandet</li>
-          <li class="text-neutral-50 md:text-p-desktop text-p-mobile">Vores levende og aktive undervisningsform – ingen kedelige klasseværelser!</li>
-          <li class="text-neutral-50 md:text-p-desktop text-p-mobile">Praktisk info: økonomi, lommepenge, pakkeliste, fridage, afrejsemåde m.m.</li>
-        </ul>
-        <p class="mt-8 text-neutral-50 md:text-p-desktop text-p-mobile">
-          Vi afslutter med "Rejsefeber Café", hvor du kan møde tidligere elever, rejseledere og ejerne – og stille alle dine spørgsmål.
-        </p>
-        <p class="mt-8 text-neutral-50 md:text-p-desktop text-p-mobile">Vi glæder os til at se dig!</p>
+        <div class="px-sm md:px-0">
+          <h4 class="font-bold mt-12 text-neutral-50">Oplev vores højskole og alt det, der venter:</h4>
+          <ul class="list-disc list-inside mt-2 space-y-2">
+            <li class="text-neutral-50">Hvem er HØJSKOLENDK?</li>
+            <li class="text-neutral-50">Vores eventyrlige højskoleophold</li>
+            <li class="text-neutral-50">Adventure, aktiviteter og oplevelser, der venter</li>
+            <li class="text-neutral-50">En typisk dag på højskole i udlandet</li>
+            <li class="text-neutral-50">Vores levende og aktive undervisningsform – ingen kedelige klasseværelser!</li>
+            <li class="text-neutral-50">Praktisk info: økonomi, lommepenge, pakkeliste, fridage, afrejsemåde m.m.</li>
+          </ul>
+          <p class="mt-8 text-neutral-50">
+            Vi afslutter med "Rejsefeber Café", hvor du kan møde tidligere elever, rejseledere og ejerne – og stille alle dine spørgsmål.
+          </p>
+          <p class="mt-8 text-neutral-50">Vi glæder os til at se dig!</p>
+        </div>
       </div>
     </div>
 
     <!-- Right Section -->
-    <div class="bg-neutral-50 md:pt-2xl pt-xs md:pl-xl md:pr-xl pl-sm pr-sm mx-auto">
-      <form action="#" method="POST" class="space-y-6 w-full md:px-s md:py-sm">
-        <h1 class="flex w-full font-display pt-m text-h2-mobile text-gray-950 md:text-h2-desktop">Tilmeld dig infomøde</h1>
+    <div class="bg-neutral-50 md:py-sm py-sm mx-auto">
+      <form action="#" method="POST" class="space-y-6 w-full lg:py-sm md:px-3xl px-md">
+        <h1 class="flex w-full pt-sm text-gray-950 md:pt-3xl">Tilmeld dig infomøde</h1>
         <div class="pt-10 py-2">
           <label for="event" class="block font-semibold mb-2">
             Vælg infomøde<span class="text-orange-700">*</span>
@@ -120,18 +122,18 @@ import pin from "../assets/images/stedpin.svg";
             required
           />
           <div class="pt-xxs">
-            <p class="text-orange-700">* Disse felter skal udfyldes/vælges</p>
+            <p class="text-orange-700">* Disse felter skal udfyldes / vælges</p>
           </div>
         </div>
         <div class="space-y-2">
           <label class="flex items-start space-x-2">
-            <input type="checkbox" class="mt-2" />
+            <input type="checkbox" class="mt-2 rounded-[5px]" />
             <span>Ved tilmelding giver du os tilladelse til at kontakte dig m. påmindelser og opfølgning</span>
           </label>
           <label class="flex items-start space-x-2">
-            <input type="checkbox" class="mt-2" />
+            <input type="checkbox" class="mt-2 rounded-[5px]" />
             <span
-              >Jeg har læst jeres <a href="#" class="text-orange-700 underline">privatlivspolitik</a> og <a href="#" class="text-orange-700 underline"
+              >Jeg har læst jeres <a href="#" class="text-blue-700 underline">privatlivspolitik</a> og <a href="#" class="text-blue-700 underline"
                 >generelle bestemmelser</a
               > og er indforstået med begge<span class="text-orange-700">*</span></span
             >
@@ -152,6 +154,10 @@ import pin from "../assets/images/stedpin.svg";
 
     input[type="text"] {
       color: #363636; /* neutral-950 */
+    }
+
+    input {
+      font-size: 1rem;
     }
   </style>
 </MainLayout>

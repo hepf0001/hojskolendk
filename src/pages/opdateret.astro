@@ -7,28 +7,26 @@ import Link from "../components/Link.astro";
 <MainLayout title="Hold dig opdateret">
   <div class="flex flex-col md:flex-row min-h-screen">
     <!-- Left Section -->
-    <div class="bg-blue-900 text-neutral-50 p-md w-full lg:w-1/2">
-      <div class="w-full md:pt-xl pt-md">
-        <h1 class="flex w-full font-display pt-m text-h2-mobile text-neutral-50 md:text-h2-desktop">Vær opdateret – Højskole i Udlandet</h1>
+    <div class="bg-blue-900 text-neutral-50 md:px-xl md:py-sm px-sm py-md max-w-[700px] h-auto">
+      <div class="w-full md:pt-4xl pt-xl px-xs">
+        <h1 class="flex w-full font-display text-neutral-50">Vær opdateret – Højskole i Udlandet</h1>
       </div>
-      <div class="mt-8">
-        <p class="mt-4 text-neutral-50 md:text-p-desktop text-p-mobile">
+      <div class="px-xs md:px-0">
+        <p class="mt-4 text-neutral-50">
           Overvejer du at tilmelde dig et af vores højskoleophold i udlandet? Så kan det være en god idé at reservere en plads:
         </p>
         <ul class="list-disc list-inside mb-6">
-          <li class="text-neutral-50 md:text-p-desktop text-p-mobile">Gratis og uforpligtende</li>
-          <li class="text-neutral-50 md:text-p-desktop text-p-mobile">
-            Modtag nyheder om afgangen, som f.eks. "Få pladser", og hør fra os inden udsolgt
-          </li>
-          <li class="text-neutral-50 md:text-p-desktop text-p-mobile">Pladsen er sikret først ved tilmelding og betaling af depositum (3.000 DKK)</li>
+          <li class="text-neutral-50">Gratis og uforpligtende</li>
+          <li class="text-neutral-50">Modtag nyheder om afgangen, som f.eks. "Få pladser", og hør fra os inden udsolgt</li>
+          <li class="text-neutral-50">Pladsen er sikret først ved tilmelding og betaling af depositum (3.000 DKK)</li>
         </ul>
-        <p class="font-bold mb-4 text-neutral-50 md:text-p-desktop text-p-mobile">
+        <p class="font-bold mb-4 text-neutral-50">
           VIGTIGT: <span class="font-regular"
             >En reservation garanterer ikke en plads. Vi modtager flere reservationer, end der er pladser. For at sikre dig en plads skal du tilmelde
             dig og betale depositum.</span
           >
         </p>
-        <p class="mb-6 text-neutral-50 md:text-p-desktop text-p-mobile">
+        <p class="mb-6 text-neutral-50">
           Er en afgang udsolgt? Du kan stadig komme på venteliste ved at tilmelde dig. For at reservere en plads skal du blot udfylde vores formular.
           Vi bekræfter din reservation hurtigst muligt – normalt inden for 24 timer. Husk, at din reservation først er gyldig, når du har modtaget en
           bekræftelse på mail.
@@ -37,9 +35,9 @@ import Link from "../components/Link.astro";
     </div>
 
     <!-- Right Section -->
-    <div class="bg-neutral-50 md:pt-2xl pt-xs md:pl-xl md:pr-xl pl-sm pr-sm mx-auto">
-      <form action="#" method="POST" class="space-y-6 w-full md:px-s md:py-sm">
-        <h1 class="flex w-full font-display pt-m text-h2-mobile text-gray-950 md:text-h2-desktop">Hold dig opdateret</h1>
+    <div class="bg-neutral-50 md:py-sm py-sm mx-auto">
+      <form action="#" method="POST" class="space-y-6 w-full lg:py-sm md:px-3xl px-sm">
+        <h1 class="flex justify-center w-full pt-sm text-gray-950 md:pt-3xl">Hold dig opdateret</h1>
         <!-- Dropdown -->
         <div>
           <div class="md:pt-10 pt-8 py-2">
@@ -142,19 +140,19 @@ import Link from "../components/Link.astro";
         <!-- Checkbox Fields -->
         <div>
           <label class="flex items-start space-x-2">
-            <input type="checkbox" required class="mt-1" />
-            <span class="text-gray-950"
-              >Jeg har læst jeres <a href="#" class="text-orange-700 underline">privatlivspolitik</a> og <a href="#" class="text-orange-700 underline"
+            <input type="checkbox" required class="mt-2 rounded-[5px]" />
+            <p class="text-gray-950">
+              Jeg har læst jeres <a href="#" class="text-blue-700 underline">privatlivspolitik</a> og <a href="#" class="text-blue-700 underline"
                 >generelle bestemmelser</a
-              > og er indforstået med begge<span class="text-orange-700">*</span></span
-            >
+              > og er indforstået med begge<span class="text-blue-700">*</span>
+            </p>
           </label>
         </div>
 
         <div>
           <label class="flex items-start space-x-2">
-            <input type="checkbox" class="mt-1" />
-            <span>Ja tak – send mig jeres brochure</span>
+            <input type="checkbox" class="mt-2 rounded-[5px]" />
+            <p>Ja tak – send mig jeres brochure</p>
           </label>
         </div>
 

@@ -4,7 +4,7 @@
 
 @layer components {
   .display {
-    @apply font-display font-black text-gray-950;
+    @apply font-display font-black text-gray-950 uppercase;
     @apply text-display-mobile;
   }
 
