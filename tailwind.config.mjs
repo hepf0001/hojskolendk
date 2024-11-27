@@ -97,20 +97,20 @@ export default {
         medium: ['2rem', { lineHeight: '3rem' }],
         large: ['2.5rem', { lineHeight: '3.75rem' }],
         xlarge: ['3rem', { lineHeight: '4.5rem' }],
-        'display-desktop': ['5rem', { lineHeight: '5.5rem' }], // 72px
-        'display-mobile': ['2.5rem', { lineHeight: '3.5rem' }], // 45px
-        'h1-desktop': ['3rem', { lineHeight: '3.75rem' }], // 48px
-        'h1-mobile': ['2.2rem', { lineHeight: '3.125rem' }], // 40px
-        'h2-desktop': ['2.5rem', { lineHeight: '3.125rem' }], // 40px
-        'h2-mobile': ['2rem', { lineHeight: '2.5rem' }], // 32px
-        'h3-desktop': ['2rem', { lineHeight: '2.5rem' }], // 32px
-        'h3-mobile': ['1.5rem', { lineHeight: '2.25rem' }], // 24px
-        'h4-desktop': ['1.5rem', { lineHeight: '2.25rem' }], // 24px
-        'h4-mobile': ['1.125rem', { lineHeight: '1.875rem' }], // 18px
-        'p-desktop': ['1.125rem', { lineHeight: '1.875rem' }], // 18px
-        'p-mobile': ['1rem', { lineHeight: '1.5rem' }], // 16px
-        'a-desktop': ['1.125rem', { lineHeight: '1.875rem' }], // 18px
-        'a-mobile': ['1rem', { lineHeight: '1.5rem' }], // 16px
+        'display-desktop': ['5rem', { lineHeight: '5.5rem' }],
+        'display-mobile': ['2.5rem', { lineHeight: '3.5rem' }],
+        'h1-desktop': ['3rem', { lineHeight: '3.75rem' }],
+        'h1-mobile': ['2.2rem', { lineHeight: '3.125rem' }],
+        'h2-desktop': ['2.5rem', { lineHeight: '3.125rem' }],
+        'h2-mobile': ['2rem', { lineHeight: '2.5rem' }],
+        'h3-desktop': ['2rem', { lineHeight: '2.5rem' }],
+        'h3-mobile': ['1.5rem', { lineHeight: '2.25rem' }],
+        'h4-desktop': ['1.5rem', { lineHeight: '2.25rem' }],
+        'h4-mobile': ['1.125rem', { lineHeight: '1.875rem' }],
+        'p-desktop': ['1.125rem', { lineHeight: '1.875rem' }],
+        'p-mobile': ['1rem', { lineHeight: '1.5rem' }],
+        'a-desktop': ['1.125rem', { lineHeight: '1.875rem' }],
+        'a-mobile': ['1rem', { lineHeight: '1.5rem' }],
       },
       fontWeight: {
         light: '300',
