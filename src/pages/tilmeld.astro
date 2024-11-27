@@ -91,13 +91,14 @@ import Link from "../components/Link.astro";
   </section>
 
   <!-------------------------------Tilmeld form start------------------------------->
-  <section class="lg:grid lg:grid-cols-2">
-    <div class="bg-blue-900 w-full h-auto">
-      <div class="hidden max-w-7xl mx-auto lg:grid lg:col-start-1 lg:col-end-2">
+  <section class="flex flex-col lg:grid lg:grid-cols-2 mx-auto relative">
+    <!--------------left side--------------->
+    <article class="h-auto relative bg-blue-900 w-full lg:mr-md">
+      <div class="hidden mx-auto lg:ml-xl lg:grid lg:col-start-1 lg:col-end-2 w-full">
         <div class="w-full pt-5xl px-xl">
           <h1 class="flex w-full pt-m font-semibold text-neutral-50">Tag første skridt mod dit højskoleeventyr!</h1>
         </div>
-        <div class="flex flex-col gap-sm px-xl pt-sm">
+        <div class="flex flex-col gap-sm px-xl pt-sm lg:mr-xl">
           <div class="flex justify-center items-start gap-sm pt-md">
             <img src="/ikon1-form_hvid.webp" alt="ikon" class="w-2xl" />
             <div class="">
@@ -134,13 +135,14 @@ import Link from "../components/Link.astro";
           </div>
         </div>
       </div>
-    </div>
-    <section class="lg:col-start-2 lg:col-end-3 lg:pt-5xl">
-      <form class="flex flex-col w-full px-s lg:py-m lg:px-xl">
-        <h1 class="flex justify-center mx-auto w-full">Tilmeld dig ophold</h1>
+    </article>
+
+    <section class="w-full pt-ml flex flex-col lg:col-start-2 lg:col-end-3 lg:pt-5xl bg-neutral-50 mx-auto mr-xl">
+      <form class="flex flex-col max-w-7xl px-s lg:py-m lg:mr-md lg:ml-md">
+        <h1 class="flex justify-center mx-auto w-full pb-ml">Tilmeld dig ophold</h1>
 
         <div class="flex flex-col lg:pt-xl">
-          <label for="Højskoleophold" class="pb-xxs"><h3>Højskoleophold</h3></label>
+          <label for="Højskoleophold" class="pb-xxs"><h3>Højskoleophold <span class="text-orange-700">*</span></h3></label>
           <select id="event" class="w-full border bg-neutral-100 border-neutral-100 p-2 rounded-[5px] text-neutral-600" required onchange="this.className = this.value ? 'w-full border bg-neutral-100 border-neutral-100 p-2 rounded-[5px] text-gray-950' : 'w-full border border-neutral-100 p-2 rounded-[5px]'" name="Højskoleophold" aria-placeholder="Vælg ønsket destination her*" class="w-full px-xs py-xxs border-[0px] text-neutral-600 bg-neutral-100 rounded-[5px]">
             <option value="Vælg ønsket destination her*">Vælg ønsket destination her*</option>
             <option value="sweden">Caribien, Hawaii & Mexico</option>
@@ -161,36 +163,36 @@ import Link from "../components/Link.astro";
           <p class="text-orange-700">*Navn skal fremgå 100% som i dit pas og dit pas skal være gyldigt i 6 måneder efter hjemkomst*</p>
 
           <div class="pt-xs">
-            <p class="pb-xxs">Fornavn(e) + evt. mellemnavn(e)</p>
+            <p class="pb-xxs">Fornavn(e) + evt. mellemnavn(e)<span class="text-orange-700">*</span></p>
             <input type="text" id="navn" placeholder="Skriv dine ønsker her" class="w-full px-xs py-xxs border-[0px] text-neutral-950 placeholder:text-neutral-600 !important bg-neutral-100 rounded-[5px]" />
           </div>
           <div class="pt-xs">
-            <p class="pb-xxs">Efternavn</p>
+            <p class="pb-xxs">Efternavn<span class="text-orange-700">*</span></p>
             <input type="text" id="navn" name="navn" placeholder="Hansen" class="w-full px-xs py-xxs border-[0px] text-neutral-950 placeholder:text-neutral-600 bg-neutral-100 rounded-[5px]" />
           </div>
           <div class="pt-xs">
-            <p class="pb-xxs">Adresse</p>
+            <p class="pb-xxs">Adresse<span class="text-orange-700">*</span></p>
             <input type="text" id="adresse" name="adresse" placeholder="Rosenørns Alle 29" class="w-full px-xs py-xxs border-[0px] text-neutral-950 placeholder:text-neutral-600 bg-neutral-100 rounded-[5px]" />
           </div>
           <div class="pt-xs">
-            <p class="pb-xxs">Postnummer</p>
+            <p class="pb-xxs">Postnummer<span class="text-orange-700">*</span></p>
             <input type="text" id="postnummer" name="postnummer" placeholder="1970" class="w-full px-xs py-xxs border-[0px] text-neutral-600 bg-neutral-100 rounded-[5px]" />
           </div>
           <div class="pt-xs">
-            <p class="pb-xxs">By</p>
+            <p class="pb-xxs">By<span class="text-orange-700">*</span></p>
             <input type="text" id="by" name="by" placeholder="Frederiksberg" class="w-full px-xs py-xxs border-[0px] text-neutral-600 bg-neutral-100 rounded-[5px]" />
           </div>
           <div class="pt-xs">
-            <p class="pb-xxs">Telefonnummer</p>
+            <p class="pb-xxs">Telefonnummer<span class="text-orange-700">*</span></p>
             <input type="text" id="Telefonnummer" name="Telefonnummer" placeholder="+45 11 22 33" class="w-full px-xs py-xxs border-[0px] text-neutral-600 bg-neutral-100 rounded-[5px]" />
           </div>
           <div class="pt-xs">
-            <p class="pb-xxs">E-mail</p>
+            <p class="pb-xxs">E-mail<span class="text-orange-700">*</span></p>
             <input type="text" id="email" name="email" placeholder="boerge.m.hansen@gmail.com" class="w-full px-xs py-xxs border-[0px] text-neutral-600 bg-neutral-100 rounded-[5px]" />
           </div>
           <div class="pt-xs">
-            <p class="pb-xxs">Fødselsdato</p>
-            <div class="flex flex-col gap-xs">
+            <p class="pb-xxs">Fødselsdato<span class="text-orange-700">*</span></p>
+            <div class="flex flex-col gap-xs md:flex-row">
               <select id="event" class="w-full border bg-neutral-100 border-neutral-100 rounded-[5px] text-neutral-600" required onchange="this.className = this.value ? 'w-full border bg-neutral-100 border-neutral-100 p-2 rounded-[5px] text-gray-950' : 'w-full border border-neutral-100 p-2 rounded-[5px]'" name="Dato" class="w-full px-xs py-xxs border-[0px] text-neutral-600 bg-neutral-100 rounded-[5px]">
                 <option value="Dato">Dato</option>
                 <option value="01">01</option>
@@ -273,7 +275,7 @@ import Link from "../components/Link.astro";
             <option value="Ved ikke">Ved ikke</option>
           </select>
         </div>
-        <div class="flex flex-col pt-10 py-2">
+        <div class="flex flex-col pt-s">
           <div>
             <div class="pt-xs pb-xxs">
               <label for="remarks" class="font-semibold text-h3-mobile text-gray-950">Bemærkning(er)</label>
@@ -284,21 +286,22 @@ import Link from "../components/Link.astro";
         <div>
           <p class="text-orange-700">* Disse felter skal udfyldes/vælges</p>
           <div class="flex items-baseline gap-xxs pt-xs">
-            <input type="checkbox" id="checkbox" name="checkbox" value="checkbox" class="bg-neutral-200 border-0" />
+            <input type="checkbox" id="checkbox" name="checkbox" value="checkbox" class="bg-neutral-200 border-0 rounded-[2px]" />
             <label for="checkbox"> Jeg har sikret mig at ovenstående informationer er 100% korrekte. (tjek lige igen for en sikkerheds skyld)</label>
           </div>
           <div class="flex items-baseline gap-xxs pt-xs">
-            <input type="checkbox" id="checkbox" name="checkbox" value="checkbox" />
-            <label for="checkbox"> Jeg har læst jeres <span class="text-orange-700">privatlivspolitik</span> og <span class="text-orange-700">generelle bestemmelser</span> og er indforstået med begge<span class="text-orange-700">*</span></label>
+            <input type="checkbox" id="checkbox" name="checkbox" value="checkbox" class="bg-neutral-200 border-0 rounded-[2px]" />
+            <label for="checkbox"> Jeg har læst jeres <span> <Link href="https://www.hojskolendk.dk/tilmeld/generelle-bestemmelser/privatlivspolitik/">privatlivspolitik</Link></span> og <span class="text-blue-600"><Link href="https://www.hojskolendk.dk/tilmeld/generelle-bestemmelser/">generelle bestemmelser</Link></span> og er indforstået med begge<span class="text-orange-700">*</span></label>
           </div>
         </div>
-        <div class="mx-auto justify-center items-center flex py-sm">
-          <Button variant="primary" size="sm:xsmall lg:medium" class="">Tilmeld dig højskoleopholdet!</Button>
-        </div>
       </form>
+      <div class="mx-auto justify-center items-center flex py-sm">
+        <Button variant="primary" size="sm:xsmall lg:medium" class="">Tilmeld dig højskoleopholdet!</Button>
+      </div>
     </section>
   </section>
 </MainLayout>
+
 <style>
   input[type="text"]::placeholder {
     color: #888888; /* neutral-600 */
@@ -349,3 +352,5 @@ import Link from "../components/Link.astro";
     });
   });
 </script>
+-->
+
