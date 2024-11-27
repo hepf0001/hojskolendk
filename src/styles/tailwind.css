@@ -5,6 +5,7 @@
 @layer components {
   .display {
     @apply font-display font-black text-gray-950;
+    @apply text-display-mobile;
   }
 
   @screen md {
@@ -13,14 +14,9 @@
     }
   }
 
-  @screen sm {
-    .display {
-      @apply text-display-mobile;
-    }
-  }
-
   h1 {
     @apply font-display font-bold text-gray-950;
+    @apply text-h1-mobile;
   }
 
   @screen md {
@@ -29,14 +25,11 @@
     }
   }
 
-  @screen sm {
-    h1 {
-      @apply text-h1-mobile;
-    }
-  }
+
 
   h2 {
     @apply font-display font-bold text-gray-950;
+    @apply text-h2-mobile;
   }
 
   @screen md {
@@ -45,14 +38,11 @@
     }
   }
 
-  @screen sm {
-    h2 {
-      @apply text-h2-mobile;
-    }
-  }
+
 
   h3 {
     @apply font-display font-semibold text-gray-950;
+    @apply text-h3-mobile;
   }
 
   @screen md {
@@ -61,14 +51,11 @@
     }
   }
 
-  @screen sm {
-    h3 {
-      @apply text-h3-mobile;
-    }
-  }
+
 
   h4 {
     @apply font-display font-semibold text-gray-950;
+    @apply text-h4-mobile;
   }
 
   @screen md {
@@ -77,14 +64,11 @@
     }
   }
 
-  @screen sm {
-    h4 {
-      @apply text-h4-mobile;
-    }
-  }
+
 
   p {
     @apply font-lato font-regular text-gray-950;
+    @apply text-p-mobile;
   }
 
   @screen md {
@@ -93,14 +77,11 @@
     }
   }
 
-  @screen sm {
-    p {
-      @apply text-p-mobile;
-    }
-  }
+
 
   a, li {
     @apply font-lato font-regular text-blue-700;
+    @apply text-a-mobile;
   }
 
   @screen md {
@@ -109,10 +90,6 @@
     }
   }
 
-  @screen sm {
-    a, li {
-      @apply text-a-mobile;
-    }
-  }
+
 }
 

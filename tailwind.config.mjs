@@ -98,9 +98,9 @@ export default {
         large: ['2.5rem', { lineHeight: '3.75rem' }],
         xlarge: ['3rem', { lineHeight: '4.5rem' }],
         'display-desktop': ['5rem', { lineHeight: '5.5rem' }], // 72px
-        'display-mobile': ['3.5rem', { lineHeight: '3.5rem' }], // 45px
+        'display-mobile': ['2.5rem', { lineHeight: '3.5rem' }], // 45px
         'h1-desktop': ['3rem', { lineHeight: '3.75rem' }], // 48px
-        'h1-mobile': ['2.5rem', { lineHeight: '3.125rem' }], // 40px
+        'h1-mobile': ['2.2rem', { lineHeight: '3.125rem' }], // 40px
         'h2-desktop': ['2.5rem', { lineHeight: '3.125rem' }], // 40px
         'h2-mobile': ['2rem', { lineHeight: '2.5rem' }], // 32px
         'h3-desktop': ['2rem', { lineHeight: '2.5rem' }], // 32px
