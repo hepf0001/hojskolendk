@@ -7,13 +7,15 @@ import Link from "../components/Link.astro";
 <MainLayout title="Hold dig opdateret">
   <div class="flex flex-col md:flex-row min-h-screen">
     <!-- Left Section -->
-    <div class="bg-blue-900 text-neutral-50 md:px-xl md:py-sm px-sm py-md max-w-[700px] h-auto">
-      <div class="w-full md:pt-4xl pt-xl px-xs">
-        <h1 class="flex w-full font-display text-neutral-50">Vær opdateret – Højskole i Udlandet</h1>
+    <div class="bg-blue-900 text-neutral-50 md:px-s mx-auto md:p-xl md:py-xl md:max-w-3xl px-sm py-md">
+      <div class="w-full md:pt-2xl pt-xl px-xs">
+        <h1 class="flex w-full font-display font-semibold text-neutral-50">Vær opdateret – Højskole i Udlandet</h1>
       </div>
       <div class="px-xs md:px-0">
         <p class="mt-8 text-neutral-50">
           Overvejer du at tilmelde dig et af vores højskoleophold i udlandet? Så kan det være en god idé at reservere en plads:
+          <br />
+          <br />
         </p>
         <ul class="list-disc list-inside mb-6">
           <li class="text-neutral-50">Gratis og uforpligtende</li>
@@ -36,12 +38,12 @@ import Link from "../components/Link.astro";
 
     <!-- Right Section -->
     <div class="bg-neutral-50 md:py-sm py-sm mx-auto">
-      <form action="#" method="POST" class="space-y-6 w-full lg:py-sm md:px-3xl px-sm">
-        <h1 class="flex justify-center w-full pt-sm text-gray-950 md:pt-3xl">Hold dig opdateret</h1>
+      <form action="#" method="POST" class="max-w-7xl px-s lg:py-m lg:mr-md lg:ml-md space-y-5">
+        <h1 class="flex justify-center w-full pt-sm text-gray-950 md:pt-3xl md:pb-ml pb-sm">Hold dig opdateret</h1>
         <!-- Dropdown -->
         <div>
           <div class="md:pt-10 pt-8 py-2">
-            <label for="destination" class="font-semibold text-h3-mobile text-gray-950">Højskoleophold<span class="text-orange-700">*</span></label>
+            <label for="destination"><h3 class="pb-xxs">Højskoleophold<span class="text-orange-700">*</span></h3></label>
           </div>
           <select
             id="destination"
@@ -67,8 +69,8 @@ import Link from "../components/Link.astro";
         <!-- Contact Info -->
 
         <div>
-          <div class="pt-xs pb-xxs">
-            <label for="name" class="font-semibold text-h3-mobile text-gray-950">Kontaktinformation</label>
+          <div class="pt-sm pb-xxs">
+            <label for="name" class="pb-xxs"><h3>Kontaktinformation</h3></label>
           </div>
           <label for="name" class="block font-regular mb-2 text-gray-950">Fulde navn<span class="text-orange-700">*</span></label>
           <input
@@ -124,8 +126,8 @@ import Link from "../components/Link.astro";
 
         <!-- Remarks -->
         <div>
-          <div class="pt-xs pb-xxs">
-            <label for="remarks" class="font-semibold text-h3-mobile text-gray-950">Bemærkning(er)</label>
+          <div class="pt-sm pb-xxs">
+            <label for="remarks"><h3 class="pb-xxs">Bemærkning(er)</h3></label>
           </div>
           <textarea
             rows="8"
@@ -137,41 +139,38 @@ import Link from "../components/Link.astro";
           </div>
         </div>
 
-        <!-- Checkbox Fields -->
-        <div>
-          <label class="flex items-start space-x-2">
-            <input type="checkbox" required class="mt-2 rounded-[5px]" />
-            <p class="text-gray-950">
-              Jeg har læst jeres <a href="#" class="text-blue-700 underline">privatlivspolitik</a> og <a href="#" class="text-blue-700 underline"
-                >generelle bestemmelser</a
-              > og er indforstået med begge<span class="text-blue-700">*</span>
-            </p>
-          </label>
+        <div class="space-y-2">
+          <div class="flex items-baseline gap-xxs pt-xs">
+            <input type="checkbox" id="checkbox" name="checkbox" value="checkbox" class="bg-neutral-200 border-0 rounded-[2px]" />
+            <label for="checkbox">
+              Jeg har læst jeres <span>
+                <Link href="https://www.hojskolendk.dk/tilmeld/generelle-bestemmelser/privatlivspolitik/">privatlivspolitik</Link></span
+              > og <span class="text-blue-600"
+                ><Link href="https://www.hojskolendk.dk/tilmeld/generelle-bestemmelser/">generelle bestemmelser</Link></span
+              > og er indforstået med begge<span class="text-orange-700">*</span></label
+            >
+          </div>
+          <div class="flex items-baseline gap-xxs pt-xs">
+            <input type="checkbox" id="checkbox" name="checkbox" value="checkbox" class="bg-neutral-200 border-0 rounded-[2px]" />
+            <label for="checkbox">Ja tak – send mig jeres brochure</label>
+          </div>
+          <!-- Submit Button -->
+          <div class="flex justify-center pt-[40px]">
+            <Button variant="primary" size="sm:xsmall md:medium">Tilmeld infobrev</Button>
+          </div>
         </div>
-
-        <div>
-          <label class="flex items-start space-x-2">
-            <input type="checkbox" class="mt-2 rounded-[5px]" />
-            <p>Ja tak – send mig jeres brochure</p>
-          </label>
-        </div>
-
-        <!-- Submit Button -->
-        <div class="flex justify-center pt-[30px]">
-          <Button variant="primary" size="sm:xsmall md:medium">Tilmeld infobrev</Button>
-        </div>
+        <div class="md:p-lg p-xs"></div>
       </form>
-      <div class="md:p-lg p-xs"></div>
     </div>
+
+    <style>
+      input[type="text"]::placeholder {
+        color: #888888; /* neutral-600 */
+      }
+
+      input[type="text"] {
+        color: #363636; /* neutral-950 */
+      }
+    </style>
   </div>
-
-  <style>
-    input[type="text"]::placeholder {
-      color: #888888; /* neutral-600 */
-    }
-
-    input[type="text"] {
-      color: #363636; /* neutral-950 */
-    }
-  </style>
 </MainLayout>

@@ -1,6 +1,7 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import Button from "../components/Button.astro";
+import Link from "../components/Link.astro";
 
 import { Image } from "astro:assets";
 import pin from "../assets/images/stedpin.svg";
@@ -9,9 +10,9 @@ import pin from "../assets/images/stedpin.svg";
 <MainLayout title="Tilmeld infomøde">
   <div class="flex flex-wrap lg:flex-nowrap">
     <!-- Left Section -->
-    <div class="bg-blue-900 text-neutral-50 md:px-xl md:py-sm px-xs py-md max-w-[700px] h-auto">
-      <div class="w-full px-s md:pt-4xl pt-xl">
-        <h1 class="font-display flex w-full text-neutral-50">Infomøder – Højskole i Udlandet</h1>
+    <div class="bg-blue-900 text-neutral-50 md:px-xl mx-auto md:p-xl md:py-xl md:max-w-[750px] px-sm py-lg">
+      <div class="w-full md:pt-2xl pt-lg px-xs">
+        <h1 class="font-display font-semibold flex w-full text-neutral-50">Infomøder – Højskole i Udlandet</h1>
         <p class="mt-8 text-neutral-50">
           Drømmer du om et rejseeventyr fyldt med adventure, naturoplevelser, kulturmøder og højskolefællesskab? Deltag i et af vores infomøder i
           København, Aarhus eller online!
@@ -20,14 +21,14 @@ import pin from "../assets/images/stedpin.svg";
       <div>
         <div class="mt-8">
           <div class="flex items-start space-x-4 px-xs">
-            <span><Image src={pin} alt="ikon_uret" class="w-6 h-6 mt-2" /></span>
+            <span><Image src={pin} alt="ikon_uret" class="w-6 h-6 mt-3" /></span>
             <div>
               <h3 class="text-[22.5px] font-bold text-neutral-50">København</h3>
               <p class="text-neutral-50">Studenterhuset<br />Købmagergade 52 – 1150 København K</p>
             </div>
           </div>
           <div class="flex items-start space-x-4 mt-10 px-xs">
-            <span><Image src={pin} alt="ikon_uret" class="w-6 h-6 mt-2" /></span>
+            <span><Image src={pin} alt="ikon_uret" class="w-6 h-6 mt-3" /></span>
             <div>
               <h3 class="text-[22.5px] font-bold text-neutral-50">Aarhus</h3>
               <p class="text-neutral-50">LYNfabrikken<br />Vestergade 49B – 8000 Aarhus</p>
@@ -54,9 +55,9 @@ import pin from "../assets/images/stedpin.svg";
 
     <!-- Right Section -->
     <div class="bg-neutral-50 md:py-sm py-sm mx-auto">
-      <form action="#" method="POST" class="space-y-6 w-full lg:py-sm md:px-3xl px-md">
-        <h1 class="flex justify-center w-full pt-sm text-gray-950 md:pt-3xl">Tilmeld dig infomøde</h1>
-        <div class="pt-10 py-2">
+      <form class="flex flex-col max-w-7xl px-s lg:py-m lg:mr-md lg:ml-md space-y-6">
+        <h1 class="flex justify-center w-full pt-sm text-gray-950 md:pt-3xl md:pb-ml pb-sm">Tilmeld dig infomøde</h1>
+        <div class="md:pt-sm pt-12 py-2">
           <label for="event" class="block font-semibold mb-2">
             Vælg infomøde<span class="text-orange-700">*</span>
           </label>
@@ -114,50 +115,61 @@ import pin from "../assets/images/stedpin.svg";
         </div>
         <div>
           <label for="destination" class="block font-semibold">Hvilken destination er du interesseret i?<span class="text-orange-700">*</span></label>
-          <input
-            type="text"
+          <select
             id="destination"
-            class="w-full border bg-neutral-100 border-neutral-100 p-2 rounded-[5px] placeholder:text-neutral-600"
-            placeholder="Caribien, Hawaii & Mexico"
+            class="w-full border bg-neutral-100 border-neutral-100 p-2 rounded-[5px] text-neutral-600"
             required
-          />
-          <div class="pt-xxs">
-            <p class="text-orange-700">* Disse felter skal udfyldes / vælges</p>
-          </div>
+            onchange="this.className = this.value ? 'w-full border bg-neutral-100 border-neutral-100 p-2 rounded-[5px] text-gray-950' : 'w-full border border-neutral-100 p-2 rounded-[5px]'"
+          >
+            <option value="" disabled selected hidden>Vælg destination</option>
+            <option value="Vælg destination">Vælg destination</option>
+            <option value="sweden">Caribien, Hawaii & Mexico</option>
+            <option value="usa">Costa Rica, Mexico & Colombia</option>
+            <option value="sweden">Australien, New Zealand, Bali & Gili</option>
+            <option value="usa">Indien, Nepal, Thailand, Vietnam & Sri Lanka</option>
+            <option value="usa">Hawaii, Australien, Japan, Bali & Gili Islands</option>
+            <option value="sweden">Maldiverne, Sri Lanka, Bali & Gili Islands</option>
+            <option value="usa">Brasilien, Bolivia & Colombia</option>
+            <option value="usa">Ecuador, Peru & Argentina</option>
+            <option value="usa">Australien, Japan, Bali & Gili Islands</option>
+            <option value="usa">Bali, Lombok & Gili (sommerhøjskole)</option>
+          </select>
+          <p class="text-orange-700">* Disse felter skal udfyldes / vælges</p>
         </div>
         <div class="space-y-2">
-          <label class="flex items-start space-x-2">
-            <input type="checkbox" class="mt-2 rounded-[5px]" />
-            <span>Ved tilmelding giver du os tilladelse til at kontakte dig m. påmindelser og opfølgning</span>
-          </label>
-          <label class="flex items-start space-x-2">
-            <input type="checkbox" class="mt-2 rounded-[5px]" />
-            <span
-              >Jeg har læst jeres <a href="#" class="text-blue-700 underline">privatlivspolitik</a> og <a href="#" class="text-blue-700 underline"
-                >generelle bestemmelser</a
-              > og er indforstået med begge<span class="text-orange-700">*</span></span
+          <div class="flex items-baseline gap-xxs pt-xs">
+            <input type="checkbox" id="checkbox" name="checkbox" value="checkbox" class="bg-neutral-200 border-0 rounded-[2px]" />
+            <label for="checkbox">Ved tilmelding giver du os tilladelse til at kontakte dig m. påmindelser og opfølgning.</label>
+          </div>
+          <div class="flex items-baseline gap-xxs pt-xs">
+            <input type="checkbox" id="checkbox" name="checkbox" value="checkbox" class="bg-neutral-200 border-0 rounded-[2px]" />
+            <label for="checkbox">
+              Jeg har læst jeres <span>
+                <Link href="https://www.hojskolendk.dk/tilmeld/generelle-bestemmelser/privatlivspolitik/">privatlivspolitik</Link></span
+              > og <span class="text-blue-600"
+                ><Link href="https://www.hojskolendk.dk/tilmeld/generelle-bestemmelser/">generelle bestemmelser</Link></span
+              > og er indforstået med begge<span class="text-orange-700">*</span></label
             >
-          </label>
-        </div>
-        <div class="flex justify-center pt-[30px]">
-          <Button variant="primary" size="sm:xsmall md:medium">Tilmeld dig infomødet!</Button>
+          </div>
         </div>
       </form>
-      <div class="md:p-xl p-xs"></div>
+      <div class="flex justify-center pt-[30px]">
+        <Button variant="primary" size="sm:xsmall md:medium">Tilmeld dig infomødet!</Button>
+      </div>
     </div>
   </div>
-
-  <style>
-    input[type="text"]::placeholder {
-      color: #888888; /* neutral-600 */
-    }
-
-    input[type="text"] {
-      color: #363636; /* neutral-950 */
-    }
-
-    input {
-      font-size: 1rem;
-    }
-  </style>
 </MainLayout>
+
+<style>
+  input[type="text"]::placeholder {
+    color: #888888; /* neutral-600 */
+  }
+
+  input[type="text"] {
+    color: #363636; /* neutral-950 */
+  }
+
+  input {
+    font-size: 1rem;
+  }
+</style>
