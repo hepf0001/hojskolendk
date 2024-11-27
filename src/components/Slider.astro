@@ -8,29 +8,59 @@ import card5 from "../assets/images/card5.webp";
 import Link from "../components/Link.astro";
 ---
 
-<!---------------------Mobile----------------------------------------------->
+<!---------------------Mobile slider----------------------------------------------->
 <div id="controls-carousel" class="relative w-full md:hidden" data-carousel="static">
   <!-- Carousel wrapper -->
   <div class="relative aspect-w-16 aspect-h-9 overflow-hidden rounded-xs md:h-auto">
     <!-- Item 1 -->
     <div class="hidden duration-700 ease-in-out" data-carousel-item>
       <Image src={card1} alt="Slide 1" class="relative w-full h-auto object-container" />
+      <div class="absolute bottom-[0] left-[0] w-full bg-blue-900 text-center">
+        <div class="flex flex-wrap items-center justify-center mx-auto gap-xxs py-xxs">
+          <p class="text-neutral-50">Glem jagten på lykke</p>
+          <Link href="https://www.hojskolendk.dk/glem-jagten-paa-lykke/" variant="secondary" size="medium">Læs mere</Link>
+        </div>
+      </div>
     </div>
     <!-- Item 2 -->
     <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
       <Image src={card2} alt="Slide 1" class="relative object-cover" />
+      <div class="absolute bottom-[0] left-[0] w-full bg-blue-900 text-center">
+        <div class="flex flex-wrap items-center justify-center mx-auto gap-xxs py-xxs">
+          <p class="text-neutral-50">Kulturforståelse er fantastisk</p>
+          <Link href="https://www.hojskolendk.dk/glem-jagten-paa-lykke/" variant="secondary" size="medium">Læs mere</Link>
+        </div>
+      </div>
     </div>
     <!-- Item 3 -->
     <div class="hidden duration-700 ease-in-out" data-carousel-item>
       <Image src={card3} alt="Slide 1" class="relative object-cover" />
+      <div class="absolute bottom-[0] left-[0] w-full bg-blue-900 text-center">
+        <div class="flex flex-wrap items-center justify-center mx-auto gap-xxs py-xxs">
+          <p class="text-neutral-50">Brev til mit fortidsjeg</p>
+          <Link href="https://www.hojskolendk.dk/glem-jagten-paa-lykke/" variant="secondary" size="medium">Læs mere</Link>
+        </div>
+      </div>
     </div>
     <!-- Item 4 -->
     <div class="hidden duration-700 ease-in-out" data-carousel-item>
       <Image src={card4} alt="Slide 1" class="relative object-cover" />
+      <div class="absolute bottom-[0] left-[0] w-full bg-blue-900 text-center">
+        <div class="flex flex-wrap items-center justify-center mx-auto gap-xxs py-xxs">
+          <p class="text-neutral-50">Hvad sagde manden?</p>
+          <Link href="https://www.hojskolendk.dk/glem-jagten-paa-lykke/" variant="secondary" size="medium">Læs mere</Link>
+        </div>
+      </div>
     </div>
     <!-- Item 5 -->
     <div class="hidden duration-700 ease-in-out" data-carousel-item>
       <Image src={card5} alt="Slide 1" class="relative object-cover" />
+      <div class="absolute bottom-[0] left-[0] w-full bg-blue-900 text-center">
+        <div class="flex flex-wrap items-center justify-center mx-auto gap-xxs py-xxs">
+          <p class="text-neutral-50">Dit sabbatår – make the most of it</p>
+          <Link href="https://www.hojskolendk.dk/glem-jagten-paa-lykke/" variant="secondary" size="medium">Læs mere</Link>
+        </div>
+      </div>
     </div>
   </div>
   <!-- Slider controls -->
@@ -126,7 +156,7 @@ import Link from "../components/Link.astro";
 </section>
 
 <style>
-  /*-----------------------------------------PC -------------------------------------*/
+  /*---------------------------------Desktop slider styling-------------------------------------*/
   #slider {
     position: relative;
     width: 50%;
@@ -269,7 +299,7 @@ import Link from "../components/Link.astro";
 </style>
 
 <script>
-  //desktop slider////////////////////////////////
+  ///////////////////////////////////////////Desktop slider////////////////////////////////
   const radioButtons = document.querySelectorAll("input[type=radio]");
 
   const slideShow = () => {
@@ -284,7 +314,7 @@ import Link from "../components/Link.astro";
 
   console.log("Hello");
 
-  /////////////////////////////////////desktop arrows//////////////////////////////////
+  //////////////////////////////////Desktop Arrows funktion//////////////////////////////////
 
   document.addEventListener("DOMContentLoaded", () => {
     document.querySelector(".data-carousel-prev").addEventListener("click", () => {
@@ -308,4 +338,5 @@ import Link from "../components/Link.astro";
     });
   });
 </script>
+<!--Plug in til mobil slider -->
 <script src="https://cdn.jsdelivr.net/npm/flowbite@1.6.5/dist/flowbite.min.js"></script>
