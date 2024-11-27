@@ -21,7 +21,7 @@ import Link from "../components/Link.astro";
           <div id="answer-1" class="hidden bg-neutral-100" aria-labelledby="accordion-color-heading-1">
             <div class="p-s">
               <div class="flex w-full items-center pb-xxs gap-xxs">
-                <img src="/ikon1-form.webp" alt="ikon" class="w-[40px]" />
+                <img src="/ikon1-form.webp" alt="ikon" class="w-lg" />
                 <h3>TILMELD DIG DIN DRØMMEREJSE</h3>
               </div>
               <p class="text-p-mobile">Vælg højskoleophold og udfyld tilmeldingsskemaet. Du modtager en e-mail med bekræftelse, første infobrev og en faktura på depositum. Din plads er sikret, når depositum er betalt.</p>
@@ -39,7 +39,7 @@ import Link from "../components/Link.astro";
           <div id="answer-2" class="hidden bg-neutral-100" aria-labelledby="accordion-color-heading-2">
             <div class="p-s">
               <div class="flex w-full items-center pb-xxs gap-xxs">
-                <img src="/ikon2-form.webp" alt="ikon" class="w-[40px]" />
+                <img src="/ikon2-form.webp" alt="ikon" class="w-lg" />
                 <h3>INFOBREV OG FAKTURA PÅ DEPOSITUM</h3>
               </div>
               <p class="pb-xxs">Efter tilmelding får du en e-mail med bekræftelse, infobrev #1 og faktura på depositum (3.000 DKK). Når det er betalt, er din plads sikret.</p>
@@ -58,18 +58,18 @@ import Link from "../components/Link.astro";
           <div id="answer-3" class="hidden bg-neutral-100" aria-labelledby="accordion-color-heading-3">
             <div class="p-s">
               <div class="flex w-full items-center pb-xxs gap-xxs">
-                <img src="/ikon3-form.webp" alt="ikon" class="w-[40px]" />
+                <img src="/ikon3-form.webp" alt="ikon" class="w-lg" />
                 <h3>VI PLANTER TRÆER</h3>
               </div>
               <p class="pb-xxs">For hver elev på vores højskoleophold planter vi 50 træer i samarbejde med nonprofitorganisationen ‘Trees for the Future’.</p>
               <p class="pb-xxs">Initiativet klimakompenserer din rejse og bidrager til en bæredygtig fremtid ved at hjælpe lokale farmere i Afrika med at blive selvforsynende – og dermed bekæmpe fattigdom og hungersnød.</p>
-              <a href="#" class="text-orange-700 font-bold">Læs mere om ‘Trees for the Future’ her!</a>
+              <Link variant="primary" size="small" href="https://trees.org/">Læs mere om ‘Trees for the Future’ her!</Link>
             </div>
           </div>
 
           <h3 id="accordion-color-heading-4">
             <button type="button" class="question-btn flex justify-between w-full p-s text-neutral-50 rounded-b-sm bg-orange-700 text-left" data-toggle="answer-4" aria-expanded="false" aria-controls="accordion-color-body-4">
-              <span>MØD REJSEKAMMERATER</span>
+              <span class="hyphens-auto">MØD REJSEKAMMERATER</span>
               <svg data-accordion-icon class="w-s h-s rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"></path>
               </svg>
@@ -78,8 +78,8 @@ import Link from "../components/Link.astro";
           <div id="answer-4" class="hidden bg-neutral-100" aria-labelledby="accordion-color-heading-4">
             <div class="p-s">
               <div class="flex w-full items-center pb-xxs gap-xxs">
-                <img src="/ikon4-form.webp" alt="ikon" class="w-[40px]" />
-                <h3>MØD REJSEKAMMERATER</h3>
+                <img src="/ikon4-form.webp" alt="ikon" class="w-lg" />
+                <h3 class="hyphens-auto">MØD REJSEKAMMERATER</h3>
               </div>
               <p class="pb-xxs">Ca. 5 uger før afrejse afholder vi et *Afrejsemøde*, hvor du møder dine medrejsende og rejselederen.</p>
               <p>Vi gennemgår pakkeliste, destinationer, undervisning, fritidsaktiviteter og rejsetips, og der er tid til spørgsmål. Mødet afsluttes med mad og højskolehygge. Vi glæder os til at møde dig!</p>
@@ -93,12 +93,12 @@ import Link from "../components/Link.astro";
   <!-------------------------------Tilmeld form start------------------------------->
   <section class="flex flex-col lg:grid lg:grid-cols-2 mx-auto relative">
     <!--------------left side--------------->
-    <article class="h-auto relative bg-blue-900 w-full lg:mr-md">
-      <div class="hidden mx-auto lg:ml-xl lg:grid lg:col-start-1 lg:col-end-2 w-full">
+    <article class="h-auto relative bg-blue-900 w-full">
+      <div class="hidden mx-auto lg:grid lg:col-start-1 lg:col-end-2 w-full">
         <div class="w-full pt-5xl px-xl">
           <h1 class="flex w-full pt-m font-semibold text-neutral-50">Tag første skridt mod dit højskoleeventyr!</h1>
         </div>
-        <div class="flex flex-col gap-sm px-xl pt-sm lg:mr-xl">
+        <div class="flex flex-col gap-sm px-xl pt-sm">
           <div class="flex justify-center items-start gap-sm pt-md">
             <img src="/ikon1-form_hvid.webp" alt="ikon" class="w-2xl" />
             <div class="">
@@ -294,10 +294,10 @@ import Link from "../components/Link.astro";
             <label for="checkbox"> Jeg har læst jeres <span> <Link href="https://www.hojskolendk.dk/tilmeld/generelle-bestemmelser/privatlivspolitik/">privatlivspolitik</Link></span> og <span class="text-blue-600"><Link href="https://www.hojskolendk.dk/tilmeld/generelle-bestemmelser/">generelle bestemmelser</Link></span> og er indforstået med begge<span class="text-orange-700">*</span></label>
           </div>
         </div>
+        <div class="mx-auto justify-center items-center flex py-sm">
+          <Button variant="primary" size="sm:xsmall lg:medium" class="">Tilmeld dig højskoleopholdet!</Button>
+        </div>
       </form>
-      <div class="mx-auto justify-center items-center flex py-sm">
-        <Button variant="primary" size="sm:xsmall lg:medium" class="">Tilmeld dig højskoleopholdet!</Button>
-      </div>
     </section>
   </section>
 </MainLayout>
