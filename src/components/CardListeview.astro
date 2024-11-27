@@ -65,7 +65,7 @@ import ikon_uret from "../assets/images/uret1.svg";
           <Image src={ikon_uret} alt="ur-ikon" class="w-5 h-5 object-cover" />
           <div>
             <p class="text-gray-500">Varighed</p>
-            <h4 class="font-semibold text-gray-950">{duration}</h4>
+            <p class="font-semibold text-gray-950">{duration}</p>
           </div>
         </div>
 
@@ -74,7 +74,7 @@ import ikon_uret from "../assets/images/uret1.svg";
           <Image src={airplane} alt="fly-ikon" class="w-5 h-5 object-cover" />
           <div>
             <p class="text-gray-500">Næste rejse</p>
-            <h4 class="font-semibold text-gray-950">
+            <p class="font-semibold text-gray-950">
               {
                 nextTrip.includes("-") ? (
                   <>
@@ -88,7 +88,7 @@ import ikon_uret from "../assets/images/uret1.svg";
                   nextTrip
                 )
               }
-            </h4>
+            </p>
           </div>
         </div>
       </div>
@@ -98,7 +98,7 @@ import ikon_uret from "../assets/images/uret1.svg";
         <div class="flex items-center gap-4 mb-2">
           <div>
             <p class="text-gray-500">Pris pr. pers.</p>
-            <h4 class="font-semibold pb-sm text-gray-950">{price}</h4>
+            <p class="font-semibold pb-sm text-gray-950">{price}</p>
           </div>
         </div>
         <p class="text-gray-500">{include}</p>
