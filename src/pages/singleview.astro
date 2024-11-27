@@ -8,11 +8,11 @@ import Link from "../components/Link.astro";
     <!------------------------------- Hero ------------------------------->
 
     <section class="relative w-full">
-        <div class="absolute inset-0 bg-neutral-950 w-full md:h-[700px] h-[450px] bg-opacity-30 z-10"></div>
-        <img class="md:h-[700px] h-[450px] w-full object-cover" src="/hero-single.webp" alt="gruppe billede" />
+        <div class="absolute inset-0 bg-neutral-950 w-full lg:h-[650px] h-[450px] bg-opacity-30 z-10"></div>
+        <img class="lg:h-[650px] h-[450px] w-full object-cover" src="/hero-single.webp" alt="gruppe billede" />
         <div class="absolute inset-0 flex items-center max-w-7xl mx-auto p-s">
-            <section class="justify-start grid md:grid-cols-12 gap-s">
-                <div class="flex items-center col-span-6">
+            <section class="justify-start grid lg:grid-cols-12 gap-s">
+                <div class="flex items-center col-span-8">
                     <h1 class="text-neutral-50 display z-20">HØJSKOLE I CARIBIEN, HAWAII & MEXICO</h1>
                 </div>
             </section>
@@ -20,67 +20,69 @@ import Link from "../components/Link.astro";
     </section>
 
     <!------------------------------- Info menu ------------------------------->
-    <section class="bg-neutral-200">
-        <section class="max-w-7xl mx-auto md:px-s">
-            <section class="grid lg:grid-cols-11">
-                <section class="col-span-1 flex lg:items-center lg:flex-row flex-col">
-                    <div class="lg:px-xxs px-s lg:py-0 py-xxs">
-                        <h4 class="text-neutral-800">Varighed</h4>
-                        <p>3 måneder</p>
+    <section class="pb-ml">
+        <section class="bg-neutral-200">
+            <section class="max-w-7xl mx-auto lg:px-s">
+                <section class="grid lg:grid-cols-11">
+                    <section class="col-span-1 flex lg:items-center lg:flex-row flex-col">
+                        <div class="lg:px-xxs px-s lg:py-0 py-xxs">
+                            <h4 class="text-neutral-800">Varighed</h4>
+                            <p>3 måneder</p>
+                        </div>
+                    </section>
+
+                    <section class="col-span-2 flex lg:items-center relative lg:flex-row flex-col">
+                        <div class="px-xxs">
+                            <div class="absolute left-0 top-1/2 transform -translate-y-1/2 h-1/2 border-l border-[1px] border-neutral-800"></div>
+                        </div>
+                        <div class="lg:px-xxs px-s lg:py-0 py-xxs">
+                            <h4 class="text-neutral-800">Inklusiv</h4>
+                            <p>Flybillet tur/retur</p>
+                        </div>
+                    </section>
+
+                    <div class="col-span-8 lg:flex-row flex-col">
+                        <div class="grid grid-cols-1 lg:grid-cols-8 gap-0 h-full">
+                            <section class="col-span-2 bg-neutral-300 h-full flex lg:items-center lg:col-span-2">
+                                <div class="lg:px-xxs px-s lg:py-0 py-xxs lg:pl-s">
+                                    <h4 class="text-neutral-800">Ca. pris</h4>
+                                    <p>67.900 DKK</p>
+                                </div>
+                            </section>
+
+                            <button class="col-span-2 bg-neutral-950 hover:bg-neutral-900 h-full p-0 lg:col-span-2">
+                                <a href="/opdateret" class="w-full px-s">
+                                    <h4 class="text-neutral-50">Hold dig opdateret</h4>
+                                </a>
+                            </button>
+
+                            <button class="col-span-2 bg-orange-600 hover:bg-orange-700 h-full p-0 lg:col-span-2">
+                                <a href="/infomoede" class="w-full px-s">
+                                    <h4 class="text-neutral-50">Tilmeld infomøde</h4>
+                                </a>
+                            </button>
+
+                            <button class="col-span-2 bg-blue-700 hover:bg-blue-800 h-full p-0 lg:col-span-2">
+                                <a href="/tilmeld" class="w-full px-s">
+                                    <h4 class="text-neutral-50">Tilmeld dig opholdet</h4>
+                                </a>
+                            </button>
+                        </div>
                     </div>
                 </section>
-
-                <section class="col-span-2 flex lg:items-center relative lg:flex-row flex-col">
-                    <div class="px-xxs">
-                        <div class="absolute left-0 top-1/2 transform -translate-y-1/2 h-1/2 border-l border-[1px] border-neutral-800"></div>
-                    </div>
-                    <div class="lg:px-xxs px-s lg:py-0 py-xxs">
-                        <h4 class="text-neutral-800">Inklusiv</h4>
-                        <p>Flybillet tur/retur</p>
-                    </div>
-                </section>
-
-                <div class="col-span-8 lg:flex-row flex-col">
-                    <div class="grid grid-cols-1 lg:grid-cols-8 gap-0 h-full">
-                        <section class="col-span-2 bg-neutral-300 h-full flex lg:items-center lg:col-span-2">
-                            <div class="lg:px-xxs px-s lg:py-0 py-xxs lg:pl-s">
-                                <h4 class="text-neutral-800">Ca. pris</h4>
-                                <p>67.900 DKK</p>
-                            </div>
-                        </section>
-
-                        <button class="col-span-2 bg-neutral-950 hover:bg-neutral-900 h-full p-0 lg:col-span-2">
-                            <a href="/opdateret" class="w-full px-s">
-                                <h4 class="text-neutral-50">Hold dig opdateret</h4>
-                            </a>
-                        </button>
-
-                        <button class="col-span-2 bg-orange-600 hover:bg-orange-700 h-full p-0 lg:col-span-2">
-                            <a href="/infomoede" class="w-full px-s">
-                                <h4 class="text-neutral-50">Tilmeld infomøde</h4>
-                            </a>
-                        </button>
-
-                        <button class="col-span-2 bg-blue-700 hover:bg-blue-800 h-full p-0 lg:col-span-2">
-                            <a href="/tilmeld" class="w-full px-s">
-                                <h4 class="text-neutral-50">Tilmeld dig opholdet</h4>
-                            </a>
-                        </button>
-                    </div>
-                </div>
             </section>
         </section>
     </section>
 
     <section class="max-w-7xl mx-auto p-s">
-        <section class="grid md:grid-cols-12 gap-s">
+        <section class="grid lg:grid-cols-12 gap-s">
             <!------------------------------- Accordion - Mobil ------------------------------->
-            <div id="accordion-color" data-accordion="collapse" data-active-classes="bg-orange-600 text-neutral-50" class="md:hidden block">
+            <div id="accordion-color" data-accordion="collapse" data-active-classes="bg-orange-600 text-neutral-50" class="lg:hidden block">
                 <div class="rounded-lg bg-white">
                     <div>
                         <h3 id="accordion-color-heading-1">
                             <button type="button" class="question-btn flex justify-between w-full p-s text-neutral-50 rounded-t-sm bg-neutral-950 text-left" data-toggle="answer-1" aria-expanded="false" aria-controls="accordion-color-body-1">
-                                <span>Overblik</span>
+                                <span><h4 class="text-neutral-50">Overblik</h4></span>
                                 <svg data-accordion-icon class="w-s h-s rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"></path>
                                 </svg>
@@ -117,7 +119,7 @@ import Link from "../components/Link.astro";
                     <div>
                         <h3 id="accordion-color-heading-2">
                             <button type="button" class="question-btn flex justify-between w-full p-s text-neutral-50 bg-neutral-950 text-left" data-toggle="answer-2" aria-expanded="false" aria-controls="accordion-color-body-2">
-                                <span>Program</span>
+                                <span><h4 class="text-neutral-50">Program</h4></span>
                                 <svg data-accordion-icon class="w-s h-s rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"></path>
                                 </svg>
@@ -134,7 +136,7 @@ import Link from "../components/Link.astro";
                                         </div>
                                     </div>
                                     <div class="pb-xs">
-                                        <img src="/introdage.webp" alt="introdage" />
+                                        <img src="/introdage.webp" alt="introdage" class="h-6xl w-full object-cover" />
                                     </div>
                                     <div>
                                         <p class="pb-xs">
@@ -153,7 +155,7 @@ import Link from "../components/Link.astro";
                                         </div>
                                     </div>
                                     <div class="pb-xs">
-                                        <img src="/teambuildingvelse.webp" alt="introdage" />
+                                        <img src="/teambuildingvelse.webp" alt="introdage" class="h-6xl w-full object-cover" />
                                     </div>
                                     <div>
                                         <p class="pb-xs">Fra New Yorks pulserende storby tager vi til Oahu, nærmere bestemt Waikiki Beach. Vi bor i Honolulu, hvor vi oplever Pearl Harbor Memorial, Iolani-paladset og Diamond Head-krateret med udsigt over Stillehavet.</p>
@@ -170,7 +172,7 @@ import Link from "../components/Link.astro";
                                         </div>
                                     </div>
                                     <div class="pb-xs">
-                                        <img src="/hawaii-friuge.webp" alt="introdage" />
+                                        <img src="/hawaii-friuge.webp" alt="introdage" class="h-6xl w-full object-cover" />
                                     </div>
                                     <div>
                                         <p class="pb-xs">
@@ -189,7 +191,7 @@ import Link from "../components/Link.astro";
                                         </div>
                                     </div>
                                     <div class="pb-xs">
-                                        <img src="/mexico-frivilligt-arbejde.webp" alt="introdage" />
+                                        <img src="/mexico-frivilligt-arbejde.webp" alt="introdage" class="h-6xl w-full object-cover" />
                                     </div>
                                     <div>
                                         <p class="pb-xs">I Mexico bor vi i farverige Playa del Carmen på Yucatán-halvøen ved det caribiske hav. Byen er kendt for aktiviteter og afslapning. Vi vænner os til en ny kultur med krydrede dufte, spanske samtaler og mariachi-musik.</p>
@@ -206,7 +208,7 @@ import Link from "../components/Link.astro";
                                         </div>
                                     </div>
                                     <div class="pb-xs">
-                                        <img src="/mexico-friuge.webp" alt="introdage" />
+                                        <img src="/mexico-friuge.webp" alt="introdage" class="h-6xl w-full object-cover" />
                                     </div>
                                     <div>
                                         <p class="pb-xs">Udforsk Mexicos spændende kultur med ældgamle maya-ruiner og inka-ruiner, eller fyld ugen med adventure i grotte-systemer under Yucatán-halvøen eller ATV-ture gennem junglen.</p>
@@ -223,7 +225,7 @@ import Link from "../components/Link.astro";
                                         </div>
                                     </div>
                                     <div class="pb-xs">
-                                        <img src="/bedste-strande-i-caribien-2.webp" alt="introdage" />
+                                        <img src="/bedste-strande-i-caribien-2.webp" alt="introdage" class="h-6xl w-full object-cover" />
                                     </div>
                                     <div>
                                         <p class="pb-xs">Midt i det Caribiske hav ligger de tidligere Dansk Vestindiske Øer – St. Thomas, St. Croix og St. John – nu kendt som US Virgin Islands. Øerne var danske indtil 1917 og har bevaret dansk kulturarv og gadenavne.</p>
@@ -240,7 +242,7 @@ import Link from "../components/Link.astro";
                                         </div>
                                     </div>
                                     <div class="pb-xs">
-                                        <img src="/sport-adventure-i-nepal.webp" alt="introdage" />
+                                        <img src="/sport-adventure-i-nepal.webp" alt="introdage" class="h-6xl w-full object-cover" />
                                     </div>
                                     <div>
                                         <p class="pb-xs">Sport & Adventure er en fed kombi af spænding, adrenalin, oplevelser og teamsport.</p>
@@ -257,7 +259,7 @@ import Link from "../components/Link.astro";
                                         </div>
                                     </div>
                                     <div class="pb-xs">
-                                        <img src="/dansk-vestindien-friuge-i-caribien.webp" alt="introdage" />
+                                        <img src="/dansk-vestindien-friuge-i-caribien.webp" alt="introdage" class="h-6xl w-full object-cover" />
                                     </div>
                                     <div>
                                         <p class="pb-xs">Mange elever har lyst til at udforske øerne omkring St. Croix, og ferien her er en god mulighed til det. Det er populært at tage en båd til St. Thomas eller St. John, eller købe en billig flybillet til Puerto Rico.</p>
@@ -274,7 +276,7 @@ import Link from "../components/Link.astro";
                                         </div>
                                     </div>
                                     <div class="pb-xs">
-                                        <img src="/puerto-rico-friuge-i-caribien.webp" alt="introdage" />
+                                        <img src="/puerto-rico-friuge-i-caribien.webp" alt="introdage" class="h-6xl w-full object-cover" />
                                     </div>
                                     <div>
                                         <p class="pb-xs">De latinamerikanske rytmer fra Mexico venter igen i Puerto Rico. Øen er kendt for sine smukke strande, frodige regnskove og en livlig kultur med spanske, afrikanske og Taíno-indflydelser.</p>
@@ -288,7 +290,7 @@ import Link from "../components/Link.astro";
                     <div>
                         <h3 id="accordion-color-heading-3">
                             <button type="button" class="question-btn flex justify-between w-full p-s text-neutral-50 bg-neutral-950 text-left" data-toggle="answer-3" aria-expanded="false" aria-controls="accordion-color-body-3">
-                                <span>Inkluderet</span>
+                                <span><h4 class="text-neutral-50">Inkluderet</h4></span>
                                 <svg data-accordion-icon class="w-s h-s rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"></path>
                                 </svg>
@@ -430,7 +432,7 @@ import Link from "../components/Link.astro";
                     <div>
                         <h3 id="accordion-color-heading-4">
                             <button type="button" class="question-btn flex justify-between w-full p-s text-neutral-50 bg-neutral-950 text-left" data-toggle="answer-4" aria-expanded="false" aria-controls="accordion-color-body-4">
-                                <span>Fag</span>
+                                <span><h4 class="text-neutral-50">Fag</h4></span>
                                 <svg data-accordion-icon class="w-s h-s rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"></path>
                                 </svg>
@@ -441,7 +443,7 @@ import Link from "../components/Link.astro";
                                 <section class="pb-ml">
                                     <h3 class="pb-xxxs">Teambuilding</h3>
                                     <div class="pb-xs">
-                                        <img src="/samarbejdsoevelser.webp" alt="introdage" />
+                                        <img src="/samarbejdsoevelser.webp" alt="introdage" class="h-6xl w-full object-cover" />
                                     </div>
                                     <div>
                                         <p class="pb-xs">Teambuilding er spændende og inspirerende fag. Fællesskabet er vigtigt, så alle trives på vores højskole-eventyr. Vi styrker fællesskabet med tankevækkende og sjove samarbejdsøvelser.</p>
@@ -454,7 +456,7 @@ import Link from "../components/Link.astro";
                                 <section class="pb-ml">
                                     <h3 class="pb-xxxs">Frivilligt arbejde & kulturforståelse</h3>
                                     <div class="pb-xs">
-                                        <img src="/frivilligt-arbejde.webp" alt="introdage" />
+                                        <img src="/frivilligt-arbejde.webp" alt="introdage" class="h-6xl w-full object-cover" />
                                     </div>
                                     <div>
                                         <p class="pb-xs">I HØJSKOLENDK tilbyder vi projekter, der gavner lokalsamfundet og giver mening for vores elever. Vælg mellem at arbejde med mennesker, dyreliv, kultur eller praktiske opgaver.</p>
@@ -467,7 +469,7 @@ import Link from "../components/Link.astro";
                                 <section class="pb-ml">
                                     <h3 class="pb-xxxs">Selvudvikling & kommunikation</h3>
                                     <div class="pb-xs">
-                                        <img src="/selvudvikling.webp" alt="introdage" />
+                                        <img src="/selvudvikling.webp" alt="introdage" class="h-6xl w-full object-cover" />
                                     </div>
                                     <div>
                                         <p class="pb-xs">
@@ -481,7 +483,7 @@ import Link from "../components/Link.astro";
                                 <section class="">
                                     <h3 class="pb-xxxs">Sport & adventure</h3>
                                     <div class="pb-xs">
-                                        <img src="/sport.webp" alt="introdage" />
+                                        <img src="/sport.webp" alt="introdage" class="h-6xl w-full object-cover" />
                                     </div>
                                     <div>
                                         <p class="pb-xs">Sport & Adventure er et fag med fart på og vi er aktive og arbejder med teamsport, adventure og outdoor-aktiviteter. Alt sammen aktiviteter der udvikler dig fysisk og mentalt, flytter dine grænser og skaber stærkere relationer i vores fællesskab.</p>
@@ -496,7 +498,7 @@ import Link from "../components/Link.astro";
                     <div>
                         <h3 id="accordion-color-heading-5">
                             <button type="button" class="question-btn flex justify-between w-full p-s text-neutral-50 rounded-b-sm bg-neutral-950 text-left" data-toggle="answer-5" aria-expanded="false" aria-controls="accordion-color-body-5">
-                                <span>Kontakt</span>
+                                <span><h4 class="text-neutral-50">Kontakt</h4></span>
                                 <svg data-accordion-icon class="w-s h-s rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"></path>
                                 </svg>
@@ -524,7 +526,7 @@ import Link from "../components/Link.astro";
             </div>
 
             <!------------------------------- Statestik - Mobil ------------------------------->
-            <section class="md:hidden block">
+            <section class="lg:hidden block">
                 <section class="py-s">
                     <div class="pb-s">
                         <div class="bg-neutral-100 rounded-sm flex items-center justify-center h-full">
@@ -565,7 +567,7 @@ import Link from "../components/Link.astro";
             </section>
 
             <!------------------------------- Tabbed interface - Desktop ------------------------------->
-            <section class="col-span-9 hidden md:block">
+            <section class="col-span-9 hidden lg:block">
                 <div class="tab-section bg-neutral-100 rounded-sm">
                     <div class="flex flex-wrap">
                         <button class="rounded-l-sm bg-neutral-950 hover:bg-neutral-900 p-xs text-neutral-50 font-bold flex-grow" data-tab-target="#tab1">Overblik</button>
@@ -608,13 +610,15 @@ import Link from "../components/Link.astro";
                         <div id="tab2" class="tab-content p-md hidden">
                             <section class="grid grid-cols-2 gap-md pb-xl">
                                 <div class="flex items-center">
-                                    <img src="/introdage.webp" alt="introdage" />
+                                    <img src="/introdage.webp" alt="introdage" class="h-12xl w-full object-cover" />
                                 </div>
                                 <div>
                                     <h3 class="pb-xxxs">Introdage</h3>
                                     <div class="flex flex-row gap-4 pb-xs">
                                         <div class="flex items-center gap-2 mb-4">
-                                            <img src="/location.svg" alt="" class="w-7 h-7 object-cover" />
+                                            <div>
+                                                <img src="/location.svg" alt="" class="w-7 h-7 object-cover" />
+                                            </div>
                                             <p class="">New York City, USA</p>
                                         </div>
                                     </div>
@@ -638,13 +642,13 @@ import Link from "../components/Link.astro";
                                     <p>North Shore tilbyder hvide sandstrande og surfing. Vi surfer med lokale, hiker til udsigtspunkter og store vandfald, og udforsker polynesisk kultur.</p>
                                 </div>
                                 <div class="flex items-center">
-                                    <img src="/teambuildingvelse.webp" alt="teambuildingvelse" />
+                                    <img src="/teambuildingvelse.webp" alt="teambuildingvelse" class="h-12xl w-full object-cover" />
                                 </div>
                             </section>
 
                             <section class="grid grid-cols-2 gap-md pb-xl">
                                 <div class="flex items-center">
-                                    <img src="/hawaii-friuge.webp" alt="introdage" />
+                                    <img src="/hawaii-friuge.webp" alt="introdage" class="h-12xl w-full object-cover" />
                                 </div>
                                 <div>
                                     <h3 class="pb-xxxs">Friuge</h3>
@@ -674,13 +678,13 @@ import Link from "../components/Link.astro";
                                     <p>"Playa" byder på restauranter, caféer og barer med livemusik ned til stranden. Der er dykning, snorkling, beachvolley og adventure-oplevelser. Byen ligger perfekt til dagsture til Mayaruinerne ved Chichen Itza, Coba og Tulum, samt undervandsgrotter.</p>
                                 </div>
                                 <div class="flex items-center">
-                                    <img src="/mexico-frivilligt-arbejde.webp" alt="introdage" />
+                                    <img src="/mexico-frivilligt-arbejde.webp" alt="introdage" class="h-12xl w-full object-cover" />
                                 </div>
                             </section>
 
                             <section class="grid grid-cols-2 gap-md pb-xl">
                                 <div class="flex items-center">
-                                    <img src="/mexico-friuge.webp" alt="introdage" />
+                                    <img src="/mexico-friuge.webp" alt="introdage" class="h-12xl w-full object-cover" />
                                 </div>
                                 <div>
                                     <h3 class="pb-xxxs">Friuge</h3>
@@ -708,13 +712,13 @@ import Link from "../components/Link.astro";
                                     <p>Det er et barfods-paradis med en hjertevarm caribisk kultur og et roligt 'Island Time' tempo. Sammenholdet og fællesskabsfølelsen er unik. Glæd jer.</p>
                                 </div>
                                 <div class="flex items-center">
-                                    <img src="/bedste-strande-i-caribien-2.webp" alt="introdage" />
+                                    <img src="/bedste-strande-i-caribien-2.webp" alt="introdage" class="h-12xl w-full object-cover" />
                                 </div>
                             </section>
 
                             <section class="grid grid-cols-2 gap-md pb-xl">
                                 <div class="flex items-center">
-                                    <img src="/sport-adventure-i-nepal.webp" alt="introdage" />
+                                    <img src="/sport-adventure-i-nepal.webp" alt="introdage" class="h-12xl w-full object-cover" />
                                 </div>
                                 <div>
                                     <h3 class="pb-xxxs">Sport & adventure</h3>
@@ -734,7 +738,7 @@ import Link from "../components/Link.astro";
                                     <h3 class="pb-xxxs">Friuge</h3>
                                     <div class="flex flex-row gap-4 pb-xs">
                                         <div class="flex items-center gap-2 mb-4">
-                                            <img src="/location.svg" alt="" class="w-7 h-7 object-cover" />
+                                            <img src="/location.svg" alt="" class="w-7 h-7 object-cover" class="h-12xl w-full object-cover" />
                                             <p class="">St. Croix, US Virgin Islands</p>
                                         </div>
                                     </div>
@@ -742,13 +746,13 @@ import Link from "../components/Link.astro";
                                     <p>For større ferie-eventyr kan man tænke på Miami og/eller Orlando for et US-roadtrip og Miami Beach. Jamaica tilbyder reggae, rastafari-fester og skøn natur. Eller måske en uges ø-hop med et krydstogtskib.</p>
                                 </div>
                                 <div class="flex items-center">
-                                    <img src="/dansk-vestindien-friuge-i-caribien.webp" alt="introdage" />
+                                    <img src="/dansk-vestindien-friuge-i-caribien.webp" alt="introdage" class="h-12xl w-full object-cover" />
                                 </div>
                             </section>
 
                             <section class="grid grid-cols-2 gap-md">
                                 <div class="flex items-center">
-                                    <img src="/puerto-rico-friuge-i-caribien.webp" alt="introdage" />
+                                    <img src="/puerto-rico-friuge-i-caribien.webp" alt="introdage" class="h-12xl w-full object-cover" />
                                 </div>
                                 <div>
                                     <h3 class="pb-xxxs">Outrodage</h3>
@@ -909,7 +913,7 @@ import Link from "../components/Link.astro";
                         <div id="tab4" class="tab-content p-md hidden">
                             <section class="grid grid-cols-2 gap-md pb-xl">
                                 <div class="flex items-center">
-                                    <img src="/samarbejdsoevelser.webp" alt="introdage" />
+                                    <img src="/samarbejdsoevelser.webp" alt="introdage" class="h-12xl object-cover" />
                                 </div>
                                 <div>
                                     <h3 class="pb-xxxs">Teambuilding</h3>
@@ -929,13 +933,13 @@ import Link from "../components/Link.astro";
                                     <a href="https://www.hojskolendk.dk/om-os/paa-hoejskole-i-udlandet/fag-undervisning/frivilligt-arbejde-kulturforstaaelse/">Læs mere om ‘Frivilligt Arbejde & Kulturforståelse’ her!</a>
                                 </div>
                                 <div class="flex items-center">
-                                    <img src="/frivilligt-arbejde.webp" alt="teambuildingvelse" />
+                                    <img src="/frivilligt-arbejde.webp" alt="teambuildingvelse" class="h-12xl object-cover" />
                                 </div>
                             </section>
 
                             <section class="grid grid-cols-2 gap-md pb-xl">
                                 <div class="flex items-center">
-                                    <img src="/selvudvikling.webp" alt="introdage" />
+                                    <img src="/selvudvikling.webp" alt="introdage" class="h-12xl object-cover" />
                                 </div>
                                 <div>
                                     <h3 class="pb-xxxs">Selvudvikling & kommunikation</h3>
@@ -955,13 +959,13 @@ import Link from "../components/Link.astro";
                                     <a href="https://www.hojskolendk.dk/om-os/paa-hoejskole-i-udlandet/fag-undervisning/sport-adventure/">Læs mere om ‘Sport & Adventure’ her!</a>
                                 </div>
                                 <div class="flex items-center">
-                                    <img src="/sport.webp" alt="teambuildingvelse" />
+                                    <img src="/sport.webp" alt="teambuildingvelse" class="h-12xl object-cover" />
                                 </div>
                             </section>
                         </div>
                         <div id="tab5" class="tab-content p-md hidden">
                             <section class="grid grid-cols-2 gap-md">
-                                <img src="/peter.webp" alt="" />
+                                <img src="/peter.webp" alt="" class="h-12xl object-cover" />
                                 <div>
                                     <h1 class="pb-m">Peter Kristensen</h1>
                                     <p class="pb-xs">
@@ -1011,143 +1015,147 @@ import Link from "../components/Link.astro";
                 </section>
 
                 <!------------------------------- Rejsebreve - Desktop ------------------------------->
-                <section class="col-span-9">
-                    <h2 class="pb-s">Rejsebreve</h2>
-                    <section class="grid grid-cols-9 gap-s">
-                        <div class="col-span-3 relative group hover:scale-[1.02] transition-all duration-300 ease-in-out">
-                            <img src="/laura.webp" alt="Billede af Laura" class="w-full h-full object-cover rounded-sm" />
-                            <div class="absolute inset-0 bg-neutral-950 opacity-50 rounded-sm"></div>
-                            <div class="overlay absolute inset-0 bg-orange-500 opacity-0 group-hover:opacity-50 transition-opacity duration-300 rounded-sm"></div>
-                            <div class="absolute inset-x-0 bottom-0 p-s z-10">
-                                <h3 class="text-neutral-50">Laura Sofie Pedersen</h3>
-                                <p class="text-neutral-50">Den 1. november 2017, stod jeg klar i Københavns Lufthavn og var klar til mit…</p>
+                <section class="pt-ml">
+                    <section class="col-span-9">
+                        <h2 class="pb-s">Rejsebreve</h2>
+                        <section class="grid grid-cols-9 gap-s">
+                            <div class="col-span-3 relative group hover:scale-[1.02] transition-all duration-300 ease-in-out">
+                                <img src="/laura.webp" alt="Billede af Laura" class="w-full h-full object-cover rounded-sm" />
+                                <div class="absolute inset-0 bg-neutral-950 opacity-50 rounded-sm"></div>
+                                <div class="overlay absolute inset-0 bg-orange-500 opacity-0 group-hover:opacity-50 transition-opacity duration-300 rounded-sm"></div>
+                                <div class="absolute inset-x-0 bottom-0 p-s z-10">
+                                    <h3 class="text-neutral-50">Laura Sofie Pedersen</h3>
+                                    <p class="text-neutral-50">Den 1. november 2017, stod jeg klar i Københavns Lufthavn og var klar til mit…</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-span-3 relative group hover:scale-[1.02] transition-all duration-300 ease-in-out">
-                            <img src="/emma.webp" alt="Billede af Emma" class="w-full h-full object-cover rounded-sm" />
-                            <div class="absolute inset-0 bg-neutral-950 opacity-50 rounded-sm"></div>
-                            <div class="overlay absolute inset-0 bg-orange-500 opacity-0 group-hover:opacity-50 transition-opacity duration-300 rounded-sm"></div>
-                            <div class="absolute inset-x-0 bottom-0 p-s z-10">
-                                <h3 class="text-neutral-50">Emma Jo Sørensen</h3>
-                                <p class="text-neutral-50">Med lidt under en uge tilbage her i Caribien kan jeg virkelig mærke, hvor meget…</p>
+                            <div class="col-span-3 relative group hover:scale-[1.02] transition-all duration-300 ease-in-out">
+                                <img src="/emma.webp" alt="Billede af Emma" class="w-full h-full object-cover rounded-sm" />
+                                <div class="absolute inset-0 bg-neutral-950 opacity-50 rounded-sm"></div>
+                                <div class="overlay absolute inset-0 bg-orange-500 opacity-0 group-hover:opacity-50 transition-opacity duration-300 rounded-sm"></div>
+                                <div class="absolute inset-x-0 bottom-0 p-s z-10">
+                                    <h3 class="text-neutral-50">Emma Jo Sørensen</h3>
+                                    <p class="text-neutral-50">Med lidt under en uge tilbage her i Caribien kan jeg virkelig mærke, hvor meget…</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-span-3 relative group hover:scale-[1.02] transition-all duration-300 ease-in-out">
-                            <img src="/kristoffer.webp" alt="Billede af Kristoffer" class="w-full h-full object-cover rounded-sm" />
-                            <div class="absolute inset-0 bg-neutral-950 opacity-50 rounded-sm"></div>
-                            <div class="overlay absolute inset-0 bg-orange-500 opacity-0 group-hover:opacity-50 transition-opacity duration-300 rounded-sm"></div>
-                            <div class="absolute inset-x-0 bottom-0 p-s z-10">
-                                <h3 class="text-neutral-50">Kristoffer Strandhauge</h3>
-                                <p class="text-neutral-50">Hvis man beder en person om at beskrive hvordan han eller hun forestiller sig Caribien…</p>
+                            <div class="col-span-3 relative group hover:scale-[1.02] transition-all duration-300 ease-in-out">
+                                <img src="/kristoffer.webp" alt="Billede af Kristoffer" class="w-full h-full object-cover rounded-sm" />
+                                <div class="absolute inset-0 bg-neutral-950 opacity-50 rounded-sm"></div>
+                                <div class="overlay absolute inset-0 bg-orange-500 opacity-0 group-hover:opacity-50 transition-opacity duration-300 rounded-sm"></div>
+                                <div class="absolute inset-x-0 bottom-0 p-s z-10">
+                                    <h3 class="text-neutral-50">Kristoffer Strandhauge</h3>
+                                    <p class="text-neutral-50">Hvis man beder en person om at beskrive hvordan han eller hun forestiller sig…</p>
+                                </div>
                             </div>
-                        </div>
+                        </section>
+                        <h4 class="pt-s text-orange-600 flex justify-center">Se flere</h4>
                     </section>
-                    <h4 class="pt-s text-orange-600 flex justify-center">Se flere</h4>
                 </section>
 
                 <!------------------------------- Trustpilot - Desktop ------------------------------->
 
-                <section class="hidden md:block">
-                    <section class="col-span-9" x-data="{slidenr: 'one'}">
-                        <img class="w-8xl pb-s" src="/trustpilot_logo_black.svg" alt="trustpilot logo" />
+                <section class="hidden lg:block">
+                    <section class="pt-ml">
+                        <section class="col-span-9" x-data="{slidenr: 'one'}">
+                            <img class="w-8xl pb-s" src="/trustpilot_logo_black.svg" alt="trustpilot logo" />
 
-                        <div class="flex flex-row">
-                            <section class="grid grid-cols-9 gap-s slide1" x-show="slidenr === 'one'" x-transition:enter.duration.700ms>
-                                <div class="col-start-1 col-span-3 row-start-1 relative group hover:scale-[1.02] transition-all duration-300 ease-in-out">
-                                    <div class="bg-neutral-100 rounded-[5px]">
-                                        <div class="p-s">
-                                            <img class="w-4xl pb-xs" src="/stjerner.svg" alt="trustpilot stjerner" />
-                                            <h4 class="pb-xs">Bedste beslutning nogensinde</h4>
-                                            <p class="pb-xs">Hvis man gerne vil ud og rejse, men også vil møde nogle nye mennesker. Så vil jeg helt klart...</p>
-                                            <p class="text-neutral-800">William, 20. juni 2024</p>
+                            <div class="flex flex-row">
+                                <section class="grid grid-cols-9 gap-s slide1" x-show="slidenr === 'one'" x-transition:enter.duration.700ms>
+                                    <div class="col-start-1 col-span-3 row-start-1 relative group hover:scale-[1.02] transition-all duration-300 ease-in-out">
+                                        <div class="bg-neutral-100 rounded-[5px]">
+                                            <div class="p-s">
+                                                <img class="w-4xl pb-xs" src="/stjerner.svg" alt="trustpilot stjerner" />
+                                                <h4 class="pb-xs">Bedste beslutning...</h4>
+                                                <p class="pb-xs">Hvis man gerne vil ud og rejse, men også vil møde nogle nye mennesker. Så vil...</p>
+                                                <p class="text-neutral-800">William, 20. juni 2024</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-start-4 col-span-3 row-start-1 relative group hover:scale-[1.02] transition-all duration-300 ease-in-out">
-                                    <div class="bg-neutral-100 rounded-[5px]">
-                                        <div class="p-s">
-                                            <img class="w-4xl pb-xs" src="/stjerner.svg" alt="trustpilot stjerner" />
-                                            <h4 class="pb-xs">Er du frisk på eventyr, så er...</h4>
-                                            <p class="pb-xs">Hvis man gerne vil ud og rejse, men også vil møde nogle nye mennesker. Så vil jeg helt klart...</p>
-                                            <p class="text-neutral-800">Emma, 23. januar 2024</p>
+                                    <div class="col-start-4 col-span-3 row-start-1 relative group hover:scale-[1.02] transition-all duration-300 ease-in-out">
+                                        <div class="bg-neutral-100 rounded-[5px]">
+                                            <div class="p-s">
+                                                <img class="w-4xl pb-xs" src="/stjerner.svg" alt="trustpilot stjerner" />
+                                                <h4 class="pb-xs">Er du frisk på eventyr...</h4>
+                                                <p class="pb-xs">I slut-april 2024 hjemvendte jeg fra mit livsrejse – Hawaii, Australien, Japan...</p>
+                                                <p class="text-neutral-800">Emma, 23. januar 2024</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-start-7 col-span-3 row-start-1 relative group hover:scale-[1.02] transition-all duration-300 ease-in-out">
-                                    <div class="bg-neutral-100 rounded-[5px]">
-                                        <div class="p-s pr-ml">
-                                            <img class="w-4xl pb-xs" src="/stjerner.svg" alt="trustpilot stjerner" />
-                                            <h4 class="pb-xs">Mega fedt!</h4>
-                                            <p class="pb-xs">Jeg var på turen Hawaii, Australien, Japan, Bali og Gili i foråret 2024 - sikke en...</p>
-                                            <p class="text-neutral-800">Mikkel, 20. juni 2024</p>
+                                    <div class="col-start-7 col-span-3 row-start-1 relative group hover:scale-[1.02] transition-all duration-300 ease-in-out">
+                                        <div class="bg-neutral-100 rounded-[5px]">
+                                            <div class="p-s pr-ml">
+                                                <img class="w-4xl pb-xs" src="/stjerner.svg" alt="trustpilot stjerner" />
+                                                <h4 class="pb-xs">Mega fedt!</h4>
+                                                <p class="pb-xs">Jeg var på turen Hawaii, Australien, Japan, Bali og Gili i foråret 2024...</p>
+                                                <p class="text-neutral-800">Mikkel, 20. juni 2024</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
 
-                                <button type=" button" class="col-start-9 row-start-1 z-10 bg-gradient-to-l from-neutral-300 text-right pr-xxs rounded-[5px]" @click="slidenr = 'two'">
-                                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 bg-neutral-100 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
-                                        <svg class="w-4 h-4 text-neutral-600 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"></path>
-                                        </svg>
-                                        <span class="sr-only">Next</span>
-                                    </span>
-                                </button>
-                            </section>
+                                    <button type=" button" class="col-start-9 row-start-1 z-10 bg-gradient-to-l from-neutral-300 text-right pr-xxs rounded-[5px]" @click="slidenr = 'two'">
+                                        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 bg-neutral-100 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                                            <svg class="w-4 h-4 text-neutral-600 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"></path>
+                                            </svg>
+                                            <span class="sr-only">Next</span>
+                                        </span>
+                                    </button>
+                                </section>
 
-                            <section class="grid grid-cols-9 gap-s slide2" x-show="slidenr === 'two'" x-transition:enter.duration.700ms>
-                                <div class="col-start-1 col-span-3 row-start-1 relative group hover:scale-[1.02] transition-all duration-300 ease-in-out">
-                                    <div class="bg-neutral-100 rounded-[5px]">
-                                        <div class="p-s pl-ml">
-                                            <img class="w-4xl pb-xs" src="/stjerner.svg" alt="trustpilot stjerner" />
-                                            <h4 class="pb-xs">Kæmpe anbefaling</h4>
-                                            <p class="pb-xs">Jeg har lige været afsted i 3 måneder på turen Hawaii, Australien, Japan, Bali...</p>
-                                            <p class="text-neutral-800">Ida, 26. januar 2024</p>
+                                <section class="grid grid-cols-9 gap-s slide2" x-show="slidenr === 'two'" x-transition:enter.duration.700ms>
+                                    <div class="col-start-1 col-span-3 row-start-1 relative group hover:scale-[1.02] transition-all duration-300 ease-in-out">
+                                        <div class="bg-neutral-100 rounded-[5px]">
+                                            <div class="p-s pl-ml">
+                                                <img class="w-4xl pb-xs" src="/stjerner.svg" alt="trustpilot stjerner" />
+                                                <h4 class="pb-xs">Kæmpe anbefaling</h4>
+                                                <p class="pb-xs">Jeg har lige været afsted i 3 måneder på turen Hawaii...</p>
+                                                <p class="text-neutral-800">Ida, 26. januar 2024</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-start-4 col-span-3 row-start-1 relative group hover:scale-[1.02] transition-all duration-300 ease-in-out">
-                                    <div class="bg-neutral-100 rounded-[5px]">
-                                        <div class="p-s">
-                                            <img class="w-4xl pb-xs" src="/stjerner.svg" alt="trustpilot stjerner" />
-                                            <h4 class="pb-xs">En rejse for livet</h4>
-                                            <p class="pb-xs">At have rejst verden rundt med höjskolendk, har uden tvivl været en af de bedste...</p>
-                                            <p class="text-neutral-800">Dicte, 24. januar 2024</p>
+                                    <div class="col-start-4 col-span-3 row-start-1 relative group hover:scale-[1.02] transition-all duration-300 ease-in-out">
+                                        <div class="bg-neutral-100 rounded-[5px]">
+                                            <div class="p-s">
+                                                <img class="w-4xl pb-xs" src="/stjerner.svg" alt="trustpilot stjerner" />
+                                                <h4 class="pb-xs">En rejse for livet</h4>
+                                                <p class="pb-xs">At have rejst verden rundt med höjskolendk, har uden tvivl været...</p>
+                                                <p class="text-neutral-800">Dicte, 24. januar 2024</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-start-7 col-span-3 row-start-1 relative group hover:scale-[1.02] transition-all duration-300 ease-in-out">
-                                    <div class="bg-neutral-100 rounded-[5px]">
-                                        <div class="p-s">
-                                            <img class="w-4xl pb-xs" src="/stjerner.svg" alt="trustpilot stjerner" />
-                                            <h4 class="pb-xs">En rejse for livet</h4>
-                                            <p class="pb-xs">Jeg var i foråret 2024 med HöjskolenDK jorden rundt på deres tur HAJBG, og...</p>
-                                            <p class="text-neutral-800">Kamilla, 23. april 2024</p>
+                                    <div class="col-start-7 col-span-3 row-start-1 relative group hover:scale-[1.02] transition-all duration-300 ease-in-out">
+                                        <div class="bg-neutral-100 rounded-[5px]">
+                                            <div class="p-s">
+                                                <img class="w-4xl pb-xs" src="/stjerner.svg" alt="trustpilot stjerner" />
+                                                <h4 class="pb-xs">En rejse for livet</h4>
+                                                <p class="pb-xs">Jeg var i foråret 2024 med HöjskolenDK jorden rundt på deres tur HAJBG...</p>
+                                                <p class="text-neutral-800">Kamilla, 23. april 2024</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
 
-                                <button type=" button" class="col-start-1 row-start-1 z-10 bg-gradient-to-r from-neutral-300 text-left pl-xxs rounded-[5px]" @click="slidenr = 'one'">
-                                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 bg-neutral-100 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
-                                        <svg class="w-4 h-4 text-neutral-600 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"></path>
-                                        </svg>
-                                        <span class="sr-only">Previous</span>
-                                    </span>
-                                </button>
-                            </section>
-                        </div>
-                        <div class="flex justify-center items-center text-center">
-                            <p class="pt-s">Bedømt til 4.8 / 5 baseret på 100 anmeldelser. Viser vores 5-stjernede anmeldelser.</p>
-                        </div>
-                        <div class="flex justify-center items-center">
-                            <img class="w-3xl" src="/trustpilot_logo_black.svg" alt="trustpilot logo" />
-                        </div>
+                                    <button type=" button" class="col-start-1 row-start-1 z-10 bg-gradient-to-r from-neutral-300 text-left pl-xxs rounded-[5px]" @click="slidenr = 'one'">
+                                        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 bg-neutral-100 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                                            <svg class="w-4 h-4 text-neutral-600 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"></path>
+                                            </svg>
+                                            <span class="sr-only">Previous</span>
+                                        </span>
+                                    </button>
+                                </section>
+                            </div>
+                            <div class="flex justify-center items-center text-center">
+                                <p class="pt-s">Bedømt til 4.8 / 5 baseret på 100 anmeldelser. Viser vores 5-stjernede anmeldelser.</p>
+                            </div>
+                            <div class="flex justify-center items-center pb-m">
+                                <img class="w-3xl" src="/trustpilot_logo_black.svg" alt="trustpilot logo" />
+                            </div>
+                        </section>
                     </section>
                 </section>
             </section>
 
             <!------------------------------- Info cards - Mobil & Desktop  ------------------------------->
-            <section class="md:col-span-3 lg:col-span-3">
+            <section class="lg:col-span-3">
                 <section class="pb-s">
                     <div class="bg-orange-600 rounded-sm">
                         <div class="p-s">
@@ -1210,8 +1218,8 @@ import Link from "../components/Link.astro";
                                 <li class="pb-xs text-gray-950">Håndklæder</li>
                                 <li class="pb-xs text-gray-950">Rejseadaptere</li>
                                 <li class="pb-xs text-gray-950">Mobiltelefon og oplader</li>
-                                <li class="pb-xs text-gray-950">Rejsepass og andre identifikationsdokumenter</li>
-                                <li class="pb-xs text-gray-950">Rejseforsikringspapirer</li>
+                                <li class="pb-xs text-gray-950">Rejsepass og andre identifikations&shy;dokumenter</li>
+                                <li class="pb-xs text-gray-950">Rejseforsikrings&shy;papirer</li>
                                 <li class="pb-xs text-gray-950">Kopier af vigtige dokumenter</li>
                                 <li class="pb-xs text-gray-950">Vandflaske</li>
                                 <li class="pb-xs text-gray-950">Dagrygsæk</li>
@@ -1223,105 +1231,109 @@ import Link from "../components/Link.astro";
             </section>
 
             <!------------------------------- Rejsebreve - Mobil ------------------------------->
-            <section class="md:hidden block">
-                <h2 class="pb-s">Rejsebreve</h2>
-                <section class="gap-s">
-                    <div class="pb-s">
-                        <div class="relative group">
-                            <img src="/laura.webp" alt="Billede af Laura" class="w-full h-full object-cover rounded-sm" />
-                            <div class="absolute inset-0 bg-neutral-950 opacity-50 rounded-sm"></div>
-                            <div class="overlay absolute inset-0 bg-orange-500 opacity-0 group-hover:opacity-50 transition-opacity duration-300 rounded-sm"></div>
-                            <div class="absolute inset-x-0 bottom-0 p-s z-10">
-                                <h3 class="text-neutral-50">Laura Sofie Pedersen</h3>
-                                <p class="text-neutral-50">Den 1. november 2017, stod jeg klar i Københavns Lufthavn og var klar til mit…</p>
+            <section class="lg:hidden block">
+                <section class="py-s">
+                    <h2 class="pb-s">Rejsebreve</h2>
+                    <section class="gap-s">
+                        <div class="pb-s">
+                            <div class="relative group">
+                                <img src="/laura.webp" alt="Billede af Laura" class="w-full h-full object-cover rounded-sm" />
+                                <div class="absolute inset-0 bg-neutral-950 opacity-50 rounded-sm"></div>
+                                <div class="overlay absolute inset-0 bg-orange-500 opacity-0 group-hover:opacity-50 transition-opacity duration-300 rounded-sm"></div>
+                                <div class="absolute inset-x-0 bottom-0 p-s z-10">
+                                    <h3 class="text-neutral-50">Laura Sofie Pedersen</h3>
+                                    <p class="text-neutral-50">Den 1. november 2017, stod jeg klar i Københavns Lufthavn og var klar til mit…</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="pb-s">
-                        <div class="relative group">
-                            <img src="/emma.webp" alt="Billede af Emma" class="w-full h-full object-cover rounded-sm" />
-                            <div class="absolute inset-0 bg-neutral-950 opacity-50 rounded-sm"></div>
-                            <div class="overlay absolute inset-0 bg-orange-500 opacity-0 group-hover:opacity-50 transition-opacity duration-300 rounded-sm"></div>
-                            <div class="absolute inset-x-0 bottom-0 p-s z-10">
-                                <h3 class="text-neutral-50">Emma Jo Sørensen</h3>
-                                <p class="text-neutral-50">Med lidt under en uge tilbage her i Caribien kan jeg virkelig mærke, hvor meget…</p>
+                        <div class="pb-s">
+                            <div class="relative group">
+                                <img src="/emma.webp" alt="Billede af Emma" class="w-full h-full object-cover rounded-sm" />
+                                <div class="absolute inset-0 bg-neutral-950 opacity-50 rounded-sm"></div>
+                                <div class="overlay absolute inset-0 bg-orange-500 opacity-0 group-hover:opacity-50 transition-opacity duration-300 rounded-sm"></div>
+                                <div class="absolute inset-x-0 bottom-0 p-s z-10">
+                                    <h3 class="text-neutral-50">Emma Jo Sørensen</h3>
+                                    <p class="text-neutral-50">Med lidt under en uge tilbage her i Caribien kan jeg virkelig mærke, hvor meget…</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="pb-s">
-                        <div class="relative group">
-                            <img src="/kristoffer.webp" alt="Billede af Kristoffer" class="w-full h-full object-cover rounded-sm" />
-                            <div class="absolute inset-0 bg-neutral-950 opacity-50 rounded-sm"></div>
-                            <div class="overlay absolute inset-0 bg-orange-500 opacity-0 group-hover:opacity-50 transition-opacity duration-300 rounded-sm"></div>
-                            <div class="absolute inset-x-0 bottom-0 p-s z-10">
-                                <h3 class="text-neutral-50">Kristoffer Strandhauge</h3>
-                                <p class="text-neutral-50">Hvis man beder en person om at beskrive hvordan han eller hun forestiller sig Caribien…</p>
+                        <div class="">
+                            <div class="relative group">
+                                <img src="/kristoffer.webp" alt="Billede af Kristoffer" class="w-full h-full object-cover rounded-sm" />
+                                <div class="absolute inset-0 bg-neutral-950 opacity-50 rounded-sm"></div>
+                                <div class="overlay absolute inset-0 bg-orange-500 opacity-0 group-hover:opacity-50 transition-opacity duration-300 rounded-sm"></div>
+                                <div class="absolute inset-x-0 bottom-0 p-s z-10">
+                                    <h3 class="text-neutral-50">Kristoffer Strandhauge</h3>
+                                    <p class="text-neutral-50">Hvis man beder en person om at beskrive hvordan han eller hun forestiller sig Caribien…</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </section>
+                    <h4 class="pt-xs text-orange-600 flex justify-center">Se flere</h4>
                 </section>
-                <h4 class="pt-s text-orange-600 flex justify-center">Se flere</h4>
             </section>
         </section>
 
         <!------------------------------- Trustpilot - Mobil ------------------------------->
-        <section class="md:hidden block">
-            <section class="col-span-3" x-data="{slidenr: 'one'}">
-                <img class="w-8xl pb-s" src="/trustpilot_logo_black.svg" alt="trustpilot logo" />
+        <section class="lg:hidden block">
+            <section class="pt-s">
+                <section class="col-span-3" x-data="{slidenr: 'one'}">
+                    <img class="w-8xl pb-s" src="/trustpilot_logo_black.svg" alt="trustpilot logo" />
 
-                <div class="flex flex-row">
-                    <section class="grid grid-cols-3 gap-s slide1" x-show="slidenr === 'one'" x-transition:enter.duration.700ms>
-                        <div class="col-start-1 col-span-3 row-start-1 relative group">
-                            <div class="bg-neutral-100 rounded-[5px]">
-                                <div class="p-s pr-ml">
-                                    <img class="w-4xl pb-xs" src="/stjerner.svg" alt="trustpilot stjerner" />
-                                    <h4 class="pb-xs">Bedste beslutning nogensinde</h4>
-                                    <p class="pb-xs">Hvis man gerne vil ud og rejse, men også vil møde nogle nye mennesker. Så vil jeg helt klart...</p>
-                                    <p class="text-neutral-800">William, 20. juni 2024</p>
+                    <div class="flex flex-row">
+                        <section class="grid grid-cols-3 gap-s slide1" x-show="slidenr === 'one'" x-transition:enter.duration.700ms>
+                            <div class="col-start-1 col-span-3 row-start-1 relative group">
+                                <div class="bg-neutral-100 rounded-[5px]">
+                                    <div class="p-s pr-ml">
+                                        <img class="w-4xl pb-xs" src="/stjerner.svg" alt="trustpilot stjerner" />
+                                        <h4 class="pb-xs">Bedste beslutning nogensinde</h4>
+                                        <p class="pb-xs">Hvis man gerne vil ud og rejse, men også vil møde nogle nye mennesker. Så vil...</p>
+                                        <p class="text-neutral-800">William, 20. juni 2024</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <button type=" button" class="col-start-3 row-start-1 z-10 bg-gradient-to-l from-neutral-300 text-right pr-xxs rounded-[5px]" @click="slidenr = 'two'">
-                            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 bg-neutral-100 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
-                                <svg class="w-4 h-4 text-neutral-600 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"></path>
-                                </svg>
-                                <span class="sr-only">Next</span>
-                            </span>
-                        </button>
-                    </section>
+                            <button type=" button" class="col-start-3 row-start-1 z-10 bg-gradient-to-l from-neutral-300 text-right pr-xxs rounded-[5px]" @click="slidenr = 'two'">
+                                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 bg-neutral-100 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                                    <svg class="w-4 h-4 text-neutral-600 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"></path>
+                                    </svg>
+                                    <span class="sr-only">Next</span>
+                                </span>
+                            </button>
+                        </section>
 
-                    <section class="grid grid-cols-3 gap-s slide2" x-show="slidenr === 'two'" x-transition:enter.duration.700ms>
-                        <div class="col-start-1 col-span-3 row-start-1 relative group">
-                            <div class="bg-neutral-100 rounded-[5px]">
-                                <div class="p-s pl-ml">
-                                    <img class="w-4xl pb-xs" src="/stjerner.svg" alt="trustpilot stjerner" />
-                                    <h4 class="pb-xs">Kæmpe anbefaling</h4>
-                                    <p class="pb-xs">Jeg har lige været afsted i 3 måneder på turen Hawaii, Australien, Japan, Bali...</p>
-                                    <p class="text-neutral-800">Ida, 26. januar 2024</p>
+                        <section class="grid grid-cols-3 gap-s slide2" x-show="slidenr === 'two'" x-transition:enter.duration.700ms>
+                            <div class="col-start-1 col-span-3 row-start-1 relative group">
+                                <div class="bg-neutral-100 rounded-[5px]">
+                                    <div class="p-s pl-ml">
+                                        <img class="w-4xl pb-xs" src="/stjerner.svg" alt="trustpilot stjerner" />
+                                        <h4 class="pb-xs">Kæmpe anbefaling</h4>
+                                        <p class="pb-xs">Jeg har lige været afsted i 3 måneder på turen Hawaii, Australien...</p>
+                                        <p class="text-neutral-800">Ida, 26. januar 2024</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <button type=" button" class="col-start-1 row-start-1 z-10 bg-gradient-to-r from-neutral-300 text-left pl-xxs rounded-[5px]" @click="slidenr = 'one'">
-                            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 bg-neutral-100 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
-                                <svg class="w-4 h-4 text-neutral-600 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"></path>
-                                </svg>
-                                <span class="sr-only">Previous</span>
-                            </span>
-                        </button>
-                    </section>
-                </div>
-                <div class="flex justify-center items-center text-center">
-                    <p class="pt-s">Bedømt til 4.8 / 5 baseret på 100 anmeldelser. Viser vores 5-stjernede anmeldelser.</p>
-                </div>
-                <div class="flex justify-center items-center">
-                    <img class="w-3xl" src="/trustpilot_logo_black.svg" alt="trustpilot logo" />
-                </div>
+                            <button type=" button" class="col-start-1 row-start-1 z-10 bg-gradient-to-r from-neutral-300 text-left pl-xxs rounded-[5px]" @click="slidenr = 'one'">
+                                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 bg-neutral-100 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                                    <svg class="w-4 h-4 text-neutral-600 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"></path>
+                                    </svg>
+                                    <span class="sr-only">Previous</span>
+                                </span>
+                            </button>
+                        </section>
+                    </div>
+                    <div class="flex justify-center items-center text-center">
+                        <p class="pt-s">Bedømt til 4.8 / 5 baseret på 100 anmeldelser. Viser vores 5-stjernede anmeldelser.</p>
+                    </div>
+                    <div class="flex justify-center items-center pb-s">
+                        <img class="w-3xl" src="/trustpilot_logo_black.svg" alt="trustpilot logo" />
+                    </div>
+                </section>
             </section>
         </section>
     </section>
