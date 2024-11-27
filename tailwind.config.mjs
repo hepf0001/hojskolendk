@@ -105,7 +105,7 @@ export default {
         'h2-mobile': ['2rem', { lineHeight: '2.5rem' }],
         'h3-desktop': ['2rem', { lineHeight: '2.5rem' }],
         'h3-mobile': ['1.5rem', { lineHeight: '2.25rem' }],
-        'h4-desktop': ['1.5rem', { lineHeight: '2.25rem' }],
+        'h4-desktop': ['1.25rem', { lineHeight: '2.25rem' }],
         'h4-mobile': ['1.125rem', { lineHeight: '1.875rem' }],
         'p-desktop': ['1.125rem', { lineHeight: '1.875rem' }],
         'p-mobile': ['1rem', { lineHeight: '1.5rem' }],
