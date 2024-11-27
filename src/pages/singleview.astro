@@ -8,11 +8,12 @@ import Link from "../components/Link.astro";
     <!------------------------------- Hero ------------------------------->
 
     <section class="relative w-full">
-        <img class="w-full object-cover" src="/hero-single.webp" alt="gruppe billede" />
+        <div class="absolute inset-0 bg-neutral-950 w-full md:h-[700px] h-[450px] bg-opacity-30 z-10"></div>
+        <img class="md:h-[700px] h-[450px] w-full object-cover" src="/hero-single.webp" alt="gruppe billede" />
         <div class="absolute inset-0 flex items-center max-w-7xl mx-auto p-s">
             <section class="justify-start grid md:grid-cols-12 gap-s">
                 <div class="flex items-center col-span-6">
-                    <h1 class="text-neutral-50 display">HØJSKOLE I CARIBIEN, HAWAII & MEXICO</h1>
+                    <h1 class="text-neutral-50 display z-20">HØJSKOLE I CARIBIEN, HAWAII & MEXICO</h1>
                 </div>
             </section>
         </div>
@@ -20,7 +21,7 @@ import Link from "../components/Link.astro";
 
     <!------------------------------- Info card ------------------------------->
     <section class="bg-neutral-200">
-        <section class="max-w-7xl mx-auto px-s">
+        <section class="max-w-7xl mx-auto md:px-s">
             <section class="grid lg:grid-cols-11">
                 <section class="col-span-1 flex lg:items-center lg:flex-row flex-col">
                     <div class="lg:px-xxs px-s">
@@ -122,8 +123,162 @@ import Link from "../components/Link.astro";
                         </h3>
                         <div id="answer-2" class="hidden bg-neutral-100" aria-labelledby="accordion-color-heading-2">
                             <div class="p-s">
-                                <h3>Program</h3>
-                                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae quidem impedit doloremque explicabo illum quos. Molestias aspernatur rem itaque doloribus culpa similique rerum provident id quos sed.</p>
+                                <section class="pb-ml">
+                                    <h3 class="pb-xxxs">Introdage</h3>
+                                    <div class="flex flex-row gap-4">
+                                        <div class="flex items-center gap-2 mb-4">
+                                            <img src="/location.svg" alt="" class="w-7 h-7 object-cover" />
+                                            <p class="">New York City, USA</p>
+                                        </div>
+                                    </div>
+                                    <div class="pb-xs">
+                                        <img src="/introdage.webp" alt="introdage" />
+                                    </div>
+                                    <div>
+                                        <p class="pb-xs">
+                                            Vi starter vores rejseeventyr med 3-4 dage på Manhattan i New York City, hvor vi lærer hinanden at kende, rystes godt sammen og i fællesskab udforsker byen. Oplev Central Park, Frihedsgudinden, Brooklyn Bridge, SoHo, Bronx, Empire State Building, Times Square, Little Italy, Chinatown og Broadway.
+                                        </p>
+                                        <p>Derefter flyver vi til Hawaii, hvor aloha-spirit, strande, surfing, vulkaner og Luau venter på os.</p>
+                                    </div>
+                                </section>
+
+                                <section class="pb-ml">
+                                    <h3 class="pb-xxxs">Teambuilding & aktiviteter</h3>
+                                    <div class="flex flex-row gap-4">
+                                        <div class="flex items-center gap-2 mb-4">
+                                            <img src="/location.svg" alt="" class="w-7 h-7 object-cover" />
+                                            <p class="">Oahu, Hawaii</p>
+                                        </div>
+                                    </div>
+                                    <div class="pb-xs">
+                                        <img src="/teambuildingvelse.webp" alt="introdage" />
+                                    </div>
+                                    <div>
+                                        <p class="pb-xs">Fra New Yorks pulserende storby tager vi til Oahu, nærmere bestemt Waikiki Beach. Vi bor i Honolulu, hvor vi oplever Pearl Harbor Memorial, Iolani-paladset og Diamond Head-krateret med udsigt over Stillehavet.</p>
+                                        <p>North Shore tilbyder hvide sandstrande og surfing. Vi surfer med lokale, hiker til udsigtspunkter og store vandfald, og udforsker polynesisk kultur.</p>
+                                    </div>
+                                </section>
+
+                                <section class="pb-ml">
+                                    <h3 class="pb-xxxs">Friuge</h3>
+                                    <div class="flex flex-row gap-4">
+                                        <div class="flex items-center gap-2 mb-4">
+                                            <img src="/location.svg" alt="" class="w-7 h-7 object-cover" />
+                                            <p class="">Hawaii</p>
+                                        </div>
+                                    </div>
+                                    <div class="pb-xs">
+                                        <img src="/hawaii-friuge.webp" alt="introdage" />
+                                    </div>
+                                    <div>
+                                        <p class="pb-xs">
+                                            Hawaii-øerne består af 8 hovedøer: Oahu, Hawai’i (Big Island), Maui, Kauai, L’nai, Niihau, Molokai og Kaho’olawe. Da øerne er forskellige, kan det være svært at vælge, hvilke(n) man skal besøge. Det tager kun ca. ½-1 time fra Honolulu til hver af øerne, så det er muligt at udforske flere under friugen.
+                                        </p>
+                                        <p>Vi tager en god snak undervejs om jeres muligheder og vores anbefalinger.</p>
+                                    </div>
+                                </section>
+
+                                <section class="pb-ml">
+                                    <h3 class="pb-xxxs">Frivilligt arbejde & kulturforståelse</h3>
+                                    <div class="flex flex-row gap-4">
+                                        <div class="flex items-center gap-2 mb-4">
+                                            <img src="/location.svg" alt="" class="w-7 h-7 object-cover" />
+                                            <p class="">Playa Del Carmen, Mexico</p>
+                                        </div>
+                                    </div>
+                                    <div class="pb-xs">
+                                        <img src="/mexico-frivilligt-arbejde.webp" alt="introdage" />
+                                    </div>
+                                    <div>
+                                        <p class="pb-xs">I Mexico bor vi i farverige Playa del Carmen på Yucatán-halvøen ved det caribiske hav. Byen er kendt for aktiviteter og afslapning. Vi vænner os til en ny kultur med krydrede dufte, spanske samtaler og mariachi-musik.</p>
+                                        <p>"Playa" byder på restauranter, caféer og barer med livemusik ned til stranden. Der er dykning, snorkling, beachvolley og adventure-oplevelser. Byen ligger perfekt til dagsture til Mayaruinerne ved Chichen Itza, Coba og Tulum, samt undervandsgrotter.</p>
+                                    </div>
+                                </section>
+
+                                <section class="pb-ml">
+                                    <h3 class="pb-xxxs">Friuge</h3>
+                                    <div class="flex flex-row gap-4">
+                                        <div class="flex items-center gap-2 mb-4">
+                                            <img src="/location.svg" alt="" class="w-7 h-7 object-cover" />
+                                            <p class="">Mexico</p>
+                                        </div>
+                                    </div>
+                                    <div class="pb-xs">
+                                        <img src="/mexico-friuge.webp" alt="introdage" />
+                                    </div>
+                                    <div>
+                                        <p class="pb-xs">Udforsk Mexicos spændende kultur med ældgamle maya-ruiner og inka-ruiner, eller fyld ugen med adventure i grotte-systemer under Yucatán-halvøen eller ATV-ture gennem junglen.</p>
+                                        <p>For flere rejseoplevelser kan du besøge Guatemala, Belize eller Costa Rica. Eventyrlystne kan tage direkte fly til Sydamerika og opleve Brasilien, Colombia, Bolivia, Argentina, Peru og/eller Ecuador.</p>
+                                    </div>
+                                </section>
+
+                                <section class="pb-ml">
+                                    <h3 class="pb-xxxs">Selvudvikling & kommunikation</h3>
+                                    <div class="flex flex-row gap-4">
+                                        <div class="flex items-center gap-2 mb-4">
+                                            <img src="/location.svg" alt="" class="w-7 h-7 object-cover" />
+                                            <p class="">St. Croix, US Virgin Islands</p>
+                                        </div>
+                                    </div>
+                                    <div class="pb-xs">
+                                        <img src="/bedste-strande-i-caribien-2.webp" alt="introdage" />
+                                    </div>
+                                    <div>
+                                        <p class="pb-xs">Midt i det Caribiske hav ligger de tidligere Dansk Vestindiske Øer – St. Thomas, St. Croix og St. John – nu kendt som US Virgin Islands. Øerne var danske indtil 1917 og har bevaret dansk kulturarv og gadenavne.</p>
+                                        <p>Det er et barfods-paradis med en hjertevarm caribisk kultur og et roligt 'Island Time' tempo. Sammenholdet og fællesskabsfølelsen er unik. Glæd jer.</p>
+                                    </div>
+                                </section>
+
+                                <section class="pb-ml">
+                                    <h3 class="pb-xxxs">Sport & adventure</h3>
+                                    <div class="flex flex-row gap-4">
+                                        <div class="flex items-center gap-2 mb-4">
+                                            <img src="/location.svg" alt="" class="w-7 h-7 object-cover" />
+                                            <p class="">St. Croix, US Virgin Islands</p>
+                                        </div>
+                                    </div>
+                                    <div class="pb-xs">
+                                        <img src="/sport-adventure-i-nepal.webp" alt="introdage" />
+                                    </div>
+                                    <div>
+                                        <p class="pb-xs">Sport & Adventure er en fed kombi af spænding, adrenalin, oplevelser og teamsport.</p>
+                                        <p>Det er en verden, hvor eventyr, aktiviteter og teamspirit går hånd i hånd og uanset om vi skal på kajaktur, hike i regnskoven eller ‘Robinson’ dyste er undervisningen et skønt frirum hvor vi flytter grænser, griner og oplever sammen – og hvor alle kan være med.</p>
+                                    </div>
+                                </section>
+
+                                <section class="pb-ml">
+                                    <h3 class="pb-xxxs">Friuge</h3>
+                                    <div class="flex flex-row gap-4">
+                                        <div class="flex items-center gap-2 mb-4">
+                                            <img src="/location.svg" alt="" class="w-7 h-7 object-cover" />
+                                            <p class="">St. Croix, US Virgin Islands</p>
+                                        </div>
+                                    </div>
+                                    <div class="pb-xs">
+                                        <img src="/dansk-vestindien-friuge-i-caribien.webp" alt="introdage" />
+                                    </div>
+                                    <div>
+                                        <p class="pb-xs">Mange elever har lyst til at udforske øerne omkring St. Croix, og ferien her er en god mulighed til det. Det er populært at tage en båd til St. Thomas eller St. John, eller købe en billig flybillet til Puerto Rico.</p>
+                                        <p>For større ferie-eventyr kan man tænke på Miami og/eller Orlando for et US-roadtrip og Miami Beach. Jamaica tilbyder reggae, rastafari-fester og skøn natur. Eller måske en uges ø-hop med et krydstogtskib.</p>
+                                    </div>
+                                </section>
+
+                                <section class="">
+                                    <h3 class="pb-xxxs">Outrodage</h3>
+                                    <div class="flex flex-row gap-4">
+                                        <div class="flex items-center gap-2 mb-4">
+                                            <img src="/location.svg" alt="" class="w-7 h-7 object-cover" />
+                                            <p class="">Puerto Rico, Caribien</p>
+                                        </div>
+                                    </div>
+                                    <div class="pb-xs">
+                                        <img src="/puerto-rico-friuge-i-caribien.webp" alt="introdage" />
+                                    </div>
+                                    <div>
+                                        <p class="pb-xs">De latinamerikanske rytmer fra Mexico venter igen i Puerto Rico. Øen er kendt for sine smukke strande, frodige regnskove og en livlig kultur med spanske, afrikanske og Taíno-indflydelser.</p>
+                                        <p>Glæd dig til musik, køkken og festivaler, samt besøg i El Yunque National Forest.</p>
+                                    </div>
+                                </section>
                             </div>
                         </div>
                     </div>
@@ -139,8 +294,133 @@ import Link from "../components/Link.astro";
                         </h3>
                         <div id="answer-3" class="hidden bg-neutral-100" aria-labelledby="accordion-color-heading-3">
                             <div class="p-s">
-                                <h3>Inkluderet</h3>
-                                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae quidem impedit doloremque explicabo illum quos. Molestias aspernatur rem itaque doloribus culpa similique rerum provident id quos sed.</p>
+                                <h1 class="pb-xs">Hvad er inkluderet?</h1>
+
+                                <h3 class="pb-xxxs">Vores højskoleophold inkluderer altid</h3>
+                                <ul class="list-disc pb-ml pl-s">
+                                    <li class="pb-xxxs text-gray-950">Dansk rejseleder på hele højskoleopholdet</li>
+                                    <li class="pb-xxxs text-gray-950">Danske undervisere – dygtige, inspirerende og engagerende</li>
+                                    <li class="pb-xxxs text-gray-950">24 timers vagttelefon – 365 dage om året</li>
+                                    <li class="pb-xxxs text-gray-950">Infobreve med bl.a., pakkeliste, opholdsinfo mm.</li>
+                                    <li class="pb-xxxs text-gray-950">Grundig vejledning vedr. visum og indrejseregler</li>
+                                    <li class="pb-xxxs text-gray-950">Afrejsemøde i Danmark ca. 5 uger inden afrejsedagen</li>
+                                    <li class="pb-xxxs text-gray-950">Fælles afrejse fra Københavns Lufthavn</li>
+                                    <li class="pb-xxxs text-gray-950">Transfers fra lufthavne tur/retur</li>
+                                    <li class="pb-xxxs text-gray-950">Personligt højskolebevis (til fx Kvote 2 og/eller jobansøgning)</li>
+                                    <li class="pb-xxxs text-gray-950">Lukket Facebook-gruppe med dine nye højskolevenner</li>
+                                    <li class="pb-xxxs text-gray-950">15% rabat på vaccinationer hos www.sikkerrejse.dk</li>
+                                    <li class="pb-xxxs text-gray-950">Indkvartering under hele opholdet (friuger undtaget)</li>
+                                    <li class="pb-xxxs text-gray-950">Entré og lokal transport ifm. programmet</li>
+                                    <li class="pb-xxxs text-gray-950">Skønne, dygtige og særligt udvalgte lokale guider</li>
+                                    <li class="pb-xxxs text-gray-950">Højskoleaftener med fællesskab, good-times og hygge</li>
+                                    <li class="pb-xxxs text-gray-950">Medlemskab i HÖJSKOLENDKs elevforening</li>
+                                    <li class="pb-xxxs text-gray-950">Et stærkt fokus på fællesskab, eventyr & adventure</li>
+                                    <li class="pb-xxxs text-gray-950">Bidrag til Rejsegarantifonden – medlemsnummer 2885</li>
+                                    <li class="pb-xxxs text-gray-950">Bidrag til ’World Animal Protection’</li>
+                                    <li class="pb-xxxs text-gray-950">Bidrag til fredning af skov i samarbejde med ’Verdens Skove’</li>
+                                    <li class="pb-xxxs text-gray-950">Vi planter 50 træer pr. elev i samarbejde med ’Trees.org’</li>
+                                </ul>
+
+                                <h3 class="pb-xxxs">Generelt for opholdet</h3>
+                                <ul class="list-disc pb-ml pl-s">
+                                    <li class="pb-xxxs text-gray-950">Flybilletter tur/retur</li>
+                                    <li class="pb-xxxs text-gray-950">Flyskatter, Afgifter & Bagage</li>
+                                    <li class="pb-xxxs text-gray-950">Introdage m/skræddersyet program for fælleskab</li>
+                                    <li class="pb-xxxs text-gray-950">HÖJSKOLENDK Adventurerace</li>
+                                    <li class="pb-xxxs text-gray-950">Undervisning i faget ‘Teambuilding’</li>
+                                    <li class="pb-xxxs text-gray-950">Undervisning i faget ‘Frivilligt Arbejde & Kulturforståelse’</li>
+                                    <li class="pb-xxxs text-gray-950">Undervisning i faget ‘Selvudvikling & Kommunikation’</li>
+                                    <li class="pb-xxxs text-gray-950">Undervisning i faget ‘Sport & Adventure’</li>
+                                </ul>
+
+                                <h3 class="pb-xxxs">New York City</h3>
+                                <ul class="list-disc pb-ml pl-s">
+                                    <li class="pb-xxxs text-gray-950">Indkvartering på Manhattan</li>
+                                    <li class="pb-xxxs text-gray-950">HÖJSKOLENDKs NYC Adventurerace</li>
+                                    <li class="pb-xxxs text-gray-950">New York CityTour m/lokal guide</li>
+                                    <li class="pb-xxxs text-gray-950">Times Square</li>
+                                    <li class="pb-xxxs text-gray-950">Central Park</li>
+                                    <li class="pb-xxxs text-gray-950">One World Trade Center</li>
+                                    <li class="pb-xxxs text-gray-950">Chinatown</li>
+                                    <li class="pb-xxxs text-gray-950">Brooklyn Bridge</li>
+                                    <li class="pb-xxxs text-gray-950">The ‘Friends’ apartment</li>
+                                </ul>
+
+                                <h3 class="pb-xxxs">Hawaii</h3>
+                                <ul class="list-disc pb-ml pl-s">
+                                    <li class="pb-xxxs text-gray-950">Indkvartering tæt på Waikiki Beach, Oahu</li>
+                                    <li class="pb-xxxs text-gray-950">Surfing</li>
+                                    <li class="pb-xxxs text-gray-950">Koko Head hike</li>
+                                    <li class="pb-xxxs text-gray-950">Diamond Head crater</li>
+                                    <li class="pb-xxxs text-gray-950">Swap Meet Market</li>
+                                    <li class="pb-xxxs text-gray-950">Vandfalds-hike</li>
+                                    <li class="pb-xxxs text-gray-950">Beachvolley på Waikiki Beach</li>
+                                    <li class="pb-xxxs text-gray-950">Besøg ved Pearl Harbor</li>
+                                </ul>
+
+                                <h3 class="pb-xxxs">Mexico</h3>
+                                <ul class="list-disc pb-ml pl-s">
+                                    <li class="pb-xxxs text-gray-950">Indkvartering i Playa Del Carmen, Yucatán</li>
+                                    <li class="pb-xxxs text-gray-950">Heldagstur til Chitchen Itza</li>
+                                    <li class="pb-xxxs text-gray-950">Tulum og Paradise Beach heldagstur</li>
+                                    <li class="pb-xxxs text-gray-950">Tulum guidet by-tur</li>
+                                    <li class="pb-xxxs text-gray-950">Street food tour</li>
+                                    <li class="pb-xxxs text-gray-950">Madlavningskursus</li>
+                                    <li class="pb-xxxs text-gray-950">Jungletour</li>
+                                    <li class="pb-xxxs text-gray-950">Rapelling</li>
+                                    <li class="pb-xxxs text-gray-950">Zipline</li>
+                                    <li class="pb-xxxs text-gray-950">Badning i Cenoter</li>
+                                    <li class="pb-xxxs text-gray-950">Salsa undervisning</li>
+                                    <li class="pb-xxxs text-gray-950">Besøg ved lokalt skoleprojekt</li>
+                                    <li class="pb-xxxs text-gray-950">Maya-Ceremoni</li>
+                                    <li class="pb-xxxs text-gray-950">Gåtur ned af 5th Avenue</li>
+                                </ul>
+
+                                <h3 class="pb-xxxs">Caribien</h3>
+                                <ul class="list-disc pb-ml pl-s">
+                                    <li class="pb-xxxs text-gray-950">Indkvartering på St. Croix</li>
+                                    <li class="pb-xxxs text-gray-950">Velkomstmiddag</li>
+                                    <li class="pb-xxxs text-gray-950">Island Beach Tour</li>
+                                    <li class="pb-xxxs text-gray-950">Kajaktur med selvlysende plankton</li>
+                                    <li class="pb-xxxs text-gray-950">Snorkel- og Nationalpark tur – Buck Island National park</li>
+                                    <li class="pb-xxxs text-gray-950">Kulturaften m/lokal foredragsholder</li>
+                                    <li class="pb-xxxs text-gray-950">Tide Pools</li>
+                                    <li class="pb-xxxs text-gray-950">Smykke-workshop</li>
+                                    <li class="pb-xxxs text-gray-950">Rainbow Beach</li>
+                                    <li class="pb-xxxs text-gray-950">Point Udall (USAs mest østlige punkt)</li>
+                                    <li class="pb-xxxs text-gray-950">Salt River National Park</li>
+                                    <li class="pb-xxxs text-gray-950">Turtle Beach</li>
+                                    <li class="pb-xxxs text-gray-950">Carambola Beach</li>
+                                    <li class="pb-xxxs text-gray-950">Robinson Dyst</li>
+                                    <li class="pb-xxxs text-gray-950">Ultimate Frisbee</li>
+                                    <li class="pb-xxxs text-gray-950">Live-musik på Caribisk Beach Bar</li>
+                                    <li class="pb-xxxs text-gray-950">Turtle Watch (NB: Kun forårs-sæson)</li>
+                                </ul>
+
+                                <h3 class="pb-xs">Puerto Rico</h3>
+                                <ul class="list-disc pb-ml pl-s">
+                                    <li class="pb-xxxs text-gray-950">Heldagstur til El Yunque National Forest</li>
+                                    <li class="pb-xxxs text-gray-950">Vandfald i National Park</li>
+                                    <li class="pb-xxxs text-gray-950">Naturlige waterslides i national parken</li>
+                                </ul>
+
+                                <hr class="border-[1px] border-neutral-800" />
+
+                                <h1 class="pb-m pt-ml">Hvad er ikke inkluderet?</h1>
+
+                                <ul class="list-disc pl-s">
+                                    <li class="pb-xxxs text-gray-950">Lommepenge til fritid, aktiviteter & shopping</li>
+                                    <li class="pb-xxxs text-gray-950">Mad, drikke og snacks</li>
+                                </ul>
+
+                                <ul class="list-disc pl-s">
+                                    <li class="pb-xxxs text-gray-950">Rejseforsikring & afbestillingsforsikring Visum og evt. andre indrejsedokumenter</li>
+                                </ul>
+
+                                <ul class="list-disc pl-s">
+                                    <li class="pb-xxxs text-gray-950">Vaccinationer</li>
+                                    <li class="pb-xxxs text-gray-950">Indkvatering & transport i friuger</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -156,8 +436,57 @@ import Link from "../components/Link.astro";
                         </h3>
                         <div id="answer-4" class="hidden bg-neutral-100" aria-labelledby="accordion-color-heading-4">
                             <div class="p-s">
-                                <h3>Fag</h3>
-                                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae quidem impedit doloremque explicabo illum quos. Molestias aspernatur rem itaque doloribus culpa similique rerum provident id quos sed.</p>
+                                <section class="pb-ml">
+                                    <h3 class="pb-xxxs">Teambuilding</h3>
+                                    <div class="pb-xs">
+                                        <img src="/samarbejdsoevelser.webp" alt="introdage" />
+                                    </div>
+                                    <div>
+                                        <p class="pb-xs">Teambuilding er spændende og inspirerende fag. Fællesskabet er vigtigt, så alle trives på vores højskole-eventyr. Vi styrker fællesskabet med tankevækkende og sjove samarbejdsøvelser.</p>
+                                        <p class="pb-xs">Udover sjove og lærerige øvelser, får I indsigt i relationer, tillid, værdier, kommunikation og konfliktløsning.</p>
+                                        <p class="pb-xs">Teambuilding-dagene giver os en fremragende start og lægger grunden for et stærkt, inkluderende fællesskab. Glæd dig til en inspirerende og meningsfuld start på vores fantastiske højskole-eventyr.</p>
+                                        <a href="https://www.hojskolendk.dk/om-os/paa-hoejskole-i-udlandet/fag-undervisning/teambuilding/">Læs mere om ‘Teambuilding’ her!</a>
+                                    </div>
+                                </section>
+
+                                <section class="pb-ml">
+                                    <h3 class="pb-xxxs">Frivilligt arbejde & kulturforståelse</h3>
+                                    <div class="pb-xs">
+                                        <img src="/frivilligt-arbejde.webp" alt="introdage" />
+                                    </div>
+                                    <div>
+                                        <p class="pb-xs">I HØJSKOLENDK tilbyder vi projekter, der gavner lokalsamfundet og giver mening for vores elever. Vælg mellem at arbejde med mennesker, dyreliv, kultur eller praktiske opgaver.</p>
+                                        <p class="pb-xs">Sammen med vores netværk i Mexico kan du hjælpe et dyreinternat eller gøre en forskel for børnehjem eller hjemløse. Du får en unik kulturforståelse og kommer tættere på områdets udfordringer.</p>
+                                        <p class="pb-xs">Glæd dig til at gøre en forskel!</p>
+                                        <a href="https://www.hojskolendk.dk/om-os/paa-hoejskole-i-udlandet/fag-undervisning/frivilligt-arbejde-kulturforstaaelse/">Læs mere om ‘Frivilligt Arbejde & Kulturforståelse’ her!</a>
+                                    </div>
+                                </section>
+
+                                <section class="pb-ml">
+                                    <h3 class="pb-xxxs">Selvudvikling & kommunikation</h3>
+                                    <div class="pb-xs">
+                                        <img src="/selvudvikling.webp" alt="introdage" />
+                                    </div>
+                                    <div>
+                                        <p class="pb-xs">
+                                            Undervisningen i Selvudvikling & Kommunikation fokuserer på personlig vækst og åben dialog. Vi bruger praktiske øvelser og redskaber som debat, refleksion, coaching, mindfulness og feedback. Du vil få større indsigt i dig selv og dine stærke sider, både alene og i grupper. Vi sørger for, at du tager nye
+                                            redskaber med hjem, og tilbyder individuelle samtaler.
+                                        </p>
+                                        <a href="https://www.hojskolendk.dk/om-os/paa-hoejskole-i-udlandet/fag-undervisning/selvudvikling-kommunikation/">Læs mere om ‘Selvudvikling & Kommunikation’ her!</a>
+                                    </div>
+                                </section>
+
+                                <section class="">
+                                    <h3 class="pb-xxxs">Sport & adventure</h3>
+                                    <div class="pb-xs">
+                                        <img src="/sport.webp" alt="introdage" />
+                                    </div>
+                                    <div>
+                                        <p class="pb-xs">Sport & Adventure er et fag med fart på og vi er aktive og arbejder med teamsport, adventure og outdoor-aktiviteter. Alt sammen aktiviteter der udvikler dig fysisk og mentalt, flytter dine grænser og skaber stærkere relationer i vores fællesskab.</p>
+                                        <p class="pb-xs">Der bliver ikke tid til at sidde stille for længe af gangen, for vi tror på at man lærer bedst ved at træne, lege og erfare tingene selv – og at det skal være trygt og sjovt når man lærer noget nyt.</p>
+                                        <a href="https://www.hojskolendk.dk/om-os/paa-hoejskole-i-udlandet/fag-undervisning/sport-adventure/">Læs mere om ‘Sport & Adventure’ her!</a>
+                                    </div>
+                                </section>
                             </div>
                         </div>
                     </div>
@@ -173,8 +502,19 @@ import Link from "../components/Link.astro";
                         </h3>
                         <div id="answer-5" class="hidden bg-neutral-100" aria-labelledby="accordion-color-heading-5">
                             <div class="p-s">
-                                <h3>Kontakt</h3>
-                                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae quidem impedit doloremque explicabo illum quos. Molestias aspernatur rem itaque doloribus culpa similique rerum provident id quos sed.</p>
+                                <div class="pb-m">
+                                    <img src="/peter.webp" alt="" />
+                                </div>
+                                <h1 class="pb-xs">Peter Kristensen</h1>
+                                <p class="pb-xs">
+                                    Hvis du læser dette, har du sikkert eventyr i blodet og er nysgerrig på vores højskoleophold i Caribien, Hawaii og Mexico. Måske har du også nogle spørgsmål eller ønsker en snak om opholdet. Jeg hedder Peter og er tidligere elev (fra 2011) på HÖJSKOLENDK. Efter mit fantastiske ophold blev jeg rejseleder og senere
+                                    underviser, og nu er jeg teamleder på kontoret.
+                                </p>
+                                <p class="pb-xs">Mit hovedansvar er dette højskoleophold, så det er mig, der sørger for alt det praktiske og gør mit bedste for at give dig en fantastisk rejse.</p>
+                                <p class="pb-xs">Hvis du har spørgsmål, vil høre mere eller bare ønsker en hyggelig snak, er du altid velkommen til at give mig et kald eller sende en mail.</p>
+                                <p class="pb-xs">Tlf.: 7027 9007 // Mail: pk@hojskolendk.dk</p>
+                                <p class="pb-xs">Jeg glæder mig til at høre fra dig!</p>
+                                <p class="pb-xs">Peter – HÖJSKOLENDK</p>
                             </div>
                         </div>
                     </div>
@@ -187,7 +527,7 @@ import Link from "../components/Link.astro";
                     <div class="pb-s">
                         <div class="bg-neutral-100 rounded-sm flex items-center justify-center h-full">
                             <div class="p-s text-center">
-                                <p class="">Glade & skønne elever</p>
+                                <p class="font-semibold">Glade & skønne elever</p>
                                 <h1 class="text-orange-600">2.000+</h1>
                             </div>
                         </div>
@@ -196,7 +536,7 @@ import Link from "../components/Link.astro";
                     <div class="pb-s">
                         <div class="bg-neutral-100 rounded-sm flex items-center justify-center h-full">
                             <div class="p-s text-center">
-                                <p class="">Anbefaler Höjskolendk</p>
+                                <p class="font-semibold">Anbefaler Höjskolendk</p>
                                 <h1 class="text-orange-600">94%</h1>
                             </div>
                         </div>
@@ -205,7 +545,7 @@ import Link from "../components/Link.astro";
                     <div class="pb-s">
                         <div class="bg-neutral-100 rounded-sm flex items-center justify-center h-full">
                             <div class="p-s text-center">
-                                <p class="">Tilfredshed efter ophold</p>
+                                <p class="font-semibold">Tilfredshed efter ophold</p>
                                 <h1 class="text-orange-600">8.7/10</h1>
                             </div>
                         </div>
@@ -214,7 +554,7 @@ import Link from "../components/Link.astro";
                     <div class="pb-s">
                         <div class="bg-neutral-100 rounded-sm flex items-center justify-center h-full">
                             <div class="p-s text-center">
-                                <img src="/trustpilot_logo_black.svg" alt="trustpilot logo" />
+                                <img class="w-3xl" src="/trustpilot_logo_black.svg" alt="trustpilot logo" />
                                 <h1 class="text-orange-600">4.8/5</h1>
                             </div>
                         </div>
@@ -236,7 +576,7 @@ import Link from "../components/Link.astro";
                         <div id="tab1" class="tab-content p-md">
                             <section class="grid grid-cols-2 gap-md">
                                 <div>
-                                    <div class="pb-ml">
+                                    <div class="pb-xl">
                                         <h3 class="pb-s">CARIBIEN, HAWAII & MEXICO</h3>
                                         <p class="pb-xs">Tag med på drømmenes højskoleophold til et vaskeægte paradis med verdens bedste strande, surfing, den smukkeste natur og sol hver dag.</p>
                                         <p>Et rejseeventyr med masser af adventure på vulkaner, i regnskov og ikke mindst på, i og under vandet. En fantastisk højskole i udlandet.</p>
@@ -250,7 +590,7 @@ import Link from "../components/Link.astro";
                                     </div>
                                 </div>
                                 <div>
-                                    <div class="pb-ml">
+                                    <div class="pb-xl">
                                         <h3 class="pb-s">Mexico</h3>
                                         <p class="pb-xs">Mexico byder på en fantastisk kombination af sol, varme, eksotiske og lækre strande, et perfekt klima og naturskønne omgivelser på Yucatan halvøen.</p>
                                         <p class="pb-xs">Vi oplever den ældgamle mayakultur, med inka-ruiner og maya indianere, og udforsker områdets fantastiske natur og dyreliv – over og under vand. Vi bor downtown i Playa del Carmen, hvor der både er plads til undervisning, chill-time og masser af lækkert højskolefællesskab.</p>
@@ -264,20 +604,375 @@ import Link from "../components/Link.astro";
                             </section>
                         </div>
                         <div id="tab2" class="tab-content p-md hidden">
-                            <h3 class="">Program</h3>
-                            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae quidem impedit doloremque explicabo illum quos. Molestias aspernatur rem itaque doloribus culpa similique rerum provident id quos sed.</p>
+                            <section class="grid grid-cols-2 gap-md pb-xl">
+                                <div class="flex items-center">
+                                    <img src="/introdage.webp" alt="introdage" />
+                                </div>
+                                <div>
+                                    <h3 class="pb-xxxs">Introdage</h3>
+                                    <div class="flex flex-row gap-4 pb-xs">
+                                        <div class="flex items-center gap-2 mb-4">
+                                            <img src="/location.svg" alt="" class="w-7 h-7 object-cover" />
+                                            <p class="">New York City, USA</p>
+                                        </div>
+                                    </div>
+                                    <p class="pb-xs">
+                                        Vi starter vores rejseeventyr med 3-4 dage på Manhattan i New York City, hvor vi lærer hinanden at kende, rystes godt sammen og i fællesskab udforsker byen. Oplev Central Park, Frihedsgudinden, Brooklyn Bridge, SoHo, Bronx, Empire State Building, Times Square, Little Italy, Chinatown og Broadway.
+                                    </p>
+                                    <p>Derefter flyver vi til Hawaii, hvor aloha-spirit, strande, surfing, vulkaner og Luau venter på os.</p>
+                                </div>
+                            </section>
+
+                            <section class="grid grid-cols-2 gap-md pb-xl">
+                                <div>
+                                    <h3 class="pb-xxxs">Teambuilding & aktiviteter</h3>
+                                    <div class="flex flex-row gap-4 pb-xs">
+                                        <div class="flex items-center gap-2 mb-4">
+                                            <img src="/location.svg" alt="" class="w-7 h-7 object-cover" />
+                                            <p class="">Oahu, Hawaii</p>
+                                        </div>
+                                    </div>
+                                    <p class="pb-xs">Fra New Yorks pulserende storby tager vi til Oahu, nærmere bestemt Waikiki Beach. Vi bor i Honolulu, hvor vi oplever Pearl Harbor Memorial, Iolani-paladset og Diamond Head-krateret med udsigt over Stillehavet.</p>
+                                    <p>North Shore tilbyder hvide sandstrande og surfing. Vi surfer med lokale, hiker til udsigtspunkter og store vandfald, og udforsker polynesisk kultur.</p>
+                                </div>
+                                <div class="flex items-center">
+                                    <img src="/teambuildingvelse.webp" alt="teambuildingvelse" />
+                                </div>
+                            </section>
+
+                            <section class="grid grid-cols-2 gap-md pb-xl">
+                                <div class="flex items-center">
+                                    <img src="/hawaii-friuge.webp" alt="introdage" />
+                                </div>
+                                <div>
+                                    <h3 class="pb-xxxs">Friuge</h3>
+                                    <div class="flex flex-row gap-4 pb-xs">
+                                        <div class="flex items-center gap-2 mb-4">
+                                            <img src="/location.svg" alt="" class="w-7 h-7 object-cover" />
+                                            <p class="">Hawaii</p>
+                                        </div>
+                                    </div>
+                                    <p class="pb-xs">
+                                        Hawaii-øerne består af 8 hovedøer: Oahu, Hawai’i (Big Island), Maui, Kauai, L’nai, Niihau, Molokai og Kaho’olawe. Da øerne er forskellige, kan det være svært at vælge, hvilke(n) man skal besøge. Det tager kun ca. ½-1 time fra Honolulu til hver af øerne, så det er muligt at udforske flere under friugen.
+                                    </p>
+                                    <p>Vi tager en god snak undervejs om jeres muligheder og vores anbefalinger.</p>
+                                </div>
+                            </section>
+
+                            <section class="grid grid-cols-2 gap-md pb-xl">
+                                <div>
+                                    <h3 class="pb-xxxs">Frivilligt arbejde & kulturforståelse</h3>
+                                    <div class="flex flex-row gap-4 pb-xs">
+                                        <div class="flex items-center gap-2 mb-4">
+                                            <img src="/location.svg" alt="" class="w-7 h-7 object-cover" />
+                                            <p class="">Playa Del Carmen, Mexico</p>
+                                        </div>
+                                    </div>
+                                    <p class="pb-xs">I Mexico bor vi i farverige Playa del Carmen på Yucatán-halvøen ved det caribiske hav. Byen er kendt for aktiviteter og afslapning. Vi vænner os til en ny kultur med krydrede dufte, spanske samtaler og mariachi-musik.</p>
+                                    <p>"Playa" byder på restauranter, caféer og barer med livemusik ned til stranden. Der er dykning, snorkling, beachvolley og adventure-oplevelser. Byen ligger perfekt til dagsture til Mayaruinerne ved Chichen Itza, Coba og Tulum, samt undervandsgrotter.</p>
+                                </div>
+                                <div class="flex items-center">
+                                    <img src="/mexico-frivilligt-arbejde.webp" alt="introdage" />
+                                </div>
+                            </section>
+
+                            <section class="grid grid-cols-2 gap-md pb-xl">
+                                <div class="flex items-center">
+                                    <img src="/mexico-friuge.webp" alt="introdage" />
+                                </div>
+                                <div>
+                                    <h3 class="pb-xxxs">Friuge</h3>
+                                    <div class="flex flex-row gap-4 pb-xs">
+                                        <div class="flex items-center gap-2 mb-4">
+                                            <img src="/location.svg" alt="" class="w-7 h-7 object-cover" />
+                                            <p class="">Mexico</p>
+                                        </div>
+                                    </div>
+                                    <p class="pb-xs">Udforsk Mexicos spændende kultur med ældgamle maya-ruiner og inka-ruiner, eller fyld ugen med adventure i grotte-systemer under Yucatán-halvøen eller ATV-ture gennem junglen.</p>
+                                    <p>For flere rejseoplevelser kan du besøge Guatemala, Belize eller Costa Rica. Eventyrlystne kan tage direkte fly til Sydamerika og opleve Brasilien, Colombia, Bolivia, Argentina, Peru og/eller Ecuador.</p>
+                                </div>
+                            </section>
+
+                            <section class="grid grid-cols-2 gap-md pb-xl">
+                                <div>
+                                    <h3 class="pb-xxxs">Selvudvikling & kommunikation</h3>
+                                    <div class="flex flex-row gap-4 pb-xs">
+                                        <div class="flex items-center gap-2 mb-4">
+                                            <img src="/location.svg" alt="" class="w-7 h-7 object-cover" />
+                                            <p class="">St. Croix, US Virgin Islands</p>
+                                        </div>
+                                    </div>
+                                    <p class="pb-xs">Midt i det Caribiske hav ligger de tidligere Dansk Vestindiske Øer – St. Thomas, St. Croix og St. John – nu kendt som US Virgin Islands. Øerne var danske indtil 1917 og har bevaret dansk kulturarv og gadenavne.</p>
+                                    <p>Det er et barfods-paradis med en hjertevarm caribisk kultur og et roligt 'Island Time' tempo. Sammenholdet og fællesskabsfølelsen er unik. Glæd jer.</p>
+                                </div>
+                                <div class="flex items-center">
+                                    <img src="/bedste-strande-i-caribien-2.webp" alt="introdage" />
+                                </div>
+                            </section>
+
+                            <section class="grid grid-cols-2 gap-md pb-xl">
+                                <div class="flex items-center">
+                                    <img src="/sport-adventure-i-nepal.webp" alt="introdage" />
+                                </div>
+                                <div>
+                                    <h3 class="pb-xxxs">Sport & adventure</h3>
+                                    <div class="flex flex-row gap-4 pb-xs">
+                                        <div class="flex items-center gap-2 mb-4">
+                                            <img src="/location.svg" alt="" class="w-7 h-7 object-cover" />
+                                            <p class="">St. Croix, US Virgin Islands</p>
+                                        </div>
+                                    </div>
+                                    <p class="pb-xs">Sport & Adventure er en fed kombi af spænding, adrenalin, oplevelser og teamsport.</p>
+                                    <p>Det er en verden, hvor eventyr, aktiviteter og teamspirit går hånd i hånd og uanset om vi skal på kajaktur, hike i regnskoven eller ‘Robinson’ dyste er undervisningen et skønt frirum hvor vi flytter grænser, griner og oplever sammen – og hvor alle kan være med.</p>
+                                </div>
+                            </section>
+
+                            <section class="grid grid-cols-2 gap-md pb-xl">
+                                <div>
+                                    <h3 class="pb-xxxs">Friuge</h3>
+                                    <div class="flex flex-row gap-4 pb-xs">
+                                        <div class="flex items-center gap-2 mb-4">
+                                            <img src="/location.svg" alt="" class="w-7 h-7 object-cover" />
+                                            <p class="">St. Croix, US Virgin Islands</p>
+                                        </div>
+                                    </div>
+                                    <p class="pb-xs">Mange elever har lyst til at udforske øerne omkring St. Croix, og ferien her er en god mulighed til det. Det er populært at tage en båd til St. Thomas eller St. John, eller købe en billig flybillet til Puerto Rico.</p>
+                                    <p>For større ferie-eventyr kan man tænke på Miami og/eller Orlando for et US-roadtrip og Miami Beach. Jamaica tilbyder reggae, rastafari-fester og skøn natur. Eller måske en uges ø-hop med et krydstogtskib.</p>
+                                </div>
+                                <div class="flex items-center">
+                                    <img src="/dansk-vestindien-friuge-i-caribien.webp" alt="introdage" />
+                                </div>
+                            </section>
+
+                            <section class="grid grid-cols-2 gap-md">
+                                <div class="flex items-center">
+                                    <img src="/puerto-rico-friuge-i-caribien.webp" alt="introdage" />
+                                </div>
+                                <div>
+                                    <h3 class="pb-xxxs">Outrodage</h3>
+                                    <div class="flex flex-row gap-4 pb-xs">
+                                        <div class="flex items-center gap-2 mb-4">
+                                            <img src="/location.svg" alt="" class="w-7 h-7 object-cover" />
+                                            <p class="">Puerto Rico, Caribien</p>
+                                        </div>
+                                    </div>
+                                    <p class="pb-xs">De latinamerikanske rytmer fra Mexico venter igen i Puerto Rico. Øen er kendt for sine smukke strande, frodige regnskove og en livlig kultur med spanske, afrikanske og Taíno-indflydelser.</p>
+                                    <p>Glæd dig til musik, køkken og festivaler, samt besøg i El Yunque National Forest.</p>
+                                </div>
+                            </section>
                         </div>
                         <div id="tab3" class="tab-content p-md hidden">
-                            <h3 class="">Inkluderet</h3>
-                            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae quidem impedit doloremque explicabo illum quos. Molestias aspernatur rem itaque doloribus culpa similique rerum provident id quos sed.</p>
+                            <section class="grid grid-cols-2 gap-md">
+                                <h1 class="pb-m">Hvad er inkluderet?</h1>
+                            </section>
+
+                            <section class="grid grid-cols-2 gap-md">
+                                <div>
+                                    <h3 class="pb-xs">Vores højskoleophold inkluderer altid</h3>
+                                    <ul class="list-disc pb-xl pl-s">
+                                        <li class="pb-xxxs text-gray-950">Dansk rejseleder på hele højskoleopholdet</li>
+                                        <li class="pb-xxxs text-gray-950">Danske undervisere – dygtige, inspirerende og engagerende</li>
+                                        <li class="pb-xxxs text-gray-950">24 timers vagttelefon – 365 dage om året</li>
+                                        <li class="pb-xxxs text-gray-950">Infobreve med bl.a., pakkeliste, opholdsinfo mm.</li>
+                                        <li class="pb-xxxs text-gray-950">Grundig vejledning vedr. visum og indrejseregler</li>
+                                        <li class="pb-xxxs text-gray-950">Afrejsemøde i Danmark ca. 5 uger inden afrejsedagen</li>
+                                        <li class="pb-xxxs text-gray-950">Fælles afrejse fra Københavns Lufthavn</li>
+                                        <li class="pb-xxxs text-gray-950">Transfers fra lufthavne tur/retur</li>
+                                        <li class="pb-xxxs text-gray-950">Personligt højskolebevis (til fx Kvote 2 og/eller jobansøgning)</li>
+                                        <li class="pb-xxxs text-gray-950">Lukket Facebook-gruppe med dine nye højskolevenner</li>
+                                        <li class="pb-xxxs text-gray-950">15% rabat på vaccinationer hos www.sikkerrejse.dk</li>
+                                        <li class="pb-xxxs text-gray-950">Indkvartering under hele opholdet (friuger undtaget)</li>
+                                        <li class="pb-xxxs text-gray-950">Entré og lokal transport ifm. programmet</li>
+                                        <li class="pb-xxxs text-gray-950">Skønne, dygtige og særligt udvalgte lokale guider</li>
+                                        <li class="pb-xxxs text-gray-950">Højskoleaftener med fællesskab, good-times og hygge</li>
+                                        <li class="pb-xxxs text-gray-950">Medlemskab i HÖJSKOLENDKs elevforening</li>
+                                        <li class="pb-xxxs text-gray-950">Et stærkt fokus på fællesskab, eventyr & adventure</li>
+                                        <li class="pb-xxxs text-gray-950">Bidrag til Rejsegarantifonden – medlemsnummer 2885</li>
+                                        <li class="pb-xxxs text-gray-950">Bidrag til ’World Animal Protection’</li>
+                                        <li class="pb-xxxs text-gray-950">Bidrag til fredning af skov i samarbejde med ’Verdens Skove’</li>
+                                        <li class="pb-xxxs text-gray-950">Vi planter 50 træer pr. elev i samarbejde med ’Trees.org’</li>
+                                    </ul>
+
+                                    <h3 class="pb-xs">Generelt for opholdet</h3>
+                                    <ul class="list-disc pb-xl pl-s">
+                                        <li class="pb-xxxs text-gray-950">Flybilletter tur/retur</li>
+                                        <li class="pb-xxxs text-gray-950">Flyskatter, Afgifter & Bagage</li>
+                                        <li class="pb-xxxs text-gray-950">Introdage m/skræddersyet program for fælleskab</li>
+                                        <li class="pb-xxxs text-gray-950">HÖJSKOLENDK Adventurerace</li>
+                                        <li class="pb-xxxs text-gray-950">Undervisning i faget ‘Teambuilding’</li>
+                                        <li class="pb-xxxs text-gray-950">Undervisning i faget ‘Frivilligt Arbejde & Kulturforståelse’</li>
+                                        <li class="pb-xxxs text-gray-950">Undervisning i faget ‘Selvudvikling & Kommunikation’</li>
+                                        <li class="pb-xxxs text-gray-950">Undervisning i faget ‘Sport & Adventure’</li>
+                                    </ul>
+
+                                    <h3 class="pb-xs">New York City</h3>
+                                    <ul class="list-disc pb-xl pl-s">
+                                        <li class="pb-xxxs text-gray-950">Indkvartering på Manhattan</li>
+                                        <li class="pb-xxxs text-gray-950">HÖJSKOLENDKs NYC Adventurerace</li>
+                                        <li class="pb-xxxs text-gray-950">New York CityTour m/lokal guide</li>
+                                        <li class="pb-xxxs text-gray-950">Times Square</li>
+                                        <li class="pb-xxxs text-gray-950">Central Park</li>
+                                        <li class="pb-xxxs text-gray-950">One World Trade Center</li>
+                                        <li class="pb-xxxs text-gray-950">Chinatown</li>
+                                        <li class="pb-xxxs text-gray-950">Brooklyn Bridge</li>
+                                        <li class="pb-xxxs text-gray-950">The ‘Friends’ apartment</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h3 class="pb-xs">Hawaii</h3>
+                                    <ul class="list-disc pb-xl pl-s">
+                                        <li class="pb-xxxs text-gray-950">Indkvartering tæt på Waikiki Beach, Oahu</li>
+                                        <li class="pb-xxxs text-gray-950">Surfing</li>
+                                        <li class="pb-xxxs text-gray-950">Koko Head hike</li>
+                                        <li class="pb-xxxs text-gray-950">Diamond Head crater</li>
+                                        <li class="pb-xxxs text-gray-950">Swap Meet Market</li>
+                                        <li class="pb-xxxs text-gray-950">Vandfalds-hike</li>
+                                        <li class="pb-xxxs text-gray-950">Beachvolley på Waikiki Beach</li>
+                                        <li class="pb-xxxs text-gray-950">Besøg ved Pearl Harbor</li>
+                                    </ul>
+
+                                    <h3 class="pb-xs">Mexico</h3>
+                                    <ul class="list-disc pb-xl pl-s">
+                                        <li class="pb-xxxs text-gray-950">Indkvartering i Playa Del Carmen, Yucatán</li>
+                                        <li class="pb-xxxs text-gray-950">Heldagstur til Chitchen Itza</li>
+                                        <li class="pb-xxxs text-gray-950">Tulum og Paradise Beach heldagstur</li>
+                                        <li class="pb-xxxs text-gray-950">Tulum guidet by-tur</li>
+                                        <li class="pb-xxxs text-gray-950">Street food tour</li>
+                                        <li class="pb-xxxs text-gray-950">Madlavningskursus</li>
+                                        <li class="pb-xxxs text-gray-950">Jungletour</li>
+                                        <li class="pb-xxxs text-gray-950">Rapelling</li>
+                                        <li class="pb-xxxs text-gray-950">Zipline</li>
+                                        <li class="pb-xxxs text-gray-950">Badning i Cenoter</li>
+                                        <li class="pb-xxxs text-gray-950">Salsa undervisning</li>
+                                        <li class="pb-xxxs text-gray-950">Besøg ved lokalt skoleprojekt</li>
+                                        <li class="pb-xxxs text-gray-950">Maya-Ceremoni</li>
+                                        <li class="pb-xxxs text-gray-950">Gåtur ned af 5th Avenue</li>
+                                    </ul>
+
+                                    <h3 class="pb-xs">Caribien</h3>
+                                    <ul class="list-disc pb-xl pl-s">
+                                        <li class="pb-xxxs text-gray-950">Indkvartering på St. Croix</li>
+                                        <li class="pb-xxxs text-gray-950">Velkomstmiddag</li>
+                                        <li class="pb-xxxs text-gray-950">Island Beach Tour</li>
+                                        <li class="pb-xxxs text-gray-950">Kajaktur med selvlysende plankton</li>
+                                        <li class="pb-xxxs text-gray-950">Snorkel- og Nationalpark tur – Buck Island National park</li>
+                                        <li class="pb-xxxs text-gray-950">Kulturaften m/lokal foredragsholder</li>
+                                        <li class="pb-xxxs text-gray-950">Tide Pools</li>
+                                        <li class="pb-xxxs text-gray-950">Smykke-workshop</li>
+                                        <li class="pb-xxxs text-gray-950">Rainbow Beach</li>
+                                        <li class="pb-xxxs text-gray-950">Point Udall (USAs mest østlige punkt)</li>
+                                        <li class="pb-xxxs text-gray-950">Salt River National Park</li>
+                                        <li class="pb-xxxs text-gray-950">Turtle Beach</li>
+                                        <li class="pb-xxxs text-gray-950">Carambola Beach</li>
+                                        <li class="pb-xxxs text-gray-950">Robinson Dyst</li>
+                                        <li class="pb-xxxs text-gray-950">Ultimate Frisbee</li>
+                                        <li class="pb-xxxs text-gray-950">Live-musik på Caribisk Beach Bar</li>
+                                        <li class="pb-xxxs text-gray-950">Turtle Watch (NB: Kun forårs-sæson)</li>
+                                    </ul>
+
+                                    <h3 class="pb-xs">Puerto Rico</h3>
+                                    <ul class="list-disc pb-xl pl-s">
+                                        <li class="pb-xxxs text-gray-950">Heldagstur til El Yunque National Forest</li>
+                                        <li class="pb-xxxs text-gray-950">Vandfald i National Park</li>
+                                        <li class="pb-xxxs text-gray-950">Naturlige waterslides i national parken</li>
+                                    </ul>
+                                </div>
+                            </section>
+
+                            <hr class="border-[1px] border-neutral-800" />
+
+                            <section class="grid grid-cols-2 gap-md">
+                                <h1 class="pb-m pt-xl">Hvad er ikke inkluderet?</h1>
+                            </section>
+
+                            <section class="grid grid-cols-2 gap-md">
+                                <div>
+                                    <ul class="list-disc pl-s">
+                                        <li class="pb-xxxs text-gray-950">Lommepenge til fritid, aktiviteter & shopping</li>
+                                        <li class="pb-xxxs text-gray-950">Mad, drikke og snacks</li>
+                                    </ul>
+
+                                    <ul class="list-disc pl-s">
+                                        <li class="pb-xxxs text-gray-950">Rejseforsikring & afbestillingsforsikring Visum og evt. andre indrejsedokumenter</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <ul class="list-disc pl-s">
+                                        <li class="pb-xxxs text-gray-950">Vaccinationer</li>
+                                        <li class="pb-xxxs text-gray-950">Indkvatering & transport i friuger</li>
+                                    </ul>
+                                </div>
+                            </section>
                         </div>
                         <div id="tab4" class="tab-content p-md hidden">
-                            <h3 class="">Fag</h3>
-                            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae quidem impedit doloremque explicabo illum quos. Molestias aspernatur rem itaque doloribus culpa similique rerum provident id quos sed.</p>
+                            <section class="grid grid-cols-2 gap-md pb-xl">
+                                <div class="flex items-center">
+                                    <img src="/samarbejdsoevelser.webp" alt="introdage" />
+                                </div>
+                                <div>
+                                    <h3 class="pb-xxxs">Teambuilding</h3>
+                                    <p class="pb-xs">Teambuilding er spændende og inspirerende fag. Fællesskabet er vigtigt, så alle trives på vores højskole-eventyr. Vi styrker fællesskabet med tankevækkende og sjove samarbejdsøvelser.</p>
+                                    <p class="pb-xs">Udover sjove og lærerige øvelser, får I indsigt i relationer, tillid, værdier, kommunikation og konfliktløsning.</p>
+                                    <p class="pb-xs">Teambuilding-dagene giver os en fremragende start og lægger grunden for et stærkt, inkluderende fællesskab. Glæd dig til en inspirerende og meningsfuld start på vores fantastiske højskole-eventyr.</p>
+                                    <a href="https://www.hojskolendk.dk/om-os/paa-hoejskole-i-udlandet/fag-undervisning/teambuilding/">Læs mere om ‘Teambuilding’ her!</a>
+                                </div>
+                            </section>
+
+                            <section class="grid grid-cols-2 gap-md pb-xl">
+                                <div>
+                                    <h3 class="pb-xxxs">Frivilligt arbejde & kulturforståelse</h3>
+                                    <p class="pb-xs">I HØJSKOLENDK tilbyder vi projekter, der gavner lokalsamfundet og giver mening for vores elever. Vælg mellem at arbejde med mennesker, dyreliv, kultur eller praktiske opgaver.</p>
+                                    <p class="pb-xs">Sammen med vores netværk i Mexico kan du hjælpe et dyreinternat eller gøre en forskel for børnehjem eller hjemløse. Du får en unik kulturforståelse og kommer tættere på områdets udfordringer.</p>
+                                    <p class="pb-xs">Glæd dig til at gøre en forskel!</p>
+                                    <a href="https://www.hojskolendk.dk/om-os/paa-hoejskole-i-udlandet/fag-undervisning/frivilligt-arbejde-kulturforstaaelse/">Læs mere om ‘Frivilligt Arbejde & Kulturforståelse’ her!</a>
+                                </div>
+                                <div class="flex items-center">
+                                    <img src="/frivilligt-arbejde.webp" alt="teambuildingvelse" />
+                                </div>
+                            </section>
+
+                            <section class="grid grid-cols-2 gap-md pb-xl">
+                                <div class="flex items-center">
+                                    <img src="/selvudvikling.webp" alt="introdage" />
+                                </div>
+                                <div>
+                                    <h3 class="pb-xxxs">Selvudvikling & kommunikation</h3>
+                                    <p class="pb-xs">
+                                        Undervisningen i Selvudvikling & Kommunikation fokuserer på personlig vækst og åben dialog. Vi bruger praktiske øvelser og redskaber som debat, refleksion, coaching, mindfulness og feedback. Du vil få større indsigt i dig selv og dine stærke sider, både alene og i grupper. Vi sørger for, at du tager nye
+                                        redskaber med hjem, og tilbyder individuelle samtaler.
+                                    </p>
+                                    <a href="https://www.hojskolendk.dk/om-os/paa-hoejskole-i-udlandet/fag-undervisning/selvudvikling-kommunikation/">Læs mere om ‘Selvudvikling & Kommunikation’ her!</a>
+                                </div>
+                            </section>
+
+                            <section class="grid grid-cols-2 gap-md">
+                                <div>
+                                    <h3 class="pb-xxxs">Sport & adventure</h3>
+                                    <p class="pb-xs">Sport & Adventure er et fag med fart på og vi er aktive og arbejder med teamsport, adventure og outdoor-aktiviteter. Alt sammen aktiviteter der udvikler dig fysisk og mentalt, flytter dine grænser og skaber stærkere relationer i vores fællesskab.</p>
+                                    <p class="pb-xs">Der bliver ikke tid til at sidde stille for længe af gangen, for vi tror på at man lærer bedst ved at træne, lege og erfare tingene selv – og at det skal være trygt og sjovt når man lærer noget nyt.</p>
+                                    <a href="https://www.hojskolendk.dk/om-os/paa-hoejskole-i-udlandet/fag-undervisning/sport-adventure/">Læs mere om ‘Sport & Adventure’ her!</a>
+                                </div>
+                                <div class="flex items-center">
+                                    <img src="/sport.webp" alt="teambuildingvelse" />
+                                </div>
+                            </section>
                         </div>
                         <div id="tab5" class="tab-content p-md hidden">
-                            <h3 class="">Kontakt</h3>
-                            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae quidem impedit doloremque explicabo illum quos. Molestias aspernatur rem itaque doloribus culpa similique rerum provident id quos sed.</p>
+                            <section class="grid grid-cols-2 gap-md">
+                                <img src="/peter.webp" alt="" />
+                                <div>
+                                    <h1 class="pb-m">Peter Kristensen</h1>
+                                    <p class="pb-xs">
+                                        Hvis du læser dette, har du sikkert eventyr i blodet og er nysgerrig på vores højskoleophold i Caribien, Hawaii og Mexico. Måske har du også nogle spørgsmål eller ønsker en snak om opholdet. Jeg hedder Peter og er tidligere elev (fra 2011) på HÖJSKOLENDK. Efter mit fantastiske ophold blev jeg rejseleder og
+                                        senere underviser, og nu er jeg teamleder på kontoret.
+                                    </p>
+                                    <p class="pb-xs">Mit hovedansvar er dette højskoleophold, så det er mig, der sørger for alt det praktiske og gør mit bedste for at give dig en fantastisk rejse.</p>
+                                    <p class="pb-xs">Hvis du har spørgsmål, vil høre mere eller bare ønsker en hyggelig snak, er du altid velkommen til at give mig et kald eller sende en mail.</p>
+                                    <p class="pb-xs">Tlf.: 7027 9007 // Mail: pk@hojskolendk.dk</p>
+                                    <p class="pb-xs">Jeg glæder mig til at høre fra dig!</p>
+                                    <p class="pb-xs">Peter – HÖJSKOLENDK</p>
+                                </div>
+                            </section>
                         </div>
                     </div>
                 </div>
@@ -286,28 +981,28 @@ import Link from "../components/Link.astro";
                 <section class="grid grid-cols-4 gap-s py-s">
                     <div class="bg-neutral-100 rounded-sm flex items-center justify-center h-full">
                         <div class="p-s text-center">
-                            <p class="">Glade & skønne elever</p>
+                            <p class="font-semibold">Glade & skønne elever</p>
                             <h1 class="text-orange-600">2.000+</h1>
                         </div>
                     </div>
 
                     <div class="bg-neutral-100 rounded-sm flex items-center justify-center h-full">
                         <div class="p-s text-center">
-                            <p class="">Anbefaler Höjskolendk</p>
+                            <p class="font-semibold">Anbefaler Höjskolendk</p>
                             <h1 class="text-orange-600">94%</h1>
                         </div>
                     </div>
 
                     <div class="bg-neutral-100 rounded-sm flex items-center justify-center h-full">
                         <div class="p-s text-center">
-                            <p class="">Tilfredshed efter ophold</p>
+                            <p class="font-semibold">Tilfredshed efter ophold</p>
                             <h1 class="text-orange-600">8.7/10</h1>
                         </div>
                     </div>
 
                     <div class="bg-neutral-100 rounded-sm flex items-center justify-center h-full">
                         <div class="p-s text-center">
-                            <img src="/trustpilot_logo_black.svg" alt="trustpilot logo" />
+                            <img class="w-4xl" src="/trustpilot_logo_black.svg" alt="trustpilot logo" />
                             <h1 class="text-orange-600">4.8/5</h1>
                         </div>
                     </div>
@@ -317,7 +1012,7 @@ import Link from "../components/Link.astro";
                 <section class="col-span-9">
                     <h2 class="pb-s">Rejsebreve</h2>
                     <section class="grid grid-cols-9 gap-s">
-                        <div class="col-span-3 relative group">
+                        <div class="col-span-3 relative group hover:scale-[1.02] transition-all duration-300 ease-in-out">
                             <img src="/laura.webp" alt="Billede af Laura" class="w-full h-full object-cover rounded-sm" />
                             <div class="absolute inset-0 bg-neutral-950 opacity-50 rounded-sm"></div>
                             <div class="overlay absolute inset-0 bg-orange-500 opacity-0 group-hover:opacity-50 transition-opacity duration-300 rounded-sm"></div>
@@ -326,7 +1021,7 @@ import Link from "../components/Link.astro";
                                 <p class="text-neutral-50">Den 1. november 2017, stod jeg klar i Københavns Lufthavn og var klar til mit…</p>
                             </div>
                         </div>
-                        <div class="col-span-3 relative group">
+                        <div class="col-span-3 relative group hover:scale-[1.02] transition-all duration-300 ease-in-out">
                             <img src="/emma.webp" alt="Billede af Emma" class="w-full h-full object-cover rounded-sm" />
                             <div class="absolute inset-0 bg-neutral-950 opacity-50 rounded-sm"></div>
                             <div class="overlay absolute inset-0 bg-orange-500 opacity-0 group-hover:opacity-50 transition-opacity duration-300 rounded-sm"></div>
@@ -335,7 +1030,7 @@ import Link from "../components/Link.astro";
                                 <p class="text-neutral-50">Med lidt under en uge tilbage her i Caribien kan jeg virkelig mærke, hvor meget…</p>
                             </div>
                         </div>
-                        <div class="col-span-3 relative group">
+                        <div class="col-span-3 relative group hover:scale-[1.02] transition-all duration-300 ease-in-out">
                             <img src="/kristoffer.webp" alt="Billede af Kristoffer" class="w-full h-full object-cover rounded-sm" />
                             <div class="absolute inset-0 bg-neutral-950 opacity-50 rounded-sm"></div>
                             <div class="overlay absolute inset-0 bg-orange-500 opacity-0 group-hover:opacity-50 transition-opacity duration-300 rounded-sm"></div>
@@ -356,7 +1051,7 @@ import Link from "../components/Link.astro";
 
                         <div class="flex flex-row">
                             <section class="grid grid-cols-9 gap-s slide1" x-show="slidenr === 'one'" x-transition:enter.duration.700ms>
-                                <div class="col-start-1 col-span-3 row-start-1 relative group">
+                                <div class="col-start-1 col-span-3 row-start-1 relative group hover:scale-[1.02] transition-all duration-300 ease-in-out">
                                     <div class="bg-neutral-100 rounded-[5px]">
                                         <div class="p-s">
                                             <img class="w-4xl pb-xs" src="/stjerner.svg" alt="trustpilot stjerner" />
@@ -366,7 +1061,7 @@ import Link from "../components/Link.astro";
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-start-4 col-span-3 row-start-1 relative group">
+                                <div class="col-start-4 col-span-3 row-start-1 relative group hover:scale-[1.02] transition-all duration-300 ease-in-out">
                                     <div class="bg-neutral-100 rounded-[5px]">
                                         <div class="p-s">
                                             <img class="w-4xl pb-xs" src="/stjerner.svg" alt="trustpilot stjerner" />
@@ -376,7 +1071,7 @@ import Link from "../components/Link.astro";
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-start-7 col-span-3 row-start-1 relative group">
+                                <div class="col-start-7 col-span-3 row-start-1 relative group hover:scale-[1.02] transition-all duration-300 ease-in-out">
                                     <div class="bg-neutral-100 rounded-[5px]">
                                         <div class="p-s pr-ml">
                                             <img class="w-4xl pb-xs" src="/stjerner.svg" alt="trustpilot stjerner" />
@@ -398,7 +1093,7 @@ import Link from "../components/Link.astro";
                             </section>
 
                             <section class="grid grid-cols-9 gap-s slide2" x-show="slidenr === 'two'" x-transition:enter.duration.700ms>
-                                <div class="col-start-1 col-span-3 row-start-1 relative group">
+                                <div class="col-start-1 col-span-3 row-start-1 relative group hover:scale-[1.02] transition-all duration-300 ease-in-out">
                                     <div class="bg-neutral-100 rounded-[5px]">
                                         <div class="p-s pl-ml">
                                             <img class="w-4xl pb-xs" src="/stjerner.svg" alt="trustpilot stjerner" />
@@ -408,7 +1103,7 @@ import Link from "../components/Link.astro";
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-start-4 col-span-3 row-start-1 relative group">
+                                <div class="col-start-4 col-span-3 row-start-1 relative group hover:scale-[1.02] transition-all duration-300 ease-in-out">
                                     <div class="bg-neutral-100 rounded-[5px]">
                                         <div class="p-s">
                                             <img class="w-4xl pb-xs" src="/stjerner.svg" alt="trustpilot stjerner" />
@@ -418,7 +1113,7 @@ import Link from "../components/Link.astro";
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-start-7 col-span-3 row-start-1 relative group">
+                                <div class="col-start-7 col-span-3 row-start-1 relative group hover:scale-[1.02] transition-all duration-300 ease-in-out">
                                     <div class="bg-neutral-100 rounded-[5px]">
                                         <div class="p-s">
                                             <img class="w-4xl pb-xs" src="/stjerner.svg" alt="trustpilot stjerner" />
