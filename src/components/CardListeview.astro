@@ -20,23 +20,23 @@ import ikon_uret from "../assets/images/uret1.svg";
 ---
 
 <div
-  class="flex flex-col md:flex-row bg-white md:w-[1600px] rounded-sm shadow-md overflow-hidden bg-neutral-100 transform hover:scale-[1.02] transition-all duration-300 ease-in-out"
+  class="flex flex-col md:flex-row bg-white rounded-[5px] shadow-md overflow-hidden bg-neutral-100 transform hover:scale-[1.02] transition-all duration-300 ease-in-out custom-sm:w-full"
 >
   <!-- Image Section -->
-  <div class="md:w-[550px] w-full md:h-[350px] h-[400px] relative">
-    <img src={image} alt={title} class="object-cover md:w-[550px] md:h-[350px] h-[400px] w-full" />
+  <div class="md:w-[550px] w-full h-[400px] relative custom-sm:h-[350px] custom-md:h-[350px]">
+    <img src={image} alt={title} class="object-cover h-[400px] w-full custom-sm:w-full custom-sm:h-[350px]" />
 
-    <!-- Main Label -->
+    <!-- Main Label (Orange) -->
     <div
-      class="absolute md:top-4 md:left-[22rem] lg:top-4 lg:left-[22rem] top-2 left-[18rem] bg-orange-400 text-white px-3 py-1 rounded-sm md:text-sm text-md"
+      class="absolute top-[1rem] left-[1rem] sm:top-[2rem] sm:left-[2rem] lg:top-[4rem] lg:left-[18rem] xl:top-[1rem] xl:left-[21rem] custom-lg:top-[3rem] custom-lg:left-[20rem] custom-md:top-[3rem] custom-md:left-[16rem] custom-sm:top-[3rem] custom-sm:left-[12rem] bg-orange-400 text-white px-3 py-1 rounded-sm sm:text-sm md:text-sm lg:text-base xl:text-lg"
     >
       {label}
     </div>
 
-    <!-- Extra Label (Only visible if 'extraLabel' exists) -->
+    <!-- Extra Label (Blue) (Only visible if 'extraLabel' exists) -->
     {
       extralabel && (
-        <div class="absolute md:top-[19rem] md:left-4 top-[22.5rem] left-2 bg-blue-500 text-white px-3 py-1 rounded-sm md:text-sm text-md">
+        <div class="absolute top-[10rem] left-[1rem] sm:top-[12rem] sm:left-[2rem] lg:top-[17rem] lg:left-[4rem] xl:top-[19rem] xl:left-[4rem] custom-lg:top-[14rem] custom-lg:left-[5rem] custom-md:top-[12rem] custom-md:left-[14rem] custom-sm:top-[11rem] custom-sm:left-[9rem] bg-blue-500 text-white px-3 py-1 rounded-sm sm:text-sm md:text-sm lg:text-base xl:text-lg">
           {extralabel}
         </div>
       )
@@ -44,9 +44,9 @@ import ikon_uret from "../assets/images/uret1.svg";
   </div>
 
   <!-- Content Section -->
-  <div class="flex flex-col md:flex-row gap-6 md:w-2/3">
+  <div class="flex flex-col sm:flex-col md:flex-row lg:flex-row xl:flex-row gap-6 sm:w-full custom-sm:w-full custom-md:w-2/3 custom-lg:w-2/3">
     <!-- Title and Description -->
-    <div class="flex-1 py-6 px-6">
+    <div class="flex-1 py-6 px-6 custom-sm:px-4 custom-md:px-6">
       <h3 class="text-xl font-bold mb-3 text-gray-950">{title}</h3>
       <p class="text-gray-600 text-[14.5px] leading-normal">{description}</p>
 
@@ -61,7 +61,7 @@ import ikon_uret from "../assets/images/uret1.svg";
     <!-- Travel Info and Price Info -->
     <div class="flex flex-row gap-4 flex-1">
       <!-- Travel Info Section -->
-      <div class="bg-gray-200 md:px-[16px] md:pt-[16px] px-4 pt-4 flex-1">
+      <div class="bg-gray-200 md:px-[16px] md:pt-[16px] px-4 pt-4 flex-1 custom-sm:px-2 custom-md:px-4">
         <!-- Duration -->
         <div class="flex items-center gap-4 mb-4">
           <Image src={ikon_uret} alt="ur-ikon" class="w-5 h-5 object-cover" />
@@ -96,7 +96,7 @@ import ikon_uret from "../assets/images/uret1.svg";
       </div>
 
       <!-- Price Info Section -->
-      <div class="bg-gray-100 p-4 flex-1 py-xs">
+      <div class="bg-gray-100 p-4 flex-1 py-xs custom-sm:px-2 custom-md:px-4">
         <div class="flex items-center gap-4 mb-2">
           <div>
             <p class="text-gray-500">Pris pr. pers.</p>
