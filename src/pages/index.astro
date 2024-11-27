@@ -21,94 +21,95 @@ import young from "../assets/images/young1.webp";
 
 <MainLayout title="Forside">
   <!--------------------Hero Section ------------------->
-  <section class="overflow-x-hidden">
-    <section class="relative w-full h-auto">
-      <div class="aspect-w-16 aspect-h-9 w-full">
-        <iframe src="https://www.youtube.com/embed/uBhtgAC1_S0?autoplay=1&mute=1&si=ijcqewpixxFZAjrM" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen> </iframe>
+
+  <section class="relative w-full h-auto">
+    <div class="aspect-w-16 aspect-h-9 w-full">
+      <iframe src="https://www.youtube.com/embed/uBhtgAC1_S0?autoplay=1&mute=1&si=ijcqewpixxFZAjrM" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen> </iframe>
+    </div>
+    <!-- Tekst over videoen -->
+    <div class="absolute w-full px-[20px] top-[27%] md:pl-2xl md:top-1/2 md:left-1/2 transform md:-translate-x-1/2 md:-translate-y-1/2">
+      <p class="font-lato text-neutral-50 text-[12px] md:font-p-mobile">Pak rygsækken og oplev verden!</p>
+      <h1 class="text-display-mobil md:text-display-mobile font-display font-bold text-neutral-50 lg:text-display-desktop">HØJSKOLE I UDLANDET</h1>
+      <p class="font-lato text-neutral-50 font-[16px] md:text-h4-mobil lg:text-h4-desktop">Er du klar til fællesskab, kulturmøder og dit livs rejseeventyr?</p>
+      <div class="flex flex-column pt-xs gap-s md:flex md:pt-s">
+        <a href="/infomoede"><Button variant="secondary" size="sm:xs md:medium">Infomøde</Button></a>
+        <a href="/tilmeld"><Button variant="primary" size="sm:xs md:medium">Tilmeld</Button></a>
       </div>
-      <!-- Tekst over videoen -->
-      <div class="absolute w-full px-[20px] top-[27%] md:pl-2xl md:top-1/2 md:left-1/2 transform md:-translate-x-1/2 md:-translate-y-1/2">
-        <p class="font-lato text-neutral-50 text-[12px] md:font-p-mobile">Pak rygsækken og oplev verden!</p>
-        <h1 class="text-display-mobil md:text-display-mobile font-display font-bold text-neutral-50 lg:text-display-desktop">HØJSKOLE I UDLANDET</h1>
-        <p class="font-lato text-neutral-50 font-[16px] md:text-h4-mobil lg:text-h4-desktop">Er du klar til fællesskab, kulturmøder og dit livs rejseeventyr?</p>
-        <div class="flex flex-column pt-xs gap-s md:flex md:pt-s">
-          <a href="/infomoede"><Button variant="secondary" size="sm:xs md:medium">Infomøde</Button></a>
-          <a href="/tilmeld"><Button variant="primary" size="sm:xs md:medium">Tilmeld</Button></a>
+    </div>
+  </section>
+
+  <!--------------------Den første section------------------->
+  <section>
+    <section class="flex flex-col px-s pt-sm mx-auto md:p-large lg:max-w-7xl">
+      <div class="mx-auto">
+        <h1 class="text-h2-mobile font-display text-neutral-950 md:text-h1-desktop md:pt-xl lg:pb-sm">ER DU KLAR TIL DIT LIVS EVENTYR?</h1>
+        <div class="flex flex-col lg:grid lg:grid-cols-2 md:justify-center md:items-start md:gap-sm md:pt-s">
+          <div class="py-xs md:py-xxxxs md:col-start-1 md:col-end-2">
+            <Image src={rejsebrev} alt="rejsebrev picture" class="w-full object-cover rounded-sm" />
+          </div>
+          <div class="text-p-mobile md:text-p-desktop md:col-start-2 md:col-end-3">
+            <p class="font-lato text-neutral-950">HÖJSKOLENDK er en dansk højskole for unge i alderen ca. 18-30 år. Vi brænder for oplevelser, fællesskab og mødet med nye mennesker og kulturer; derfor laver vi eventyrlige højskoleophold i udlandet.</p>
+            <br />
+            <p class="font-lato text-neutral-950">HÖJSKOLENDK er noget for dig, hvis du vil på højskole i udlandet og er vild med højskolefællesskab, vil med på et fantastisk rejseeventyr, glæder dig til at lære om fremmede kulturer, vil rejse med rygsæk, drømmer om en fed grupperejse med andre skønne unge, vil opleve et stærkt sammenhold og ønsker inspirerende og meningsfuld undervisning.</p>
+            <br />
+            <p class="font-lato text-neutral-950">Du er sikker på en tryg rejseoplevelse da vi er medlem af Rejsegarantifonden. Vi glæder os til at lære dig at kende!</p>
+            <div class="pt-xs">
+              <a href="/listview"><Button variant="primary" size="sm:xsmall md:medium">Højskoleophold</Button></a>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="py-xs hidden md:max-w-7xl md:mx-auto md:py-xxxxs md:w-full md:p-large md:grid md:grid-cols-2 md:justify-center md:items-start md:gap-sm md:relative">
+        <Image src={fly} alt="fly illustration" class="w-full md:pt-s md:pl-lg object-cover" />
+        <Image src={top} alt="group top picture" class="w-full object-cover sm:mt-[4%] sm:ml-[3%] md:mt-[0%] md:ml-[3%] lg:mt-[0%] lg:ml-[10%] xl:mt-[-22%] xl:ml-[10%]" />
       </div>
     </section>
+    <!--------------------Den parallax section------------------->
 
-    <!--------------------Den første section------------------->
-    <section>
-      <section class="flex flex-col px-s pt-sm mx-auto md:p-large lg:max-w-7xl">
-        <div class="mx-auto">
-          <h1 class="text-h2-mobile font-display text-neutral-950 md:text-h1-desktop md:pt-[80px]">ER DU KLAR TIL DIT LIVS EVENTYR?</h1>
-          <div class="flex flex-col lg:grid lg:grid-cols-2 md:justify-center md:items-start md:gap-sm md:pt-s">
-            <div class="py-xs md:py-xxxxs md:col-start-1 md:col-end-2">
-              <Image src={rejsebrev} alt="rejsebrev picture" class="w-full object-cover rounded-sm" />
-            </div>
-            <div class="text-p-mobile md:text-p-desktop md:col-start-2 md:col-end-3">
-              <p class="font-lato text-neutral-950">HÖJSKOLENDK er en dansk højskole for unge i alderen ca. 18-30 år. Vi brænder for oplevelser, fællesskab og mødet med nye mennesker og kulturer; derfor laver vi eventyrlige højskoleophold i udlandet.</p>
-              <br />
-              <p class="font-lato text-neutral-950">HÖJSKOLENDK er noget for dig, hvis du vil på højskole i udlandet og er vild med højskolefællesskab, vil med på et fantastisk rejseeventyr, glæder dig til at lære om fremmede kulturer, vil rejse med rygsæk, drømmer om en fed grupperejse med andre skønne unge, vil opleve et stærkt sammenhold og ønsker inspirerende og meningsfuld undervisning.</p>
-              <br />
-              <p class="font-lato text-neutral-950">Du er sikker på en tryg rejseoplevelse da vi er medlem af Rejsegarantifonden. Vi glæder os til at lære dig at kende!</p>
-              <div class="pt-xs">
-                <a href="/listview"><Button variant="primary" size="sm:xsmall md:medium">Højskoleophold</Button></a>
-              </div>
-            </div>
-          </div>
+    <section class="pt-sm md:pt-s lg:pt-xs"><Parallax /></section>
+
+    <!--------------------Den infomøde kort section------------------->
+    <section class="flex flex-col px-s pt-sm mx-auto lg:max-w-7xl md:p-large md:pt-xl">
+      <h1 class="text-h2-mobile font-display text-neutral-950 md:text-h1-desktop">Infomøde</h1>
+      <p class="font-lato text-neutral-950 py-xxs text-p-mobile lg:w-1/2 md:text-p-desktop">Hvis du drømmer om et fantastisk rejseeventyr med masser af eventyr, vilde naturoplevelser og spændende kulturmøder så smut forbi et af vores hyggelige infomøder i København eller Aarhus – eller mød os på et online infomøde.</p>
+      <div class="pb-sm md:pt-xs"><a href="/infomoede"><Button variant="primary" size="medium">Tilmeld dig infomødet</Button></a></div>
+
+      <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-sm md:items-center">
+        <Cardinfomoede url="#" cardimage="copenhagen.webp" sted="København" cardimagealt="København infomøde" lokale="Studenthuset, Købmagergade 52-1150, København K" dato="16. Januar. 2025" tidspunkt="Kl.17-19" />
+        <Cardinfomoede url="#" cardimage="aarhus.webp" sted="Aarhus" cardimagealt="Aarhus infomøde" lokale="LYN fabrikken, Vestergade 49B – 8000, Aarhus" dato="14. Januar. 2025" tidspunkt="Kl.17-19" />
+        <Cardinfomoede url="#" cardimage="online.webp" sted="Online infomøde" cardimagealt="online infomøde" lokale="Online infomøde" dato="13. Januar. 2025" tidspunkt="Kl.17-19" />
+      </section>
+    </section>
+
+    <!--------------------Den brochure section------------------->
+    <section class="py-sm px-s mx-auto md:max-w-7xl md:pt-xl">
+      <h1 class="text-h2-mobile font-display text-neutral-950 md:text-h1-desktop">Brochure</h1>
+      <p class="font-lato text-neutral-950 pt-xxs pb-xs text-p-mobile md:pb-sm">Her kan du læse, downloade og bestille vores brochure.</p>
+
+      <section class="gap-sm flex flex-col md:grid md:grid-cols-2">
+        <div class="relative w-full h-full bg-blue-600 rounded-sm md:col-start-1 md:col-end-2 md:row-start-1 md:row-end-3">
+          <div class="relative"><Image src={brochure_1} alt="brochure picture" class="w-full h-full object-cover rounded-sm relative" /></div>
+          <div class="absolute bottom-[4%] right-[4%] md:bottom-[3%] md:right-[7%] m-4"><a href="https://www.hojskolendk.dk/brochure/"><Button variant="secondary" size="medium">Download brochure</Button></a></div>
         </div>
-        <div class="py-xs hidden md:max-w-7xl md:mx-auto md:py-xxxxs md:w-full md:p-large md:grid md:grid-cols-2 md:justify-center md:items-start md:gap-sm md:relative">
-          <Image src={fly} alt="fly illustration" class="w-full md:pt-s md:pl-lg object-cover" />
-          <Image src={top} alt="group top picture" class="w-full object-cover sm:mt-[4%] sm:ml-[3%] md:mt-[0%] md:ml-[3%] lg:mt-[0%] lg:ml-[10%] xl:mt-[-22%] xl:ml-[10%]" />
+
+        <div class="relative flex flex-col md:col-start-2 md:col-end-3 md:row-start-1 md:row-end-2">
+          <div class="w-full h-11xl lg:h-12xl bg-blue-600 rounded-sm">
+            <div class="absolute transform top-[11%] right-[16%] rotate-0 md:top-[-16%] md:right-[10%] md:rotate-[-29deg] lg:top-[-26%] lg:right-[13%] lg:rotate-[-29deg]"><Image src={brochure_close} alt="brochure picture" class="sm:w-[300px] lg:w-[450px] object-cover rounded-sm" /></div>
+          </div>
+          <div class="absolute bottom-[4%] right-[4%] md:bottom-[7%] md:right-[7%] m-4"><a href="https://www.hojskolendk.dk/bestil-brochure/"><Button variant="secondary" size="medium">Bestill brochure</Button></a></div>
+        </div>
+
+        <div class="relative md:col-start-2 md:col-end-3 md:row-start-2 md:row-end-3">
+          <div class="w-full h-11xl lg:h-12xl bg-blue-600 rounded-sm">
+            <div class="absolute top-[10%] right-[0%] pt-sm transform rotate-0 md:top-[2%] md:left-[-6%] md:rotate-[-16deg] lg:top-[4%] lg:bottom-[58%] lg:right-[8%] lg:[-12%]"><Image src={brochure_open} alt="brochure picture" class="sm:w-[400px] lg:w-[500px] object-cover rounded-sm" /></div>
+          </div>
+          <div class="absolute bottom-[4%] right-[4%] md:bottom-[7%] md:right-[7%] m-4"><a href="https://issuu.com/hojskolendk/docs/h_jskolendk_-_dit_livs_eventyr"><Button variant="secondary" size="medium">Læs brochure</Button></a></div>
         </div>
       </section>
-      <!--------------------Den parallax section------------------->
+    </section>
 
-      <section class="pt-sm md:pt-s lg:pt-xs"><Parallax /></section>
-
-      <!--------------------Den infomøde kort section------------------->
-      <section class="flex flex-col px-s pt-sm mx-auto lg:max-w-7xl md:p-large md:pt-xl">
-        <h1 class="text-h2-mobile font-display text-neutral-950 md:text-h1-desktop">Infomøde</h1>
-        <p class="font-lato text-neutral-950 py-xxs text-p-mobile lg:w-1/2 md:text-p-desktop">Hvis du drømmer om et fantastisk rejseeventyr med masser af eventyr, vilde naturoplevelser og spændende kulturmøder så smut forbi et af vores hyggelige infomøder i København eller Aarhus – eller mød os på et online infomøde.</p>
-        <div class="pb-sm md:pt-xs"><a href="/infomoede"><Button variant="primary" size="medium">Tilmeld dig infomødet</Button></a></div>
-
-        <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-sm md:items-center">
-          <Cardinfomoede url="#" cardimage="copenhagen.webp" sted="København" cardimagealt="København infomøde" lokale="Studenthuset, Købmagergade 52-1150, København K" dato="16. Januar. 2025" tidspunkt="Kl.17-19" />
-          <Cardinfomoede url="#" cardimage="aarhus.webp" sted="Aarhus" cardimagealt="Aarhus infomøde" lokale="LYN fabrikken, Vestergade 49B – 8000, Aarhus" dato="14. Januar. 2025" tidspunkt="Kl.17-19" />
-          <Cardinfomoede url="#" cardimage="online.webp" sted="Online infomøde" cardimagealt="online infomøde" lokale="Online infomøde" dato="13. Januar. 2025" tidspunkt="Kl.17-19" />
-        </section>
-      </section>
-
-      <!--------------------Den brochure section------------------->
-      <section class="py-sm px-s mx-auto md:max-w-7xl md:pt-xl">
-        <h1 class="text-h2-mobile font-display text-neutral-950 md:text-h1-desktop">Brochure</h1>
-        <p class="font-lato text-neutral-950 pt-xxs pb-xs text-p-mobile md:pb-sm">Her kan du læse, downloade og bestille vores brochure.</p>
-
-        <section class="gap-sm flex flex-col md:grid md:grid-cols-2">
-          <div class="relative w-full h-full bg-blue-600 rounded-sm md:col-start-1 md:col-end-2 md:row-start-1 md:row-end-3">
-            <div class="relative"><Image src={brochure_1} alt="brochure picture" class="w-full h-full object-cover rounded-sm relative" /></div>
-            <div class="absolute bottom-[4%] right-[4%] md:bottom-[3%] md:right-[7%] m-4"><a href="https://www.hojskolendk.dk/brochure/"><Button variant="secondary" size="medium">Download brochure</Button></a></div>
-          </div>
-
-          <div class="relative flex flex-col md:col-start-2 md:col-end-3 md:row-start-1 md:row-end-2">
-            <div class="w-full h-11xl lg:h-12xl bg-blue-600 rounded-sm">
-              <div class="absolute transform top-[11%] right-[16%] rotate-0 md:top-[-16%] md:right-[10%] md:rotate-[-29deg] lg:top-[-26%] lg:right-[13%] lg:rotate-[-29deg]"><Image src={brochure_close} alt="brochure picture" class="sm:w-[300px] lg:w-[450px] object-cover rounded-sm" /></div>
-            </div>
-            <div class="absolute bottom-[4%] right-[4%] md:bottom-[7%] md:right-[7%] m-4"><a href="https://www.hojskolendk.dk/bestil-brochure/"><Button variant="secondary" size="medium">Bestill brochure</Button></a></div>
-          </div>
-
-          <div class="relative md:col-start-2 md:col-end-3 md:row-start-2 md:row-end-3">
-            <div class="w-full h-11xl lg:h-12xl bg-blue-600 rounded-sm">
-              <div class="absolute top-[10%] right-[0%] pt-sm transform rotate-0 md:top-[2%] md:left-[-6%] md:rotate-[-16deg] lg:top-[4%] lg:bottom-[58%] lg:right-[8%] lg:[-12%]"><Image src={brochure_open} alt="brochure picture" class="sm:w-[400px] lg:w-[500px] object-cover rounded-sm" /></div>
-            </div>
-            <div class="absolute bottom-[4%] right-[4%] md:bottom-[7%] md:right-[7%] m-4"><a href="https://issuu.com/hojskolendk/docs/h_jskolendk_-_dit_livs_eventyr"><Button variant="secondary" size="medium">Læs brochure</Button></a></div>
-          </div>
-        </section>
-      </section>
-
-      <!--------------------Den Højskole i udlandet for unge mennesker section------------------->
+    <!--------------------Den Højskole i udlandet for unge mennesker section------------------->
+    <section class="overflow-x-hidden">
       <section class="bg-orange-600 mx-auto md:mt-md lg:mt-4xl w-screen">
         <div class="relative pt-sm md:pb-xs px-s md:max-w-7xl mx-auto lg:grid lg:grid-cols-2 lg:gap-md md:pt-md">
           <div class="lg:col-start-1 lg:col-end-2">
