@@ -4,7 +4,7 @@ import ButtonHeader from "../components/ButtonHeader.astro";
 
 <div x-data="{ showmenu: false, showDropdown: false }" class="z-50 w-full fixed bg-gray-950 bg-opacity-70 backdrop-blur-md shadow-lg">
   <!-- Fixed Header -->
-  <div id="navbar" class="flex items-center justify-between max-w-full py-[30px] px-[15px] md:px-[60px]">
+  <div id="navbar" class="flex items-center justify-between max-w-full py-[30px] px-[15px] md:px-[95px]">
     <!-- Logo -->
     <div class="md:w-11xl w-10xl">
       <a href="/"><img src="/logo_white.png" alt="Logo" /></a>
@@ -16,7 +16,7 @@ import ButtonHeader from "../components/ButtonHeader.astro";
         <a class="hover:text-orange-500 text-neutral-50" href="/">Hjem</a>
         <!-- Dropdown -->
         <li class="relative list-none" @mouseenter="showDropdown = true" @mouseleave="showDropdown = false">
-          <a href="/listview" class="text-neutral-50 hover:text-orange-500 py-2 flex items-center text-base">
+          <a href="/listview" class="text-neutral-50 hover:text-orange-500 py-2 flex items-center">
             Rejser
             <svg
               class="w-4 h-4 ml-2 transition-transform duration-300 transform"
@@ -33,53 +33,56 @@ import ButtonHeader from "../components/ButtonHeader.astro";
           <div
             x-show="showDropdown"
             x-transition
-            class="absolute left-0 mt-2 w-10xl p-[5px] bg-neutral-950 border border-neutral-800 rounded-[0.5rem] shadow-lg z-10"
+            class="absolute left-0 mt-2 w-[275px] pl-[20px] pr-[20px] py-[10px] bg-neutral-950 border border-neutral-800 rounded-[0.5rem] shadow-lg z-10"
           >
             <ul>
               <li>
-                <a href="/singleview" class="block py-xxs px-xxxs text-neutral-50 hover:text-orange-500 hover:bg-neutral-900 rounded-[0.5rem]">
+                <a href="/singleview" class="text-[1rem] block py-[5px] px-xxxs text-neutral-50 hover:text-orange-500 rounded-[0.5rem]">
                   Caribien, Hawaii & Mexico</a
                 >
               </li>
               <li>
-                <a href="/singleview" class="block py-xxs px-xxxs text-neutral-50 hover:text-orange-500 hover:bg-neutral-900 rounded-[0.5rem]">
+                <a href="/singleview" class="text-[1rem] block py-[5px] px-xxxs text-neutral-50 hover:text-orange-500 rounded-[0.5rem]">
                   Costa rica, Mexico & Colombia</a
                 >
               </li>
               <li>
-                <a href="/singleview" class="block py-xxs px-xxxs text-neutral-50 hover:text-orange-500 hover:bg-neutral-900 rounded-[0.5rem]"
+                <a href="/singleview" class="text-[1rem] block py-[5px] px-xxxs text-neutral-50 hover:text-orange-500 rounded-[0.5rem]"
                   >Australien, NZ, Bali & Gili Islands</a
                 >
               </li>
               <li>
-                <a href="/singleview" class="block py-xxs px-xxxs text-neutral-50 hover:text-orange-500 hover:bg-neutral-900 rounded-[0.5rem]"
+                <a href="/singleview" class="text-[1rem] block py-[5px] px-xxxs text-neutral-50 hover:text-orange-500 rounded-[0.5rem]"
                   >Australien, Japan, Bali & Gili Islands</a
                 >
               </li>
               <li>
-                <a href="/singleview" class="block py-xxs px-xxxs text-neutral-50 hover:text-orange-500 hover:bg-neutral-900 rounded-[0.5rem]"
+                <a href="/singleview" class="text-[1rem] block py-[5px] px-xxxs text-neutral-50 hover:text-orange-500 rounded-[0.5rem]"
                   >Hawaii, Australien, Japan, Bali & Gili Islands</a
                 >
               </li>
               <li>
-                <a href="/singleview" class="block py-xxs px-xxxs text-neutral-50 hover:text-orange-500 hover:bg-neutral-900 rounded-[0.5rem]"
+                <a href="/singleview" class="text-[1rem] block py-[5px] px-xxxs text-neutral-50 hover:text-orange-500 rounded-[0.5rem]"
+                  >Maldiverne, Sri Lanka, Bali & Gili Islands</a
+                >
+              </li>
+              <li>
+                <a href="/singleview" class="text-[1rem] block py-[5px] px-xxxs text-neutral-50 hover:text-orange-500 rounded-[0.5rem]"
                   >Brasilien, Bolivia, Colombia, Ecuador, Peru & Argentina</a
                 >
               </li>
               <li>
-                <a href="/singleview" class="block py-xxs px-xxxs text-neutral-50 hover:text-orange-500 hover:bg-neutral-900 rounded-[0.5rem]"
+                <a href="/singleview" class="text-[1rem] block py-[5px] px-xxxs text-neutral-50 hover:text-orange-500 rounded-[0.5rem]"
                   >Costa Rica, Mexico & Colombia</a
                 >
               </li>
               <li>
-                <a href="/singleview" class="block py-xxs px-xxxs text-neutral-50 hover:text-orange-500 hover:bg-neutral-900 rounded-[0.5rem]"
+                <a href="/singleview" class="text-[1rem] block py-[5px] px-xxxs text-neutral-50 hover:text-orange-500 rounded-[0.5rem]"
                   >Indien, Nepal, Thailand, Vietnam & Sri Lanka</a
                 >
               </li>
               <li>
-                <a
-                  href="/singleview"
-                  class="rounded-y-sm block py-xxs px-xxxs text-neutral-50 hover:text-orange-500 hover:bg-neutral-900 rounded-[0.5rem]"
+                <a href="/singleview" class="rounded-y-sm text-[1rem] block py-[5px] px-xxxs text-neutral-50 hover:text-orange-500 rounded-[0.5rem]"
                   >Bali, Lombok & Gili (sommerhøjskole)</a
                 >
               </li>
@@ -134,5 +137,6 @@ import ButtonHeader from "../components/ButtonHeader.astro";
     <a class="text-neutral-50 hover:text-orange-500 py-2" href="/">Hjem</a>
     <a class="text-neutral-50 hover:text-orange-500 py-2" href="/listview">Rejser</a>
     <a href="/tilmeld"><ButtonHeader variant="primary" size="small">Tilmeld</ButtonHeader></a>
+    <div class="pb-xxxxs md:pb-0"></div>
   </nav>
 </div>

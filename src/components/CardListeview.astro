@@ -27,7 +27,9 @@ import ikon_uret from "../assets/images/uret1.svg";
     <img src={image} alt={title} class="object-cover md:w-[550px] md:h-[350px] h-[400px] w-full" />
 
     <!-- Main Label -->
-    <div class="absolute md:top-4 md:left-[21.5rem] top-2 left-[18rem] bg-orange-400 text-white px-3 py-1 rounded-sm md:text-sm text-md">
+    <div
+      class="absolute md:top-4 md:left-[22rem] lg:top-4 lg:left-[22rem] top-2 left-[18rem] bg-orange-400 text-white px-3 py-1 rounded-sm md:text-sm text-md"
+    >
       {label}
     </div>
 
@@ -45,8 +47,8 @@ import ikon_uret from "../assets/images/uret1.svg";
   <div class="flex flex-col md:flex-row gap-6 md:w-2/3">
     <!-- Title and Description -->
     <div class="flex-1 py-6 px-6">
-      <h3 class="text-xl font-bold mb-2 text-gray-950">{title}</h3>
-      <p class="text-gray-600">{description}</p>
+      <h3 class="text-xl font-bold mb-3 text-gray-950">{title}</h3>
+      <p class="text-gray-600 text-[14.5px] leading-normal">{description}</p>
 
       <!-- Button Section -->
       <div class="mt-sm">
@@ -59,13 +61,13 @@ import ikon_uret from "../assets/images/uret1.svg";
     <!-- Travel Info and Price Info -->
     <div class="flex flex-row gap-4 flex-1">
       <!-- Travel Info Section -->
-      <div class="bg-gray-200 px-[16px] pt-[16px] flex-1">
+      <div class="bg-gray-200 md:px-[16px] md:pt-[16px] px-4 pt-4 flex-1">
         <!-- Duration -->
         <div class="flex items-center gap-4 mb-4">
           <Image src={ikon_uret} alt="ur-ikon" class="w-5 h-5 object-cover" />
           <div>
             <p class="text-gray-500">Varighed</p>
-            <h4 class="font-semibold text-gray-950">{duration}</h4>
+            <p class="font-semibold text-gray-950">{duration}</p>
           </div>
         </div>
 
@@ -74,7 +76,7 @@ import ikon_uret from "../assets/images/uret1.svg";
           <Image src={airplane} alt="fly-ikon" class="w-5 h-5 object-cover" />
           <div>
             <p class="text-gray-500">Næste rejse</p>
-            <h4 class="font-semibold text-gray-950">
+            <p class="font-semibold text-gray-950">
               {
                 nextTrip.includes("-") ? (
                   <>
@@ -88,7 +90,7 @@ import ikon_uret from "../assets/images/uret1.svg";
                   nextTrip
                 )
               }
-            </h4>
+            </p>
           </div>
         </div>
       </div>
@@ -98,7 +100,7 @@ import ikon_uret from "../assets/images/uret1.svg";
         <div class="flex items-center gap-4 mb-2">
           <div>
             <p class="text-gray-500">Pris pr. pers.</p>
-            <h4 class="font-semibold pb-sm text-gray-950">{price}</h4>
+            <p class="font-semibold pb-sm text-gray-950">{price}</p>
           </div>
         </div>
         <p class="text-gray-500">{include}</p>
