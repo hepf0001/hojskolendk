@@ -20,13 +20,13 @@ import ikon_uret from "../assets/images/uret1.svg";
 ---
 
 <div
-  class="relative w-full grid grid-cols-2 lg:grid-cols-4 rounded-[5px] shadow-md overflow-hidden bg-neutral-100 transform hover:scale-[1.02] transition-all duration-300 ease-in-out"
+  class="lg:h-[300px] relative w-full grid grid-cols-2 lg:grid-cols-4 rounded-[5px] shadow-md overflow-hidden bg-neutral-100 transform hover:scale-[1.02] transition-all duration-300 ease-in-out"
 >
-  <div class="relative w-full col-start-1 col-end-3 lg:col-start-1 lg:col-end-2 min-h-[300px]">
-    <img src={image} alt={title} class="w-fit object-cover lg:h-full lg:w-auto" />
+  <div class="relative col-start-1 col-end-3 lg:col-start-1 lg:col-end-2 lg:min-h-[300px] h-[300px]">
+    <img src={image} alt={title} class="h-full object-cover w-[100%]" />
 
     <div class="relative">
-      <div class="absolute bg-orange-400 text-neutral-50 px-3 py-1 rounded-[0.5rem] text-sm top-3 right-2">
+      <div class="absolute bg-orange-400 text-neutral-50 px-3 py-1 rounded-[0.5rem] text-sm -top-[18rem] right-2">
         {label}
       </div>
 
@@ -44,7 +44,7 @@ import ikon_uret from "../assets/images/uret1.svg";
       >
         {description}
       </p>
-      <div class="mt-8">
+      <div class="mt-6">
         <a href="/singleview" class="text-[1rem]">
           <button
             class="bg-blue-500 text-neutral-50 rounded-[0.5rem] py-1.5 px-3 sm:py-1 sm:px-3 tablet:py-2 tablet:px-4 lg:py-3 lg:px-6 xl:py-4 xl:px-8 desktop:py-4 desktop:px-10"
