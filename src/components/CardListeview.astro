@@ -20,94 +20,102 @@ import ikon_uret from "../assets/images/uret1.svg";
 ---
 
 <div
-  class="flex flex-col md:flex-row bg-white rounded-[5px] shadow-md overflow-hidden bg-neutral-100 transform hover:scale-[1.02] transition-all duration-300 ease-in-out custom-sm:w-full"
+  class="relative w-full grid grid-cols-2 lg:grid-cols-4 bg-white rounded-[5px] shadow-md overflow-hidden bg-neutral-100 transform hover:scale-[1.02] transition-all duration-300 ease-in-out"
 >
-  <!-- Image Section -->
-  <div class="md:w-[550px] w-full h-[400px] relative custom-sm:h-[350px] custom-md:h-[350px]">
-    <img src={image} alt={title} class="object-cover h-[400px] w-full custom-sm:w-full custom-sm:h-[350px]" />
+  <div class="relative w-full col-start-1 col-end-3 lg:col-start-1 lg:col-end-2 min-h-[300px]">
+    <img src={image} alt={title} class="absolute top-0 left-0 w-full h-full object-cover" />
 
-    <!-- Main Label (Orange) -->
     <div
-      class="absolute top-[1rem] left-[1rem] sm:top-[2rem] sm:left-[2rem] lg:top-[4rem] lg:left-[18rem] xl:top-[1rem] xl:left-[21rem] custom-lg:top-[3rem] custom-lg:left-[20rem] custom-md:top-[3rem] custom-md:left-[16rem] custom-sm:top-[3rem] custom-sm:left-[12rem] bg-orange-400 text-white px-3 py-1 rounded-sm sm:text-sm md:text-sm lg:text-base xl:text-lg"
+      class="absolute bg-orange-400 text-white px-3 py-1 rounded-sm text-sm sm:text-sm tablet:text-sm lg:text-base xl:text-lg top-[0.5rem] left-[18.5rem] sm:top-[3rem] sm:left-[3rem] lg:top-[4rem] lg:left-[15rem] xl:top-[2rem] xl:left-[18rem] custom-lg:top-[3rem] custom-lg:left-[17rem] custom-md:top-[1rem] custom-md:left-[18.5rem] custom-sm:top-[5rem] custom-sm:left-[10rem]"
     >
       {label}
     </div>
 
-    <!-- Extra Label (Blue) (Only visible if 'extraLabel' exists) -->
     {
       extralabel && (
-        <div class="absolute top-[10rem] left-[1rem] sm:top-[12rem] sm:left-[2rem] lg:top-[17rem] lg:left-[4rem] xl:top-[19rem] xl:left-[rem] custom-lg:top-[14rem] custom-lg:left-[5rem] custom-md:top-[12rem] custom-md:left-[14rem] custom-sm:top-[11rem] custom-sm:left-[9rem] bg-blue-500 text-white px-3 py-1 rounded-sm sm:text-sm md:text-sm lg:text-base xl:text-lg">
+        <div class="absolute bg-blue-500 text-white px-3 py-1 rounded-sm text-sm sm:text-sm tablet:text-sm lg:text-base xl:text-lg top-[25.5rem] left-[0.5rem] sm:top-[10rem] sm:left-[3rem] lg:top-[15rem] lg:left-[4rem] xl:top-[17rem] xl:left-[2rem] custom-lg:top-[12rem] custom-lg:left-[4rem] custom-md:top-[32.5rem] custom-md:left-[1rem] custom-sm:top-[9rem] custom-sm:left-[8rem]">
           {extralabel}
         </div>
       )
     }
   </div>
 
-  <!-- Content Section -->
-  <div class="flex flex-col sm:flex-col md:flex-row lg:flex-row xl:flex-row gap-6 sm:w-full custom-sm:w-full custom-md:w-2/3 custom-lg:w-2/3">
-    <!-- Title and Description -->
+  <div class="col-start-1 col-end-3 lg:col-start-2 lg:col-end-4">
     <div class="flex-1 py-6 px-6 custom-sm:px-4 custom-md:px-6">
-      <h3 class="text-xl font-bold mb-3 text-gray-950">{title}</h3>
-      <p class="text-gray-600 text-[14.5px] leading-normal">{description}</p>
-
-      <!-- Button Section -->
-      <div class="mt-sm">
-        <a href="/singleview">
-          <Button variant="primary" size="sm:xsmall md:medium">{buttonText}</Button>
+      <h3 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-3 text-gray-950 custom-sm:text-lg custom-md:text-2xl custom-lg:text-3xl">
+        {title}
+      </h3>
+      <p
+        class="truncated-text text-sm sm:text-xs md:text-xs lg:text-xl desktop:text-xs text-gray-600 leading-normal custom-sm:text-xs custom-md:text-sm custom-lg:text-base"
+      >
+        {description}
+      </p>
+      <div class="mt-6">
+        <a href="/singleview" class="text-[1rem]">
+          <button
+            class="bg-blue-500 text-neutral-50 rounded-[0.5rem] py-1.5 px-3 sm:py-1 sm:px-3 tablet:py-2 tablet:px-4 lg:py-3 lg:px-6 xl:py-4 xl:px-8 desktop:py-4 desktop:px-10"
+          >
+            {buttonText}
+          </button>
         </a>
-      </div>
-    </div>
-
-    <!-- Travel Info and Price Info -->
-    <div class="flex flex-row gap-4 flex-1">
-      <!-- Travel Info Section -->
-      <div class="bg-gray-200 md:px-[16px] md:pt-[16px] px-4 pt-4 flex-1 custom-sm:px-2 custom-md:px-4">
-        <!-- Duration -->
-        <div class="flex items-center gap-4 mb-4">
-          <Image src={ikon_uret} alt="ur-ikon" class="w-5 h-5 object-cover" />
-          <div>
-            <p class="text-gray-500">Varighed</p>
-            <p class="font-semibold text-gray-950">{duration}</p>
-          </div>
-        </div>
-
-        <!-- Next Trip -->
-        <div class="flex items-center gap-4 py-xs">
-          <Image src={airplane} alt="fly-ikon" class="w-5 h-5 object-cover" />
-          <div>
-            <p class="text-gray-500">Næste rejse</p>
-            <p class="font-semibold text-gray-950">
-              {
-                nextTrip.includes("-") ? (
-                  <>
-                    {nextTrip.split(" - ")[0]} -
-                    <span class="hidden md:inline">
-                      <br />
-                    </span>
-                    {nextTrip.split(" - ")[1]}
-                  </>
-                ) : (
-                  nextTrip
-                )
-              }
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Price Info Section -->
-      <div class="bg-gray-100 p-4 flex-1 py-xs custom-sm:px-2 custom-md:px-4">
-        <div class="flex items-center gap-4 mb-2">
-          <div>
-            <p class="text-gray-500">Pris pr. pers.</p>
-            <p class="font-semibold pb-sm text-gray-950">{price}</p>
-          </div>
-        </div>
-        <p class="text-gray-500">{include}</p>
       </div>
     </div>
   </div>
 
-  <!-- Add an absolutely positioned link that covers the whole card -->
+  <div class="col-start-1 col-end-2 lg:col-start-4 lg:col-end-5">
+    <div
+      class="bg-gray-200 flex flex-col w-full max-w-[200px] h-full px-4 py-4 pt-4 tablet:px-[16px] desktop:px-6 tablet:pt-[16px] custom-sm:px-2 custom-md:px-4 desktop:px-6 desktop:pt-6 overflow-auto"
+    >
+      <div class="flex items-center gap-4 mb-4 py-xs px-xs">
+        <Image src={ikon_uret} alt="ur-ikon" class="w-5 h-5 object-cover" />
+        <div>
+          <p class="text-sm sm:text-base md:text-lg text-gray-500">Varighed</p>
+          <p class="font-semibold text-gray-950 text-sm sm:text-base md:text-lg">{duration}</p>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-4 px-xs">
+        <Image src={airplane} alt="fly-ikon" class="w-5 h-5 object-cover" />
+        <div>
+          <p class="text-sm sm:text-base md:text-lg text-gray-500">Næste rejse</p>
+          <p class="font-semibold text-gray-950 text-sm sm:text-base md:text-lg">
+            {
+              nextTrip.includes("-") ? (
+                <>
+                  {nextTrip.split(" - ")[0]} -
+                  <span class="hidden tablet:inline">
+                    <br />
+                  </span>
+                  {nextTrip.split(" - ")[1]}
+                </>
+              ) : (
+                nextTrip
+              )
+            }
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-gray-100 lg:col-start-5 lg:col-end-6 p-sm max-w-[200px]">
+    <div class="mb-2">
+      <p class="text-sm sm:text-base md:text-lg text-gray-500">Pris pr. pers.</p>
+      <p class="font-semibold text-gray-950 text-sm sm:text-base md:text-lg">{price}</p>
+    </div>
+    <p class="text-sm sm:text-base md:text-lg text-gray-500">{include}</p>
+  </div>
+
   <a href="/singleview" class="absolute inset-0 z-0"></a>
 </div>
+
+<style>
+  @media (max-width: 768px) {
+    .truncated-text {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+  }
+</style>

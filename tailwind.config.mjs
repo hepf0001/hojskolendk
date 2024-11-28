@@ -143,10 +143,13 @@ export default {
     },
     extend: {
       screens: {
+        "custom-xl": "1280px", // Custom breakpoint for 1280px
         "custom-lg": "1030px", // Custom breakpoint for 1030px
         "custom-md": "982px", // Custom breakpoint for 982px
         "custom-sm": "768px", // Custom breakpoint for 768px
       },
+      tablet: "768px", // Define your tablet breakpoint
+      desktop: "1024px", // Define your desktop breakpoint
     },
   },
   plugins: [
