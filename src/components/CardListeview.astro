@@ -20,20 +20,24 @@ import ikon_uret from "../assets/images/uret1.svg";
 ---
 
 <div
-  class="relative w-full grid grid-cols-2 lg:grid-cols-4 bg-white rounded-[5px] shadow-md overflow-hidden bg-neutral-100 transform hover:scale-[1.02] transition-all duration-300 ease-in-out"
+  class="relative w-full grid grid-cols-2 lg:grid-cols-4 rounded-[5px] shadow-md overflow-hidden bg-neutral-100 transform hover:scale-[1.02] transition-all duration-300 ease-in-out"
 >
   <div class="relative w-full col-start-1 col-end-3 lg:col-start-1 lg:col-end-2 min-h-[300px]">
-    <img src={image} alt={title} class="absolute top-0 left-0 w-full h-full object-cover" />
+    <img src={image} alt={title} class="w-fit object-cover lg:h-full lg:w-auto" />
 
     <div
-      class="absolute bg-orange-400 text-white px-3 py-1 rounded-sm text-sm sm:text-sm tablet:text-sm lg:text-base xl:text-lg top-[0.5rem] left-[18.5rem] sm:top-[3rem] sm:left-[3rem] lg:top-[4rem] lg:left-[15rem] xl:top-[2rem] xl:left-[18rem] custom-lg:top-[3rem] custom-lg:left-[17rem] custom-md:top-[1rem] custom-md:left-[18.5rem] custom-sm:top-[5rem] custom-sm:left-[10rem]"
+      class="absolute bg-orange-400 text-neutral-50 px-3 py-1 rounded-[0.5rem] text-sm xl:text-lg
+           top-[0.5rem] left-[18.5rem] sm:top-[0.5rem] sm:left-[8rem]"
     >
       {label}
     </div>
 
     {
       extralabel && (
-        <div class="absolute bg-blue-500 text-white px-3 py-1 rounded-sm text-sm sm:text-sm tablet:text-sm lg:text-base xl:text-lg top-[25.5rem] left-[0.5rem] sm:top-[10rem] sm:left-[3rem] lg:top-[15rem] lg:left-[4rem] xl:top-[17rem] xl:left-[2rem] custom-lg:top-[12rem] custom-lg:left-[4rem] custom-md:top-[32.5rem] custom-md:left-[1rem] custom-sm:top-[9rem] custom-sm:left-[8rem]">
+        <div
+          class="absolute bg-blue-500 text-neutral-50 px-3 py-1 rounded-[0.5rem] text-sm xl:text-lg 
+               top-[25.5rem] left-[0.5rem] sm:top-[16.5rem] sm:left-[0.5rem]"
+        >
           {extralabel}
         </div>
       )
@@ -50,7 +54,7 @@ import ikon_uret from "../assets/images/uret1.svg";
       >
         {description}
       </p>
-      <div class="mt-6">
+      <div class="mt-8">
         <a href="/singleview" class="text-[1rem]">
           <button
             class="bg-blue-500 text-neutral-50 rounded-[0.5rem] py-1.5 px-3 sm:py-1 sm:px-3 tablet:py-2 tablet:px-4 lg:py-3 lg:px-6 xl:py-4 xl:px-8 desktop:py-4 desktop:px-10"
@@ -64,21 +68,21 @@ import ikon_uret from "../assets/images/uret1.svg";
 
   <div class="col-start-1 col-end-2 lg:col-start-4 lg:col-end-5">
     <div
-      class="bg-gray-200 flex flex-col w-full max-w-[200px] h-full px-4 py-4 pt-4 tablet:px-[16px] desktop:px-6 tablet:pt-[16px] custom-sm:px-2 custom-md:px-4 desktop:px-6 desktop:pt-6 overflow-auto"
+      class="bg-gray-200 flex flex-col w-full max-w-[300px] h-full px-2 py-4 pt-4 tablet:px-[16px] desktop:px-6 tablet:pt-[16px] custom-sm:px-2 custom-md:px-4 desktop:px-6 desktop:pt-6 overflow-auto"
     >
-      <div class="flex items-center gap-4 mb-4 py-xs px-xs">
+      <div class="flex items-center gap-4 mb-4 md:py-xs md:px-md py-xxs px-xxs">
         <Image src={ikon_uret} alt="ur-ikon" class="w-5 h-5 object-cover" />
         <div>
-          <p class="text-sm sm:text-base md:text-lg text-gray-500">Varighed</p>
-          <p class="font-semibold text-gray-950 text-sm sm:text-base md:text-lg">{duration}</p>
+          <p class="sm:text-sm md:text-lg text-gray-500">Varighed</p>
+          <p class="font-semibold text-gray-950 sm:text-sm md:text-lg">{duration}</p>
         </div>
       </div>
 
-      <div class="flex items-center gap-4 px-xs">
+      <div class="flex items-center gap-4 md:py-xs md:px-md py-xxs px-xxs pb-sm">
         <Image src={airplane} alt="fly-ikon" class="w-5 h-5 object-cover" />
         <div>
-          <p class="text-sm sm:text-base md:text-lg text-gray-500">Næste rejse</p>
-          <p class="font-semibold text-gray-950 text-sm sm:text-base md:text-lg">
+          <p class="sm:text-sm md:text-lg text-gray-500">Næste rejse</p>
+          <p class="font-semibold text-gray-950 sm:text-sm md:text-lg">
             {
               nextTrip.includes("-") ? (
                 <>
@@ -100,10 +104,10 @@ import ikon_uret from "../assets/images/uret1.svg";
 
   <div class="bg-gray-100 lg:col-start-5 lg:col-end-6 p-sm max-w-[200px]">
     <div class="mb-2">
-      <p class="text-sm sm:text-base md:text-lg text-gray-500">Pris pr. pers.</p>
-      <p class="font-semibold text-gray-950 text-sm sm:text-base md:text-lg">{price}</p>
+      <p class="sm:text-sm md:text-lg text-gray-500">Pris pr. pers.</p>
+      <p class="font-semibold text-gray-950 text-sm sm:text-sm md:text-lg">{price}</p>
     </div>
-    <p class="text-sm sm:text-base md:text-lg text-gray-500">{include}</p>
+    <p class="text-sm sm:text-sm md:text-lg text-gray-500">{include}</p>
   </div>
 
   <a href="/singleview" class="absolute inset-0 z-0"></a>
