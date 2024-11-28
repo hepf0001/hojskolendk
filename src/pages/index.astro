@@ -78,7 +78,7 @@ import yay from "../assets/images/yay.webp";
       <!--------------------Den infomøde kort section------------------->
       <section class="flex flex-col px-s pt-sm mx-auto lg:max-w-7xl md:p-large md:pt-xl">
         <h1 class="">Infomøde</h1>
-        <p class="grid grid-cols-1 md:grid-cols-2">Hvis du drømmer om et fantastisk rejseeventyr med masser af eventyr, vilde naturoplevelser og spændende kulturmøder så smut forbi et af vores hyggelige infomøder i København eller Aarhus – eller mød os på et online infomøde.</p>
+        <p class="grid grid-cols-1 lg:grid-cols-2">Hvis du drømmer om et fantastisk rejseeventyr med masser af eventyr, vilde naturoplevelser og spændende kulturmøder så smut forbi et af vores hyggelige infomøder i København eller Aarhus – eller mød os på et online infomøde.</p>
         <div class="py-sm md:pb-sm md:pt-xs"><a href="/infomoede"><Button variant="primary" size="medium">Tilmeld dig infomødet</Button></a></div>
 
         <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-sm md:items-center">
@@ -141,8 +141,10 @@ import yay from "../assets/images/yay.webp";
           </div>
         </section>
         <section class="bg-orange-600 w-full mx-auto pb-md md:pb-none">
-          <div class="px-s md:max-w-7xl mx-auto py-sm md:py-none md:grid md:grid-cols-2 md:gap-sm md:pt-xl">
-            <h2 class="text-neutral-50 pb-s md:pb-none">En rejse højskole fyldt med oplevelser</h2>
+          <h2 class="text-neutral-50 pb-s px-s md:pb-none lg:hidden">En rejse højskole fyldt med oplevelser</h2>
+          <div class="px-s md:max-w-7xl mx-auto py-sm md:py-none md:grid md:grid-cols-2 md:gap-sm lg:pt-xl">
+            <h2 class="text-neutral-50 pb-s md:pb-none md:hidden lg:block">En rejse højskole fyldt med oplevelser</h2>
+
             <div class="pb-s md:pb-[0px] md:col-start-1 md:col-end-2 md:row-start-2 md:row-end-3 lg:pr-md">
               <div class="flex items-center gap-xs pb-xxs lg:gap-xxs lg:pb-xs">
                 <img src="/team.svg" alt="teambuilding ikon" />
@@ -177,7 +179,7 @@ import yay from "../assets/images/yay.webp";
                 <img src="/natur.svg" alt="kulturoplevelser ikon" />
                 <h3 class="text-neutral-50">Vilde naturoplevelser</h3>
               </div>
-              <p class="font-lato text-neutral-50">Ingen rejse uden vilde naturoplevelser! Vores højskoleophold byder på enestående natur: snorkling i Caribien, river rafting i Thailand, brøleaber i Costa Ricas regnskove, Inka-ruiner i Mexico, trekking i Himalaya, kajaksejlads, dykning ved Hawaii, vandring i New Zealands nationalparker og safari i Sri Lanka med leoparder, elefanter og bjørne. Uforglemmelige oplevelser garanteret!</p>
+              <p class="text-neutral-50 md:pb-md lg:pb-none">Ingen rejse uden vilde naturoplevelser! Vores højskoleophold byder på enestående natur: snorkling i Caribien, river rafting i Thailand, brøleaber i Costa Ricas regnskove, Inka-ruiner i Mexico, trekking i Himalaya, kajaksejlads, dykning ved Hawaii, vandring i New Zealands nationalparker og safari i Sri Lanka med leoparder, elefanter og bjørne. Uforglemmelige oplevelser garanteret!</p>
             </div>
             <div class="flex items-center justify-center mx-auto pt-xs w-[150px] md:mx-[0px] md:items-end md:justify-self-end md:w-[250px] md:pt-[0px] md:pb-sm md:col-start-2 md:col-end-3 md:row-start-4 md:row-end-5"><img src="/logo_700.svg" alt="LOGO" class="w-full" /></div>
           </div>
